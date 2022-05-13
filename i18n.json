@@ -1,0 +1,11 @@
+{
+  "locales": ["en", "ja"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common", "navbar", "footer"],
+    "/": ["home"],
+    "/about": ["about"],
+    "/pricing": ["pricing"],
+    "contact": ["contact"]
+  }
+}

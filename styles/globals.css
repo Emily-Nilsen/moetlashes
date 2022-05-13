@@ -1,16 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: quicksand, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: quicksand, sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* font-family: pacifico, sans-serif; */
+
+/* New Naturalism Font Pack */
+/* Bold mixed with normal/italic */
+h1 {
+  font-family: dejanire-headline, serif;
+}
+
+/* Bold mixed with light */
+h2 {
+  font-family: basic-sans, sans-serif;
+}
+
+/* looks nice in italic for another type of heading */
+h3 {
+  font-family: dejanire-headline, serif;
 }
