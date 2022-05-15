@@ -21,7 +21,7 @@ const growthFeatures = [
 
 export default function Lifts() {
   return (
-    <div className="bg-zinc-800">
+    <div id="lifts" className="bg-zinc-800">
       <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
           <h2 className="text-lg font-semibold leading-6 tracking-wider uppercase text-rose-300">

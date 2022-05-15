@@ -250,7 +250,7 @@ function classNames(...classes) {
 
 export default function Pricing() {
   return (
-    <div className="bg-white">
+    <div id="extensions" className="bg-white">
       {/* Pricing with four tiers and toggle */}
       <div className="bg-gradient-to-b from-white to-zinc-50">
         <div className="px-4 pt-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -307,7 +307,7 @@ export default function Pricing() {
                 </div>
                 <div className="px-6 pt-6 pb-8">
                   <h3 className="text-xs font-medium tracking-wide uppercase text-zinc-900">
-                    What's included
+                    Whats included
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {tier.features.map((feature) => (

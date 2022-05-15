@@ -51,7 +51,7 @@ export default function About() {
             <div className="mt-8 lg:mt-0">
               <div className="mx-auto text-base max-w-prose lg:max-w-none">
                 <p className="text-lg text-zinc-500">
-                  Making you look and feel good is Moe's passion, and this shows
+                  Making you look and feel good is Moe*s passion, and this shows
                   on every client that walks out of our beauty salon.
                 </p>
               </div>

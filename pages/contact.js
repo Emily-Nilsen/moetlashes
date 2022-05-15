@@ -337,7 +337,10 @@ export default function Contact() {
           </section>
 
           {/* FAQ offset */}
-          <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-20 lg:px-8">
+          <div
+            id="faqs"
+            className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-20 lg:px-8"
+          >
             <div className="lg:grid lg:grid-cols-3 lg:gap-8">
               <div className="space-y-4">
                 <h2 className="text-3xl font-extrabold text-zinc-900">
