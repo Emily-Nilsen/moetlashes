@@ -5,10 +5,10 @@ import useTranslation from 'next-translate/useTranslation';
 
 export default function Testimonials() {
   return (
-    <div className="pt-12 bg-zinc-50 sm:pt-16">
+    <div className="pt-12 bg-zinc-800 sm:pt-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="py-6 text-4xl text-rose-400 sm:text-5xl">
+          <h3 className="py-6 text-4xl text-rose-200 sm:text-5xl">
             <span className="font-bold">
               What our customers are saying about{' '}
             </span>
@@ -16,13 +16,13 @@ export default function Testimonials() {
           </h3>
         </div>
       </div>
-      <div className="mt-10 mb-12 bg-white sm:pb-16">
+      <div className="mt-10 bg-rose-50 sm:pb-16">
         <div className="relative">
-          <div className="absolute inset-0 h-1/2 bg-zinc-50" />
+          <div className="absolute inset-0 h-1/2 bg-zinc-800" />
           <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <dl className="rounded-lg shadow-lg bg-rose-50 sm:grid sm:grid-cols-3">
-                <div className="flex flex-col p-6 text-center border-b border-rose-100 sm:border-0 sm:border-r">
+                <div className="flex flex-col p-10 text-center border-b border-rose-100 sm:border-0 sm:border-r">
                   <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                     <div className="relative text-lg font-normal text-zinc-600 md:flex-grow">
                       <svg
@@ -43,10 +43,12 @@ export default function Testimonials() {
                     <footer className="mt-8">
                       <div className="flex items-start">
                         <div className="inline-flex flex-shrink-0 border-2 rounded-full border-rose-300">
-                          <img
+                          <Image
                             className="w-12 h-12 rounded-full"
                             src="/static/flowers-1.jpeg"
-                            alt=""
+                            alt="Su Lisa Miles"
+                            width={48}
+                            height={48}
                           />
                         </div>
                         <div className="ml-4">
@@ -62,7 +64,7 @@ export default function Testimonials() {
                   </blockquote>
                 </div>
                 {/* Testimonial 2 */}
-                <div className="flex flex-col p-6 text-center border-t border-b border-rose-100 sm:border-0 sm:border-l sm:border-r">
+                <div className="flex flex-col p-10 text-center border-t border-b border-rose-100 sm:border-0 sm:border-l sm:border-r">
                   <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                     <div className="relative text-lg font-normal text-zinc-600 md:flex-grow">
                       <svg
@@ -83,10 +85,12 @@ export default function Testimonials() {
                     <footer className="mt-8">
                       <div className="flex items-start">
                         <div className="inline-flex flex-shrink-0 border-2 rounded-full border-rose-300">
-                          <img
+                          <Image
                             className="w-12 h-12 rounded-full"
                             src="/static/flowers-2.jpeg"
-                            alt=""
+                            alt="Asami Burke"
+                            width={48}
+                            height={48}
                           />
                         </div>
                         <div className="ml-4">
@@ -102,7 +106,7 @@ export default function Testimonials() {
                   </blockquote>
                 </div>
                 {/* Testimonial 3 */}
-                <div className="flex flex-col p-6 text-center border-t border-rose-100 sm:border-0 sm:border-l">
+                <div className="flex flex-col p-10 text-center border-t border-rose-100 sm:border-0 sm:border-l">
                   <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                     <div className="relative text-lg font-normal text-zinc-600 md:flex-grow">
                       <svg
@@ -123,10 +127,12 @@ export default function Testimonials() {
                     <footer className="mt-8">
                       <div className="flex items-start">
                         <div className="inline-flex flex-shrink-0 border-2 rounded-full border-rose-300">
-                          <img
+                          <Image
                             className="w-12 h-12 rounded-full"
                             src="/static/flowers-3.jpeg"
-                            alt=""
+                            alt="Catie McCullash"
+                            width={48}
+                            height={48}
                           />
                         </div>
                         <div className="ml-4">

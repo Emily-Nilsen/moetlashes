@@ -35,7 +35,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="py-16 bg-rose-50 lg:px-6">
+    <div className="py-16 bg-zinc-800 lg:px-6">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">What we offer.</h2>
         <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-x-6">

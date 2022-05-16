@@ -252,7 +252,7 @@ export default function Pricing() {
   return (
     <div id="extensions" className="bg-white">
       {/* Pricing with four tiers and toggle */}
-      <div className="bg-gradient-to-b from-white to-zinc-50">
+      <div className="pt-24 pb-16 lg:pb-24 lg:pt-16 bg-gradient-to-b from-rose-50 to-rose-200">
         <div className="px-4 pt-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center">
             <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
@@ -262,26 +262,12 @@ export default function Pricing() {
               Start building for free, then add a site plan to go live. Account
               plans unlock additional features.
             </p>
-            <div className="relative mt-6 bg-zinc-100 rounded-lg p-0.5 flex self-center sm:mt-8">
-              <button
-                type="button"
-                className="relative w-1/2 py-2 text-sm font-medium bg-white rounded-md shadow-sm text-zinc-900 border-zinc-200 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-purple-500 focus:z-10 sm:w-auto sm:px-8"
-              >
-                Monthly billing
-              </button>
-              <button
-                type="button"
-                className="ml-0.5 relative border border-transparent rounded-md py-2 w-1/2 text-sm font-medium text-zinc-700 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-purple-500 focus:z-10 sm:w-auto sm:px-8"
-              >
-                Yearly billing
-              </button>
-            </div>
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
             {tiers.map((tier) => (
               <div
                 key={tier.name}
-                className="border divide-y rounded-lg shadow-sm border-zinc-200 divide-zinc-200"
+                className="bg-white border divide-y rounded-lg shadow-sm border-rose-200 divide-rose-200"
               >
                 <div className="p-6">
                   <h2 className="text-lg font-medium leading-6 text-zinc-900">

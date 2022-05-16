@@ -8,9 +8,9 @@ export default function Home() {
     <div className="bg-zinc-800">
       <section aria-labelledby="features-heading" className="relative">
         <div className="relative overflow-hidden aspect-w-3 aspect-h-2 sm:aspect-w-5 lg:aspect-none lg:absolute lg:w-1/2 lg:h-full lg:pr-4 xl:pr-16">
-          <div className="relative object-cover object-center w-full h-full lg:h-full lg:w-full">
+          <div className="object-cover object-center w-full h-full lg:h-full lg:w-full">
             <Image
-              src="/static/moet-hero.webp"
+              src="/static/home/moet-hero.webp"
               alt="Moët Lashes"
               width={1500}
               height={1000}
