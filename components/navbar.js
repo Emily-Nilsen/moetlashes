@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 
 const navigation = [
-  { name: 'Lashes', href: '/' },
+  { name: 'Lashes', href: '/lashes' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
@@ -33,11 +33,7 @@ export default function Navbar() {
                   <Image
                     height={40}
                     width={104}
-                    src={
-                      asPath === '/about' || asPath === '/pricing'
-                        ? '/moet-zinc.svg'
-                        : '/moet-pink.svg'
-                    }
+                    src="/moet-pink.svg"
                     alt="Moët Lashes logo"
                   />
                 </div>
@@ -48,11 +44,7 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className={`${
-                    asPath === '/about' || asPath === '/pricing'
-                      ? 'text-zinc-500 hover:text-rose-400'
-                      : 'text-white hover:text-rose-200'
-                  } ${'text-base transition duration-300 ease-in-out font-regular'}`}
+                  className="text-base text-white transition duration-300 ease-in-out font-regular hover:text-rose-200"
                 >
                   {link.name}
                 </a>
@@ -66,13 +58,7 @@ export default function Navbar() {
         <div className="flex flex-wrap justify-center py-4 space-x-6 lg:hidden">
           {navigation.map((link) => (
             <Link key={link.name} href={link.href} passHref>
-              <a
-                className={`${
-                  asPath === '/about' || asPath === '/pricing'
-                    ? 'text-zinc-500 hover:text-rose-400'
-                    : 'text-white hover:text-rose-200'
-                } ${'text-sm transition duration-300 ease-in-out font-regular'}`}
-              >
+              <a className="text-sm text-white transition duration-300 ease-in-out font-regular hover:text-rose-200">
                 {link.name}
               </a>
             </Link>

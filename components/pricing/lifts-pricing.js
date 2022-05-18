@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import { CheckIcon } from '@heroicons/react/outline';
+import { PhoneOutgoingIcon } from '@heroicons/react/solid';
 
-const hobbyFeatures = [
+const tintFeatures = [
   'Pariatur quod similique',
   'Sapiente libero doloribus',
   'Vel ipsa esse repudiandae',
 ];
-const scaleFeatures = [
+const liftFeatures = [
   'Pariatur quod similique',
   'Sapiente libero doloribus',
   'Vel ipsa esse repudiandae',
 ];
-const growthFeatures = [
+const liftTintFeatures = [
   'Quia rem est sed impedit magnam',
   'Dolorem vero ratione voluptates',
   'Qui sed ab doloribus voluptatem dolore',
@@ -19,27 +20,32 @@ const growthFeatures = [
   'Nam ut ipsa nesciunt culpa modi dolor',
 ];
 
-export default function Lifts() {
+export default function LiftsPricing() {
   return (
-    <div id="lifts" className="bg-zinc-800">
+    <div id="lifts" className="bg-rose-50">
       <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
-          <h2 className="text-lg font-semibold leading-6 tracking-wider uppercase text-rose-300">
+          <h2 className="text-lg font-semibold leading-6 tracking-wider uppercase text-rose-400">
             Pricing
           </h2>
-          <p className="mt-2 text-3xl font-extrabold text-rose-200 sm:text-4xl lg:text-5xl">
-            The right price for you, whoever you are
-          </p>
-          <p className="max-w-4xl mx-auto mt-3 text-xl text-zinc-300 sm:mt-5 sm:text-2xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-            numquam eligendi quos odit doloribus molestiae voluptatum.
+          <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
+            Price tiers for our lash{' '}
+            <span className="italic font-normal text-rose-400">lifts </span>
+            and tints
+          </h1>
+          <p className="max-w-4xl mx-auto mt-3 text-lg text-zinc-500 sm:mt-5 sm:text-xl">
+            A lash lift is the perfect alternative for those who want the styled
+            look without using eyelash extensions. A lash lift is essentially a
+            perming treatment to curl the eyelashes and set them in position. We
+            tint your natural eyelashes using a safe, semi-permanent, black
+            vegetable dye.
           </p>
         </div>
       </div>
 
-      <div className="pb-12 mt-16 bg-rose-50 lg:mt-20 lg:pb-20">
+      <div className="pb-12 mt-16 bg-zinc-50 lg:mt-20 lg:pb-20">
         <div className="relative z-0">
-          <div className="absolute inset-0 h-5/6 bg-zinc-800 lg:h-2/3" />
+          <div className="absolute inset-0 h-5/6 bg-rose-50 lg:h-2/3" />
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative lg:grid lg:grid-cols-7">
               <div className="max-w-md mx-auto lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
@@ -49,47 +55,56 @@ export default function Lifts() {
                       <div>
                         <h3
                           className="text-2xl font-medium text-center text-zinc-800"
-                          id="tier-hobby"
+                          id="tier-tint"
                         >
-                          Hobby
+                          Tint
                         </h3>
                         <div className="flex items-center justify-center mt-4">
                           <span className="flex items-start px-3 text-6xl tracking-tight text-rose-400">
-                            <span className="mt-2 mr-2 text-4xl font-medium">
-                              $
-                            </span>
-                            <span className="font-extrabold">79</span>
-                          </span>
-                          <span className="text-xl font-medium text-rose-300">
-                            /month
+                            <h1>
+                              <span className="mt-2 mr-2 text-4xl font-medium">
+                                $
+                              </span>
+                              <span className="font-extrabold">20</span>
+                            </h1>
                           </span>
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-gray-100 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                    <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-rose-200 bg-zinc-50 sm:p-10 lg:p-6 xl:p-10">
                       <ul role="list" className="space-y-4">
-                        {hobbyFeatures.map((feature) => (
+                        {tintFeatures.map((feature) => (
                           <li key={feature} className="flex items-start">
                             <div className="flex-shrink-0">
                               <CheckIcon
-                                className="flex-shrink-0 w-6 h-6 text-rose-400"
+                                className="flex-shrink-0 w-6 h-6 text-lime-500"
                                 aria-hidden="true"
                               />
                             </div>
-                            <p className="ml-3 text-base font-medium text-gray-500">
+                            <p className="ml-3 text-base font-normal text-zinc-500">
                               {feature}
                             </p>
                           </li>
                         ))}
                       </ul>
                       <div className="mt-8">
-                        <div className="rounded-lg shadow-md">
+                        <div className="rounded-full shadow">
                           <a
                             href="#"
-                            className="block w-full px-6 py-3 text-base font-medium text-center bg-white border border-transparent rounded-lg text-rose-400 hover:bg-gray-50"
-                            aria-describedby="tier-hobby"
+                            className="flex items-center justify-center w-full px-6 py-3 text-base font-medium text-center transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
+                            aria-describedby="tier-tint"
                           >
-                            Start your trial
+                            <p className="text-base font-medium">
+                              Book a{' '}
+                              <span className="font-extrabold">Tint</span>{' '}
+                              treatment
+                            </p>
+                            <span>
+                              <PhoneOutgoingIcon
+                                className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
+                                aria-hidden="true"
+                              />
+                            </span>
                           </a>
                         </div>
                       </div>
@@ -114,47 +129,56 @@ export default function Lifts() {
                     <div>
                       <h3
                         className="text-3xl font-semibold text-center text-zinc-800 sm:-mx-6"
-                        id="tier-growth"
+                        id="tier-liftTint"
                       >
-                        Growth
+                        Lift & Tint
                       </h3>
                       <div className="flex items-center justify-center mt-4">
                         <span className="flex items-start px-3 text-6xl tracking-tight text-rose-400 sm:text-6xl">
-                          <span className="mt-2 mr-2 text-4xl font-medium">
-                            $
-                          </span>
-                          <span className="font-extrabold">149</span>
-                        </span>
-                        <span className="text-2xl font-medium text-rose-300">
-                          /month
+                          <h1>
+                            <span className="mt-2 mr-2 text-4xl font-medium">
+                              $
+                            </span>
+                            <span className="font-extrabold">149</span>
+                          </h1>
                         </span>
                       </div>
                     </div>
                   </div>
-                  <div className="px-6 pt-10 pb-8 border-t-2 border-gray-100 rounded-b-lg bg-gray-50 sm:px-10 sm:py-10">
+                  <div className="px-6 pt-10 pb-8 border-t-2 rounded-b-lg border-rose-200 bg-zinc-50 sm:px-10 sm:py-10">
                     <ul role="list" className="space-y-4">
-                      {growthFeatures.map((feature) => (
+                      {liftTintFeatures.map((feature) => (
                         <li key={feature} className="flex items-start">
                           <div className="flex-shrink-0">
                             <CheckIcon
-                              className="flex-shrink-0 w-6 h-6 text-rose-400"
+                              className="flex-shrink-0 w-6 h-6 text-lime-500"
                               aria-hidden="true"
                             />
                           </div>
-                          <p className="ml-3 text-base font-medium text-zinc-500">
+                          <p className="ml-3 text-base font-normal text-zinc-500">
                             {feature}
                           </p>
                         </li>
                       ))}
                     </ul>
                     <div className="mt-10">
-                      <div className="rounded-lg shadow-md">
+                      <div className="rounded-full shadow">
                         <a
                           href="#"
-                          className="block w-full px-6 py-4 text-xl font-medium leading-6 text-center text-white border border-transparent rounded-lg bg-rose-400 hover:bg-rose-300"
-                          aria-describedby="tier-growth"
+                          className="flex items-center justify-center w-full px-6 py-4 text-xl font-medium leading-6 text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full bg-rose-400 hover:bg-rose-500 group"
+                          aria-describedby="tier-liftTint"
                         >
-                          Start your trial
+                          {' '}
+                          <p>
+                            Book a{' '}
+                            <span className="font-bold">Lift & Tint</span>
+                          </p>
+                          <span>
+                            <PhoneOutgoingIcon
+                              className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
+                              aria-hidden="true"
+                            />
+                          </span>
                         </a>
                       </div>
                     </div>
@@ -167,48 +191,56 @@ export default function Lifts() {
                     <div className="px-6 py-10 bg-white">
                       <div>
                         <h3
-                          className="text-2xl font-medium text-center text-gray-900"
-                          id="tier-scale"
+                          className="text-2xl font-medium text-center text-zinc-800"
+                          id="tier-lift"
                         >
-                          Scale
+                          Lift
                         </h3>
                         <div className="flex items-center justify-center mt-4">
-                          <span className="flex items-start px-3 text-6xl tracking-tight text-gray-900">
-                            <span className="mt-2 mr-2 text-4xl font-medium">
-                              $
-                            </span>
-                            <span className="font-extrabold">349</span>
-                          </span>
-                          <span className="text-xl font-medium text-gray-500">
-                            /month
+                          <span className="flex items-start px-3 text-6xl tracking-tight text-rose-400">
+                            <h1>
+                              <span className="mt-2 mr-2 text-4xl font-medium">
+                                $
+                              </span>
+                              <span className="font-extrabold">349</span>
+                            </h1>
                           </span>
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-gray-100 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                    <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-rose-200 bg-zinc-50 sm:p-10 lg:p-6 xl:p-10">
                       <ul role="list" className="space-y-4">
-                        {scaleFeatures.map((feature) => (
+                        {liftFeatures.map((feature) => (
                           <li key={feature} className="flex items-start">
                             <div className="flex-shrink-0">
                               <CheckIcon
-                                className="flex-shrink-0 w-6 h-6 text-green-500"
+                                className="flex-shrink-0 w-6 h-6 text-lime-500"
                                 aria-hidden="true"
                               />
                             </div>
-                            <p className="ml-3 text-base font-medium text-gray-500">
+                            <p className="ml-3 text-base font-normal text-zinc-500">
                               {feature}
                             </p>
                           </li>
                         ))}
                       </ul>
                       <div className="mt-8">
-                        <div className="rounded-lg shadow-md">
+                        <div className="rounded-full shadow">
                           <a
                             href="#"
-                            className="block w-full px-6 py-3 text-base font-medium text-center text-indigo-600 bg-white border border-transparent rounded-lg hover:bg-gray-50"
-                            aria-describedby="tier-scale"
+                            className="flex items-center justify-center w-full px-6 py-3 text-center transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
+                            aria-describedby="tier-lift"
                           >
-                            Start your trial
+                            <p className="text-base font-medium">
+                              Book a{' '}
+                              <span className="font-extrabold">Lift</span>{' '}
+                            </p>
+                            <span>
+                              <PhoneOutgoingIcon
+                                className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
+                                aria-hidden="true"
+                              />
+                            </span>
                           </a>
                         </div>
                       </div>

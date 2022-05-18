@@ -12,7 +12,7 @@ export default function Testimonials() {
             <span className="font-bold">
               What our customers are saying about{' '}
             </span>
-            <span className="italic font-normal">us</span>
+            <span className="italic font-normal text-white">us</span>
           </h3>
         </div>
       </div>
@@ -21,8 +21,8 @@ export default function Testimonials() {
           <div className="absolute inset-0 h-1/2 bg-zinc-800" />
           <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <dl className="rounded-lg shadow-lg bg-rose-50 sm:grid sm:grid-cols-3">
-                <div className="flex flex-col p-10 text-center border-b border-rose-100 sm:border-0 sm:border-r">
+              <dl className="bg-white rounded-lg shadow-lg md:grid md:grid-cols-3">
+                <div className="flex flex-col p-10 text-center border-b border-rose-50 md:border-0 md:border-r">
                   <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                     <div className="relative text-lg font-normal text-zinc-600 md:flex-grow">
                       <svg
@@ -64,7 +64,7 @@ export default function Testimonials() {
                   </blockquote>
                 </div>
                 {/* Testimonial 2 */}
-                <div className="flex flex-col p-10 text-center border-t border-b border-rose-100 sm:border-0 sm:border-l sm:border-r">
+                <div className="flex flex-col p-10 text-center border-t border-b border-rose-50 sm:border-0 sm:border-l sm:border-r">
                   <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                     <div className="relative text-lg font-normal text-zinc-600 md:flex-grow">
                       <svg
@@ -106,7 +106,7 @@ export default function Testimonials() {
                   </blockquote>
                 </div>
                 {/* Testimonial 3 */}
-                <div className="flex flex-col p-10 text-center border-t border-rose-100 sm:border-0 sm:border-l">
+                <div className="flex flex-col p-10 text-center border-t border-rose-100 md:border-0 md:border-l">
                   <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                     <div className="relative text-lg font-normal text-zinc-600 md:flex-grow">
                       <svg

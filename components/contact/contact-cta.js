@@ -3,7 +3,10 @@ import Link from 'next/link';
 
 export default function ContactCTA() {
   return (
-    <section className="relative bg-rose-50" aria-labelledby="join-heading">
+    <section
+      className="relative bg-rose-50 lg:pb-20"
+      aria-labelledby="join-heading"
+    >
       <div
         className="absolute inset-x-0 hidden h-1/2 bg-rose-50 lg:block"
         aria-hidden="true"
@@ -20,12 +23,12 @@ export default function ContactCTA() {
                 <div className="object-cover object-center overflow-hidden shadow-2xl rounded-3xl">
                   <Image
                     width={600}
-                    height={600}
-                    src="/static/home/moe-hero.webp"
+                    height={300}
+                    src="/static/home/moetlashes-img-1.webp"
                     alt="Moët Lashes Cairns City"
                     layout="fill"
                     objectFit="cover"
-                    objectPosition="center"
+                    objectPosition="bottom"
                   />
                 </div>
               </div>

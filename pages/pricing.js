@@ -1,246 +1,58 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Lifts from '../components/pricing/lifts';
+import Lifts from '../components/pricing/lifts-pricing';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CheckIcon as CheckIconOutline,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/react/outline';
 import {
   CheckIcon as CheckIconSolid,
   ChevronDownIcon,
 } from '@heroicons/react/solid';
+import { PhoneOutgoingIcon } from '@heroicons/react/solid';
 
-const solutions = [
-  {
-    name: 'Analytics',
-    description:
-      'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorClickIcon,
-  },
-  {
-    name: 'Security',
-    description: "Your customers' data will be safe and secure.",
-    href: '#',
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
-  },
-  {
-    name: 'Automations',
-    description:
-      'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
-];
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-];
-const resources = [
-  {
-    id: 1,
-    name: 'Help Center',
-    description:
-      'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-    icon: SupportIcon,
-  },
-  {
-    id: 2,
-    name: 'Guides',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-    icon: BookmarkAltIcon,
-  },
-  {
-    id: 3,
-    name: 'Events',
-    description:
-      'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: CalendarIcon,
-  },
-  {
-    id: 4,
-    name: 'Security',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
-    icon: ShieldCheckIcon,
-  },
-];
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-  },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-];
 const tiers = [
   {
-    name: 'Hobby',
+    name: 'Classic Lashes',
     href: '#',
-    priceMonthly: 12,
-    description: 'All the basics for starting a new business',
+    priceMonthly: 60,
+    description:
+      'Individual eyelash extensions are attached one by one to each natural lash.',
     features: [
-      'Potenti felis, in cras at at ligula nunc.',
-      'Orci neque eget pellentesque.',
+      'It gives the most natural look.',
+      'Recommended for those that have never tried eyelash extensions before.',
     ],
   },
   {
-    name: 'Freelancer',
+    name: 'Double Lashes',
     href: '#',
-    priceMonthly: 24,
-    description: 'All the basics for starting a new business',
+    priceMonthly: 70,
+    description:
+      'The double method attaches two single eyelash extensions to each natural lash.',
     features: [
-      'Potenti felis, in cras at at ligula nunc. ',
-      'Orci neque eget pellentesque.',
-      'Donec mauris sit in eu tincidunt etiam.',
+      'It gives the illusion of fuller and fluffy-looking lashes.',
+      'Perfect for those who wear eye make-up daily.',
     ],
   },
   {
-    name: 'Startup',
+    name: 'Hybrid Lashes',
     href: '#',
-    priceMonthly: 32,
-    description: 'All the basics for starting a new business',
+    priceMonthly: 80,
+    description:
+      'A mix of a single lash and a volume lash is attached to each natural lash.',
     features: [
-      'Potenti felis, in cras at at ligula nunc. ',
-      'Orci neque eget pellentesque.',
-      'Donec mauris sit in eu tincidunt etiam.',
-      'Faucibus volutpat magna.',
+      'It achieves a dense and more defined lash line.',
+      'Recommended for those wishing to obtain a wow effect or those with sparse eyelashes.',
     ],
   },
   {
-    name: 'Enterprise',
+    name: 'Volume Lashes',
     href: '#',
-    priceMonthly: 48,
-    description: 'All the basics for starting a new business',
+    priceMonthly: 90,
+    description:
+      'The volume method attaches three extra fine lashes to each natural lash.',
     features: [
-      'Potenti felis, in cras at at ligula nunc. ',
-      'Orci neque eget pellentesque.',
-      'Donec mauris sit in eu tincidunt etiam.',
-      'Faucibus volutpat magna.',
-      'Id sed tellus in varius quisque.',
-      'Risus egestas faucibus.',
-      'Risus cursus ullamcorper.',
+      'The resulting bouquet of volume lashes creates a dramatic and dark lash line',
+      'Lashes look both fluffy and entirely natural.',
     ],
-  },
-];
-const features = [
-  {
-    name: 'Invite team members',
-    description:
-      'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-  },
-  {
-    name: 'Notifications',
-    description:
-      'Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh urna non parturient.',
-  },
-  {
-    name: 'List view',
-    description:
-      'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
-  },
-  {
-    name: 'Boards',
-    description:
-      'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
-  },
-  {
-    name: 'Keyboard shortcuts',
-    description:
-      'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
-  },
-  {
-    name: 'Reporting',
-    description:
-      'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
-  },
-  {
-    name: 'Calendars',
-    description:
-      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
-  },
-  {
-    name: 'Mobile app',
-    description:
-      'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
-  },
-];
-const logos = [
-  {
-    name: 'Tuple',
-    url: 'https://tailwindui.com/img/logos/tuple-logo-purple-200.svg',
-  },
-  {
-    name: 'Mirage',
-    url: 'https://tailwindui.com/img/logos/mirage-logo-purple-200.svg',
-  },
-  {
-    name: 'StaticKit',
-    url: 'https://tailwindui.com/img/logos/statickit-logo-purple-200.svg',
-  },
-  {
-    name: 'Transistor',
-    url: 'https://tailwindui.com/img/logos/transistor-logo-purple-200.svg',
-  },
-  {
-    name: 'Workcation',
-    url: 'https://tailwindui.com/img/logos/workcation-logo-purple-200.svg',
-  },
-];
-const faqs = [
-  {
-    id: 1,
-    question: 'How do you make holy water?',
-    answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
-  },
-  {
-    id: 2,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    id: 3,
-    question: 'What do you call someone with no body and no nose?',
-    answer:
-      'Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
-  },
-  {
-    id: 4,
-    question: 'Why do you never see elephants hiding in trees?',
-    answer:
-      "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
 ];
 
@@ -251,16 +63,56 @@ function classNames(...classes) {
 export default function Pricing() {
   return (
     <div id="extensions" className="bg-white">
-      {/* Pricing with four tiers and toggle */}
-      <div className="pt-24 pb-16 lg:pb-24 lg:pt-16 bg-gradient-to-b from-rose-50 to-rose-200">
-        <div className="px-4 pt-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="sm:flex sm:flex-col sm:align-center">
-            <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
-              Pricing Plans
+      {/* Hero card */}
+      <div className="relative">
+        <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+
+        <div className="relative">
+          <div className="absolute inset-0">
+            <div className="relative object-cover w-full h-full">
+              <Image
+                src="/static/home/moetlashes-img-4.webp"
+                alt="Eyelash extensions hero image"
+                width={1000}
+                height={697}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="top"
+              />
+            </div>
+            <div
+              className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <h1 className="pt-20 mt-10 -mb-10 text-5xl font-extrabold tracking-tight text-left sm:text-6xl lg:text-7xl sm:text-center">
+              <span className="text-white">Our </span>
+              <span className="italic font-normal text-rose-200">pricing</span>
             </h1>
-            <p className="mt-5 text-xl text-zinc-500 sm:text-center">
-              Start building for free, then add a site plan to go live. Account
-              plans unlock additional features.
+          </div>
+        </div>
+      </div>
+      {/* Pricing with four tiers and toggle */}
+      <div className="py-16 bg-rose-50">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="sm:flex sm:flex-col sm:align-center">
+            <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider uppercase sm:text-lg sm:text-center text-rose-400">
+              Premium quality
+            </h2>
+            <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
+              Price tiers for our eyelash{' '}
+              <span className="italic font-normal text-rose-400">
+                extensions{' '}
+              </span>
+            </h1>
+            <p className="max-w-4xl mx-auto mt-5 text-lg text-zinc-500 sm:text-center sm:text-xl">
+              Our premium{' '}
+              <span className="font-medium text-rose-400">Nagaraku</span>{' '}
+              eyelashes’ unique material ensures that each lash is soft,
+              lightweight and flat at the base for maximum adhesion. We
+              skillfully attach each ellipse eyelash to your individual lashes
+              for an entirely natural and stunning look.
             </p>
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
@@ -270,36 +122,39 @@ export default function Pricing() {
                 className="bg-white border divide-y rounded-lg shadow-sm border-rose-200 divide-rose-200"
               >
                 <div className="p-6">
-                  <h2 className="text-lg font-medium leading-6 text-zinc-900">
+                  <h1 className="text-xl font-medium leading-6 text-zinc-800">
                     {tier.name}
-                  </h2>
+                  </h1>
                   <p className="mt-4 text-sm text-zinc-500">
                     {tier.description}
                   </p>
-                  <p className="mt-8">
-                    <span className="text-4xl font-extrabold text-zinc-900">
+                  <h1 className="mt-8">
+                    <span className="text-4xl font-extrabold text-zinc-800">
                       ${tier.priceMonthly}
                     </span>{' '}
-                    <span className="text-base font-medium text-zinc-500">
-                      /mo
-                    </span>
-                  </p>
+                  </h1>
                   <a
                     href={tier.href}
-                    className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white border border-transparent rounded-md bg-rose-400 hover:bg-purple-700"
+                    className="flex justify-center w-full py-2 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full bg-rose-400 hover:bg-rose-500 group"
                   >
-                    Buy {tier.name}
+                    Book {tier.name}
+                    <span>
+                      <PhoneOutgoingIcon
+                        className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
+                        aria-hidden="true"
+                      />
+                    </span>
                   </a>
                 </div>
                 <div className="px-6 pt-6 pb-8">
-                  <h3 className="text-xs font-medium tracking-wide uppercase text-zinc-900">
-                    Whats included
-                  </h3>
+                  <h2 className="text-xs font-bold tracking-wide uppercase text-zinc-800">
+                    The result
+                  </h2>
                   <ul role="list" className="mt-6 space-y-4">
                     {tier.features.map((feature) => (
                       <li key={feature} className="flex space-x-3">
                         <CheckIconSolid
-                          className="flex-shrink-0 w-5 h-5 text-green-500"
+                          className="flex-shrink-0 w-5 h-5 text-lime-500"
                           aria-hidden="true"
                         />
                         <span className="text-sm text-zinc-500">{feature}</span>
@@ -313,7 +168,36 @@ export default function Pricing() {
         </div>
       </div>
 
-      {/* Lifts */}
+      {/* Lifts Hero card */}
+      <div className="relative">
+        <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+
+        <div className="relative">
+          <div className="absolute inset-0">
+            <div className="relative object-cover w-full h-full">
+              <Image
+                src="/static/home/lift-prices-hero.webp"
+                alt="Eyelash extensions hero image"
+                width={1000}
+                height={697}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="top"
+              />
+            </div>
+            <div
+              className="absolute inset-0 opacity-50 bg-gradient-to-b from-zinc-800 to-t"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <h1 className="pt-20 text-5xl font-extrabold tracking-tight text-center mt-14 -mb-14 sm:text-6xl lg:text-7xl">
+              <span className="text-white">Lift & </span>
+              <span className="italic font-normal text-rose-200">style</span>
+            </h1>
+          </div>
+        </div>
+      </div>
       <Lifts />
     </div>
   );

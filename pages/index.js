@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
-import Features from '../components/home/features';
 import Link from 'next/link';
-import Lashes from '../components/home/lashes';
-import Lifts from '../components/home/lifts';
+import Lifts from '../components/lashes/lifts';
 import HomeCTA from '../components/home/home-cta';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -20,22 +18,22 @@ const features = [
     name_start: `Eyelash `,
     name_end: `extensions`,
     description: `Make your lash fringe longer, fuller and darker with our extensive selection of eyelash extension treatments.`,
-    href: `/#extensions`,
+    href: `/lashes`,
     link_name: `Extensions`,
     icon: `/static/home/icon-1.svg`,
   },
   {
     name_start: `Lash lift & `,
     name_end: `style`,
-    description: `Enhance and style your natural lashes with a lash lift treatment.`,
-    href: `/#lifts`,
+    description: `Enhance and style your natural lashes with a lash lift treatment or tint.`,
+    href: `/lashes/#lifts`,
     link_name: `Lifts`,
     icon: `/static/home/icon-2.svg`,
   },
   {
     name_start: `Aftercare `,
     name_end: `advice`,
-    description: `Receive friendly advice about how best to care for your eyelash extensions.`,
+    description: `Receive friendly advice about how best to care for your eyelash extensions, lifts and tints.`,
     href: `/contact/#faqs`,
     link_name: `FAQs`,
     icon: `/static/home/icon-3.svg`,
@@ -84,7 +82,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="pb-16">
+      <main>
         <div className="bg-rose-50">
           {/* Cards */}
           <section
@@ -121,12 +119,14 @@ export default function Home() {
                       {feature.description}
                     </p>
                   </div>
-                  <div className="p-6 text-base font-medium transition duration-300 ease-in-out text-rose-400 bg-zinc-50 rounded-bl-2xl rounded-br-2xl md:px-8 hover:text-white hover:bg-rose-300">
-                    <a href={feature.href} className="">
-                      {feature.link_name}
-                      <span aria-hidden="true"> &rarr;</span>
-                    </a>
-                  </div>
+                  <Link href={feature.href} passHref>
+                    <div className="p-6 text-base font-medium transition duration-300 ease-in-out cursor-pointer text-rose-400 bg-zinc-50 rounded-bl-2xl rounded-br-2xl md:px-8 hover:text-white hover:bg-rose-300">
+                      <a>
+                        {feature.link_name}
+                        <span aria-hidden="true"> &rarr;</span>
+                      </a>
+                    </div>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
               Beautiful Lashes
             </h2> */}
             <h1 className="max-w-3xl mx-auto mt-1 text-5xl font-normal text-rose-400 sm:text-6xl sm:tracking-tight lg:text-7xl">
-              Treat yourself and
+              Treat yourself,
               <span className="italic font-semibold text-zinc-900">
                 {' '}
                 enhance
@@ -147,14 +147,9 @@ export default function Home() {
               <span className="block">your eyes.</span>
               <span className="italic font-normal"></span>
             </h1>
-            {/* <p className="max-w-xl mx-auto mt-5 text-xl text-zinc-500">
-              Enhance your natural beauty and achieve your most becoming look
-              with an eyelash extension or a lash lift treatment.
-            </p> */}
           </div>
         </div>
-        <Lashes />
-        <Lifts />
+        {/* <Lifts /> */}
         <HomeCTA />
       </main>
     </div>
