@@ -2,16 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PhoneIcon } from '@heroicons/react/solid';
 
-export default function HomeCTA() {
+export default function ExtensionsCTA() {
   return (
     <div className="relative bg-zinc-800">
       <div className="h-56 bg-rose-300 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <div className="relative object-cover w-full h-full">
           <Image
-            src="/static/home/moetlashes-img-2.webp"
+            src="/static/home/moetlashes-img-1.webp"
             alt="Add volume and length"
-            width={2400}
-            height={1326}
+            width={1000}
+            height={817}
             layout="fill"
             objectFit="cover"
             objectPosition="center"

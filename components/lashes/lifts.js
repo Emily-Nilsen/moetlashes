@@ -1,15 +1,24 @@
 import Image from 'next/image';
 
-const stats = [
-  { label: 'Founded', value: '2021' },
-  { label: 'Employees', value: '5' },
-  { label: 'Beta Users', value: '521' },
-  { label: 'Raised', value: '$25M' },
-];
-
 export default function Lifts() {
   return (
-    <div className="relative py-16 bg-white sm:py-24">
+    <div id="lifts" className="relative py-16 bg-white sm:py-24">
+      <div className="bg-white">
+        <div className="px-4 pb-16 mx-auto max-w-7xl sm:pb-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-base font-semibold tracking-wide uppercase text-rose-400">
+              We also offer
+            </h2>
+            <h1 className="mt-1 text-5xl font-extrabold text-zinc-800 sm:text-6xl sm:tracking-tight lg:text-7xl">
+              Lift, style & tint
+            </h1>
+            <p className="max-w-xl mx-auto mt-5 text-xl text-zinc-500">
+              A lash lift and tint is the perfect alternative for those who want
+              the styled look without using eyelash extensions.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div
@@ -66,8 +75,10 @@ export default function Lifts() {
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h3 className="text-4xl font-extrabold tracking-tight text-zinc-800 sm:text-5xl">
-              Lift, style &{' '}
-              <span className="italic font-normal text-rose-400">tint</span>
+              Eyelash extension{' '}
+              <span className="italic font-normal text-rose-400">
+                alternative
+              </span>
             </h3>
             <div className="mt-6 space-y-6 text-zinc-500">
               <p className="text-lg">
@@ -95,29 +106,25 @@ export default function Lifts() {
             </div>
           </div>
 
-          {/* Stats section */}
+          {/* CTA */}
           <div className="mt-10">
-            <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="pt-6 border-t-2 border-zinc-100"
+            <div className="bg-rose-200 rounded-2xl">
+              <div className="max-w-2xl px-4 py-16 mx-auto text-center sm:py-20 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+                  <span className="block">Boost your productivity.</span>
+                  <span className="block">Start using Workflow today.</span>
+                </h2>
+                <p className="mt-4 text-lg leading-6 text-zinc-500">
+                  Ac euismod vel sit maecenas id pellentesque eu sed
+                  consectetur. Malesuada adipiscing sagittis vel nulla nec.
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-400 hover:text-white sm:w-auto"
                 >
-                  <dt className="text-base font-medium text-zinc-500">
-                    {stat.label}
-                  </dt>
-                  <dd className="text-3xl font-extrabold tracking-tight text-zinc-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <div className="mt-10">
-              <a href="#" className="text-base font-medium text-rose-400">
-                {' '}
-                Learn more about how were changing the world{' '}
-                <span aria-hidden="true">&rarr;</span>{' '}
-              </a>
+                  See our pricing
+                </a>
+              </div>
             </div>
           </div>
         </div>

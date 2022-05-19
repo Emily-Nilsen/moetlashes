@@ -1,23 +1,23 @@
 import Link from 'next/link';
 import { CheckIcon } from '@heroicons/react/outline';
-import { PhoneOutgoingIcon } from '@heroicons/react/solid';
+import { PhoneIcon } from '@heroicons/react/solid';
 
 const tintFeatures = [
-  'Pariatur quod similique',
-  'Sapiente libero doloribus',
-  'Vel ipsa esse repudiandae',
+  `Adds depth and a deep black colour`,
+  `We use a safe, semi-permanent, black vegetable dye`,
+  `Recommended for those who want an alternative to eyelash extensions`,
 ];
 const liftFeatures = [
-  'Pariatur quod similique',
-  'Sapiente libero doloribus',
-  'Vel ipsa esse repudiandae',
+  `Eyelashes are curled and set into a styled position`,
+  `It achieves a more defined lash line`,
+  `Recommended for those who want an alternative to eyelash extensions`,
 ];
 const liftTintFeatures = [
-  'Quia rem est sed impedit magnam',
-  'Dolorem vero ratione voluptates',
-  'Qui sed ab doloribus voluptatem dolore',
-  'Laborum commodi molestiae id et fugiat',
-  'Nam ut ipsa nesciunt culpa modi dolor',
+  `Eyelashes are curled and set into a styled position`,
+  `It achieves a more defined lash line`,
+  `Adds depth and a deep black colour`,
+  `We use a safe, semi-permanent, black vegetable dye`,
+  `Recommended for those who want an alternative to eyelash extensions`,
 ];
 
 export default function LiftsPricing() {
@@ -25,11 +25,11 @@ export default function LiftsPricing() {
     <div id="lifts" className="bg-rose-50">
       <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
-          <h2 className="text-lg font-semibold leading-6 tracking-wider uppercase text-rose-400">
+          <h2 className="pb-2 text-lg font-semibold leading-6 tracking-wider uppercase text-rose-400">
             Pricing
           </h2>
-          <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
-            Price tiers for our lash{' '}
+          <h1 className="pb-2 text-5xl font-extrabold text-zinc-900 sm:text-center">
+            Price tiers for lash{' '}
             <span className="italic font-normal text-rose-400">lifts </span>
             and tints
           </h1>
@@ -90,17 +90,13 @@ export default function LiftsPricing() {
                       <div className="mt-8">
                         <div className="rounded-full shadow">
                           <a
-                            href="#"
+                            href="tel:61466609975"
                             className="flex items-center justify-center w-full px-6 py-3 text-base font-medium text-center transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
                             aria-describedby="tier-tint"
                           >
-                            <p className="text-base font-medium">
-                              Book a{' '}
-                              <span className="font-extrabold">Tint</span>{' '}
-                              treatment
-                            </p>
+                            <p className="text-base font-medium">Book Tint</p>
                             <span>
-                              <PhoneOutgoingIcon
+                              <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
                                 aria-hidden="true"
                               />
@@ -139,7 +135,7 @@ export default function LiftsPricing() {
                             <span className="mt-2 mr-2 text-4xl font-medium">
                               $
                             </span>
-                            <span className="font-extrabold">149</span>
+                            <span className="font-extrabold">65</span>
                           </h1>
                         </span>
                       </div>
@@ -164,17 +160,14 @@ export default function LiftsPricing() {
                     <div className="mt-10">
                       <div className="rounded-full shadow">
                         <a
-                          href="#"
+                          href="tel:61466609975"
                           className="flex items-center justify-center w-full px-6 py-4 text-xl font-medium leading-6 text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full bg-rose-400 hover:bg-rose-500 group"
                           aria-describedby="tier-liftTint"
                         >
                           {' '}
-                          <p>
-                            Book a{' '}
-                            <span className="font-bold">Lift & Tint</span>
-                          </p>
+                          <p>Book Lift & Tint</p>
                           <span>
-                            <PhoneOutgoingIcon
+                            <PhoneIcon
                               className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
                               aria-hidden="true"
                             />
@@ -202,7 +195,7 @@ export default function LiftsPricing() {
                               <span className="mt-2 mr-2 text-4xl font-medium">
                                 $
                               </span>
-                              <span className="font-extrabold">349</span>
+                              <span className="font-extrabold">50</span>
                             </h1>
                           </span>
                         </div>
@@ -227,16 +220,13 @@ export default function LiftsPricing() {
                       <div className="mt-8">
                         <div className="rounded-full shadow">
                           <a
-                            href="#"
+                            href="tel:61466609975"
                             className="flex items-center justify-center w-full px-6 py-3 text-center transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
                             aria-describedby="tier-lift"
                           >
-                            <p className="text-base font-medium">
-                              Book a{' '}
-                              <span className="font-extrabold">Lift</span>{' '}
-                            </p>
+                            <p className="text-base font-medium">Book Lift</p>
                             <span>
-                              <PhoneOutgoingIcon
+                              <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
                                 aria-hidden="true"
                               />

@@ -7,51 +7,51 @@ import {
   CheckIcon as CheckIconSolid,
   ChevronDownIcon,
 } from '@heroicons/react/solid';
-import { PhoneOutgoingIcon } from '@heroicons/react/solid';
+import { PhoneIcon } from '@heroicons/react/solid';
 
 const tiers = [
   {
     name: 'Classic Lashes',
-    href: '#',
-    priceMonthly: 60,
+    href: `tel:61466609975`,
+    price: 60,
     description:
       'Individual eyelash extensions are attached one by one to each natural lash.',
     features: [
-      'It gives the most natural look.',
-      'Recommended for those that have never tried eyelash extensions before.',
+      'It gives the most natural look',
+      'Recommended for those who have never tried eyelash extensions before',
     ],
   },
   {
     name: 'Double Lashes',
-    href: '#',
-    priceMonthly: 70,
+    href: `tel:61466609975`,
+    price: 70,
     description:
       'The double method attaches two single eyelash extensions to each natural lash.',
     features: [
-      'It gives the illusion of fuller and fluffy-looking lashes.',
-      'Perfect for those who wear eye make-up daily.',
+      'It gives the illusion of fuller and fluffy-looking lashes',
+      'Perfect for those who wear eye make-up daily',
     ],
   },
   {
     name: 'Hybrid Lashes',
-    href: '#',
-    priceMonthly: 80,
+    href: `tel:61466609975`,
+    price: 80,
     description:
       'A mix of a single lash and a volume lash is attached to each natural lash.',
     features: [
-      'It achieves a dense and more defined lash line.',
-      'Recommended for those wishing to obtain a wow effect or those with sparse eyelashes.',
+      'It achieves a dense and more defined lash line',
+      'Recommended for those wishing to obtain a wow effect or those with sparse eyelashes',
     ],
   },
   {
     name: 'Volume Lashes',
-    href: '#',
-    priceMonthly: 90,
+    href: `tel:61466609975`,
+    price: 90,
     description:
       'The volume method attaches three extra fine lashes to each natural lash.',
     features: [
       'The resulting bouquet of volume lashes creates a dramatic and dark lash line',
-      'Lashes look both fluffy and entirely natural.',
+      'Lashes look both fluffy and entirely natural',
     ],
   },
 ];
@@ -98,10 +98,10 @@ export default function Pricing() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center">
             <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider uppercase sm:text-lg sm:text-center text-rose-400">
-              Premium quality
+              price tiers
             </h2>
             <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
-              Price tiers for our eyelash{' '}
+              Pricing for premium eyelash{' '}
               <span className="italic font-normal text-rose-400">
                 extensions{' '}
               </span>
@@ -119,7 +119,7 @@ export default function Pricing() {
             {tiers.map((tier) => (
               <div
                 key={tier.name}
-                className="bg-white border divide-y rounded-lg shadow-sm border-rose-200 divide-rose-200"
+                className="bg-white border divide-y rounded-lg shadow-lg border-rose-200 divide-rose-200"
               >
                 <div className="p-6">
                   <h1 className="text-xl font-medium leading-6 text-zinc-800">
@@ -129,17 +129,23 @@ export default function Pricing() {
                     {tier.description}
                   </p>
                   <h1 className="mt-8">
-                    <span className="text-4xl font-extrabold text-zinc-800">
-                      ${tier.priceMonthly}
-                    </span>{' '}
+                    <span className="flex items-start text-5xl tracking-tight text-zinc-800">
+                      <h1>
+                        <span className="mt-2 mr-2 text-3xl font-medium">
+                          $
+                        </span>
+                        <span className="font-extrabold">{tier.price}</span>
+                      </h1>
+                    </span>
                   </h1>
                   <a
                     href={tier.href}
-                    className="flex justify-center w-full py-2 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full bg-rose-400 hover:bg-rose-500 group"
+                    className="flex items-center justify-center w-full px-6 py-3 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full shadow bg-rose-400 hover:bg-rose-500 group"
                   >
-                    Book {tier.name}
+                    {' '}
+                    <p className="text-base font-medium">Book {tier.name}</p>
                     <span>
-                      <PhoneOutgoingIcon
+                      <PhoneIcon
                         className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
                         aria-hidden="true"
                       />

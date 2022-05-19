@@ -52,7 +52,7 @@ export default function About() {
               </h2>
               <h3 className="py-6 text-6xl text-zinc-800">
                 <span className="font-bold">Meet </span>
-                <span className="italic font-normal">Moe</span>
+                <span className="italic font-normal text-rose-400">Moe</span>
               </h3>
             </div>
           </div>
@@ -86,20 +86,24 @@ export default function About() {
             <div className="mt-8 lg:mt-0">
               <div className="mx-auto text-base max-w-prose lg:max-w-none">
                 <p className="text-lg text-zinc-500">
-                  Making you look and feel good is Moe*s passion, and this shows
+                  Making you look and feel good is Moe’s passion, and this shows
                   on every client that walks out of our beauty salon.
                 </p>
               </div>
               <div className="mx-auto mt-5 prose text-zinc-500 prose-rose lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
                   Through ongoing education and training, Moe stays updated on
-                  the latest styles and techniques to bring you the best
-                  professional lash extensions.
+                  the latest styles and techniques to bring you the best{' '}
+                  <span className="font-medium text-rose-400">
+                    professional
+                  </span>{' '}
+                  lash extensions.
                 </p>
                 <p>
                   Moe dedicates herself to providing you with the best eyelash
-                  extensions and lash lifts in Cairns, emphasising
-                  professionalism, quality and artistic flair.
+                  extensions and lash lifts in{' '}
+                  <span className="font-medium text-rose-400">Cairns</span>,
+                  emphasising professionalism, quality and artistic flair.{' '}
                 </p>
                 <p>
                   Our goal at Moët Lashes is to bring out your best and have you

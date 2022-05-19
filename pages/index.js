@@ -66,12 +66,12 @@ export default function Home() {
         </Popover>
 
         <div className="relative max-w-md px-4 pt-32 pb-16 mx-auto mt-24 sm:max-w-3xl sm:px-6 md:mt-32 lg:max-w-7xl lg:px-8">
-          <h2 id="features-heading" className="font-medium text-white">
+          <h2 id="features-heading" className="font-medium text-rose-200">
             Cairns City
           </h2>
-          <h3 className="py-6 text-6xl text-rose-200">
+          <h3 className="py-6 text-6xl text-white">
             <span className="font-bold">Eyelash </span>
-            <span className="italic font-normal">Extensions</span>
+            <span className="italic font-normal text-rose-200">Extensions</span>
           </h3>
           <p className="max-w-md mt-3 text-lg font-normal text-white sm:text-xl md:mt-5 md:max-w-xl">
             We skillfully attach each premium{' '}
@@ -90,7 +90,7 @@ export default function Home() {
             aria-labelledby="contact-heading"
           >
             <h2 className="sr-only" id="contact-heading">
-              Contact us
+              Cairns City eyelash extensions
             </h2>
             <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
               {features.map((feature) => (
@@ -111,7 +111,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-medium text-zinc-800">
                       {feature.name_start}
-                      <span className="italic font-normal">
+                      <span className="italic font-normal text-rose-400">
                         {feature.name_end}
                       </span>
                     </h3>
@@ -120,7 +120,7 @@ export default function Home() {
                     </p>
                   </div>
                   <Link href={feature.href} passHref>
-                    <div className="p-6 text-base font-medium transition duration-300 ease-in-out cursor-pointer text-rose-400 bg-zinc-50 rounded-bl-2xl rounded-br-2xl md:px-8 hover:text-white hover:bg-rose-300">
+                    <div className="p-6 text-base font-medium transition duration-300 ease-in-out cursor-pointer text-rose-400 bg-rose-50 rounded-bl-2xl rounded-br-2xl md:px-8 hover:text-white hover:bg-rose-300">
                       <a>
                         {feature.link_name}
                         <span aria-hidden="true"> &rarr;</span>

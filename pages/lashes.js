@@ -1,16 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Lifts from '../components/lashes/lifts';
+import ExtensionsCTA from '../components/lashes/extensions-cta';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import {
-  MenuIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  SupportIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-import { SparklesIcon } from '@heroicons/react/solid';
+import { PhoneIcon } from '@heroicons/react/outline';
+import { EyeIcon } from '@heroicons/react/solid';
 
 export default function Lashes() {
   return (
@@ -104,6 +99,7 @@ export default function Lashes() {
                     fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
                   />
                 </svg>
+                {/* Attaching individual eyelash extensions */}
                 <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                   <figure>
                     <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
@@ -120,7 +116,7 @@ export default function Lashes() {
                       </div>
                     </div>
                     <figcaption className="flex mt-3 text-sm text-gray-500">
-                      <SparklesIcon
+                      <EyeIcon
                         className="flex-none w-5 h-5 text-rose-300"
                         aria-hidden="true"
                       />
@@ -190,6 +186,7 @@ export default function Lashes() {
             </div>
           </div>
         </div>
+        <ExtensionsCTA />
         {/* Lifts and tints */}
         <Lifts />
       </main>
