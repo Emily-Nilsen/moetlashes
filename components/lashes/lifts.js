@@ -60,13 +60,17 @@ export default function Lifts() {
             </svg>
           </div>
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-            {/* Testimonial card*/}
+            {/* Image with pink flowers*/}
             <div className="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
-              <img
-                className="absolute inset-0 object-cover w-full h-full"
-                src="/static/home/moetlashes-img-7.webp"
-                alt=""
-              />
+              <div className="absolute inset-0 object-cover w-full h-full">
+                <Image
+                  src="/static/home/moetlashes-img-7.webp"
+                  alt="Lift, style and tint"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -94,7 +94,7 @@ export default function LiftsPricing() {
                             className="flex items-center justify-center w-full px-6 py-3 text-base font-medium text-center transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
                             aria-describedby="tier-tint"
                           >
-                            <p className="text-base font-medium">Book Tint</p>
+                            <p className="text-base font-medium">Tint</p>
                             <span>
                               <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
@@ -165,7 +165,7 @@ export default function LiftsPricing() {
                           aria-describedby="tier-liftTint"
                         >
                           {' '}
-                          <p>Book Lift & Tint</p>
+                          <p>Lift & Tint</p>
                           <span>
                             <PhoneIcon
                               className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
@@ -224,7 +224,7 @@ export default function LiftsPricing() {
                             className="flex items-center justify-center w-full px-6 py-3 text-center transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
                             aria-describedby="tier-lift"
                           >
-                            <p className="text-base font-medium">Book Lift</p>
+                            <p className="text-base font-medium">Lift</p>
                             <span>
                               <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"

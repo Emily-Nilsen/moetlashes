@@ -143,7 +143,7 @@ export default function Pricing() {
                     className="flex items-center justify-center w-full px-6 py-3 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full shadow bg-rose-400 hover:bg-rose-500 group"
                   >
                     {' '}
-                    <p className="text-base font-medium">Book {tier.name}</p>
+                    <p className="text-base font-medium">{tier.name}</p>
                     <span>
                       <PhoneIcon
                         className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"

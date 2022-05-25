@@ -51,14 +51,16 @@ export default function Footer() {
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <div className="w-auto h-10">
-              <Image
-                height={40}
-                width={104}
-                src="/moet-zinc.svg"
-                alt="Moët Lashes logo"
-              />
-            </div>
+            <Link href="/" passHref>
+              <div className="w-auto h-10 cursor-pointer">
+                <Image
+                  height={40}
+                  width={104}
+                  src="/moet-zinc.svg"
+                  alt="Moët Lashes logo"
+                />
+              </div>
+            </Link>
             <p className="max-w-xl text-base text-zinc-500">
               Whether you are looking to add subtle eye definition or a dramatic
               and defined lash line, we have your look covered.

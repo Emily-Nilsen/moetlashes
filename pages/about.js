@@ -52,7 +52,9 @@ export default function About() {
               </h2>
               <h3 className="py-6 text-6xl text-zinc-800">
                 <span className="font-bold">Meet </span>
-                <span className="italic font-normal text-rose-400">Moe</span>
+                <span className="font-bold text-rose-400">
+                  <h4 className="inline text-7xl">Moe</h4>{' '}
+                </span>
               </h3>
             </div>
           </div>

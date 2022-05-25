@@ -5,7 +5,7 @@ import { PhoneIcon } from '@heroicons/react/solid';
 export default function ExtensionsCTA() {
   return (
     <div className="relative bg-zinc-800">
-      <div className="h-56 bg-rose-300 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+      <div className="h-56 bg-rose-300 sm:h-96 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <div className="relative object-cover w-full h-full">
           <Image
             src="/static/home/moetlashes-img-1.webp"
@@ -18,7 +18,7 @@ export default function ExtensionsCTA() {
           />
         </div>
       </div>
-      <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-20">
+      <div className="relative px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-24">
         <div className="lg:ml-auto lg:w-1/2 lg:pl-10">
           <h3 className="mt-2 text-4xl font-extrabold tracking-tight text-rose-200 sm:text-5xl">
             Add volume &{' '}
