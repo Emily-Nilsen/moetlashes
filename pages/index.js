@@ -9,9 +9,24 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
+import { buildUrl } from 'cloudinary-build-url';
 
 export default function Home() {
   const { t } = useTranslation();
+  const homeHeroUrl = buildUrl('moe-hero_qq11pi', {
+    cloud: {
+      cloudName: 'dt3k2apqd',
+    },
+  });
+  const homeHeroUrlBlurred = buildUrl('moe-hero_qq11pi', {
+    cloud: {
+      cloudName: 'dt3k2apqd',
+    },
+    transformations: {
+      effect: 'blur:1000',
+      quality: 1,
+    },
+  });
 
   const features = [
     {
@@ -49,28 +64,20 @@ export default function Home() {
       <div className="bg-rose-50">
         <header className="relative pb-36 bg-blue-gray-800">
           <div className="absolute inset-0">
-            <motion.div
-              whileInView={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{
-                duration: 0.8,
-                type: 'fade',
-              }}
-              className="object-cover w-full h-full"
-            >
+            <div className="object-cover w-full h-full">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moe-hero_qq11pi.webp"
+                src={homeHeroUrl}
                 alt="Moët Lashes"
                 // width={1500}
                 // height={1000}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
-                // blurDataURL="data:..."
-                // placeholder="blur"
+                blurDataURL={homeHeroUrlBlurred}
+                placeholder="blur"
                 priority={true}
               />
-            </motion.div>
+            </div>
             <div
               className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
               aria-hidden="true"

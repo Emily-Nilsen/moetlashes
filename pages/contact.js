@@ -6,9 +6,24 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { LocationMarkerIcon, PhoneIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
+import { buildUrl } from 'cloudinary-build-url';
 
 export default function Contact() {
   const { t } = useTranslation();
+  const contactHeroUrl = buildUrl('moet-hero_gkhyyy', {
+    cloud: {
+      cloudName: 'dt3k2apqd',
+    },
+  });
+  const contactHeroUrlBlurred = buildUrl('moet-hero_gkhyyy', {
+    cloud: {
+      cloudName: 'dt3k2apqd',
+    },
+    transformations: {
+      effect: 'blur:1000',
+      quality: 1,
+    },
+  });
 
   const faqs = [
     {
@@ -54,16 +69,16 @@ export default function Contact() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moet-hero_gkhyyy.webp"
+              src={contactHeroUrl}
               alt="Moët Lashes"
-              width={1500}
-              height={1000}
+              // width={1500}
+              // height={1000}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               priority={true}
-              // blurDataURL="data:..."
-              // placeholder="blur"
+              blurDataURL={contactHeroUrlBlurred}
+              placeholder="blur"
             />
           </motion.div>
           <div
