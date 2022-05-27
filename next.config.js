@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextTranslate = require('next-translate');
 
-module.exports = {
+const withExportImages = require('next-export-optimize-images');
+
+module.exports = withExportImages({
   ...nextTranslate(),
   images: {
     domains: ['res.cloudinary.com'],
   },
-};
+});
