@@ -19,8 +19,8 @@ export default function ExtensionsCTA() {
           <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moetlashes-img-1_olyxfe.webp"
             alt="Add volume and length"
-            width={1000}
-            height={817}
+            // width={1000}
+            // height={817}
             layout="fill"
             objectFit="cover"
             objectPosition="center"

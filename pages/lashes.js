@@ -39,8 +39,8 @@ export default function Lashes() {
                   <Image
                     src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/moetlashes-img-3-gradient_qfkbz0.webp"
                     alt="Eyelash extensions hero image"
-                    width={1000}
-                    height={697}
+                    // width={1000}
+                    // height={697}
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"

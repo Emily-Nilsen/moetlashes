@@ -61,8 +61,8 @@ export default function Home() {
               <Image
                 src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moe-hero_qq11pi.webp"
                 alt="Moët Lashes"
-                width={1500}
-                height={1000}
+                // width={1500}
+                // height={1000}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
