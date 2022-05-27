@@ -1,48 +1,49 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
+import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import Lifts from '../components/lashes/lifts';
 import HomeCTA from '../components/home/home-cta';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import {
-  MenuIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  SupportIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-
-const features = [
-  {
-    name_start: `Eyelash `,
-    name_end: `extensions`,
-    description: `Make your lash fringe longer, fuller and darker with our extensive selection of eyelash extension treatments.`,
-    href: `/lashes`,
-    link_name: `Extensions`,
-    icon: `/static/home/icon-1.svg`,
-  },
-  {
-    name_start: `Lash lift & `,
-    name_end: `style`,
-    description: `Enhance and style your natural lashes with a lash lift treatment or tint.`,
-    href: `/lashes/#lifts`,
-    link_name: `Lifts`,
-    icon: `/static/home/icon-2.svg`,
-  },
-  {
-    name_start: `Aftercare `,
-    name_end: `advice`,
-    description: `Receive friendly advice about how best to care for your eyelash extensions, lifts and tints.`,
-    href: `/contact/#faqs`,
-    link_name: `FAQs`,
-    icon: `/static/home/icon-3.svg`,
-  },
-];
+import { MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline';
 
 export default function Home() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name_start: `${t('home:eyelash')}`,
+      name_end: `${t('home:extensions')}`,
+      description: `${t('home:extensions_text')}`,
+      href: `/lashes`,
+      link_name: `${t('home:extensions')}`,
+      icon: `/static/home/icon-1.svg`,
+    },
+    {
+      name_start: `${t('home:lash_lift')}`,
+      name_end: `${t('home:style')}`,
+      description: `${t('home:lift_text')}`,
+      href: `/lashes/#lifts`,
+      link_name: `${t('home:lifts')}`,
+      icon: `/static/home/icon-2.svg`,
+    },
+    {
+      name_start: `${t('home:aftercare')}`,
+      name_end: `${t('home:advice')}`,
+      description: `${t('home:aftercare_text')}`,
+      href: `/contact/#faqs`,
+      link_name: `${t('home:faqs')}`,
+      icon: `/static/home/icon-3.svg`,
+    },
+  ];
+
   return (
-    <Layout>
+    <Layout
+      title={t('layout:home_title')}
+      description={t('layout:home_description')}
+      keywords={t('layout:home_keywords')}
+    >
       <div className="bg-rose-50">
         <header className="relative pb-36 bg-blue-gray-800">
           <div className="absolute inset-0">
@@ -68,12 +69,12 @@ export default function Home() {
 
           <div className="relative max-w-md px-4 pt-32 pb-16 mx-auto mt-24 sm:max-w-3xl sm:px-6 md:mt-32 lg:max-w-7xl lg:px-8">
             <h2 id="features-heading" className="font-medium text-rose-200">
-              Cairns City
+              {t('home:cairns_city')}
             </h2>
             <h3 className="py-6 text-6xl text-white">
-              <span className="font-bold">Eyelash </span>
+              <span className="font-bold">{t('home:eyelash')}</span>
               <span className="italic font-normal text-rose-200">
-                Extensions
+                {t('home:extensions')}
               </span>
             </h3>
             <p className="max-w-md mt-3 text-lg font-normal text-white sm:text-xl md:mt-5 md:max-w-xl">
@@ -123,7 +124,7 @@ export default function Home() {
                       </p>
                     </div>
                     <Link href={feature.href} passHref>
-                      <div className="p-6 text-base font-medium transition duration-300 ease-in-out cursor-pointer text-rose-400 bg-rose-50 rounded-bl-2xl rounded-br-2xl md:px-8 hover:text-white hover:bg-rose-300">
+                      <div className="p-6 text-base font-medium capitalize transition duration-300 ease-in-out cursor-pointer text-rose-400 bg-rose-50 rounded-bl-2xl rounded-br-2xl md:px-8 hover:text-white hover:bg-rose-300">
                         <a>
                           {feature.link_name}
                           <span aria-hidden="true"> &rarr;</span>

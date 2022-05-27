@@ -1,8 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 import { PhoneIcon } from '@heroicons/react/solid';
 
 export default function HomeCTA() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative bg-zinc-800">
       <div className="h-56 bg-rose-300 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
@@ -26,17 +29,14 @@ export default function HomeCTA() {
               length &nbsp;&nbsp;
             </span>
           </h3>
-          <p className="mt-3 text-lg text-zinc-300">
-            Enhance your natural beauty and achieve your most becoming look with
-            an eyelash extension or a lash lift treatment.
-          </p>
+          <p className="mt-3 text-lg text-zinc-300">{t('home:cta_text')}</p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
               <a
                 href="tel:61466609975"
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-300 hover:text-white group"
               >
-                <p>Call our salon</p>
+                <p>{t('home:call_salon')}</p>
 
                 <PhoneIcon
                   className="w-5 h-5 ml-3 -mr-1 text-rose-300 group-hover:text-rose-50"

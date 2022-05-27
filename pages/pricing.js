@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
+import useTranslation from 'next-translate/useTranslation';
 import Lifts from '../components/pricing/lifts-pricing';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -9,60 +11,60 @@ import {
 } from '@heroicons/react/solid';
 import { PhoneIcon } from '@heroicons/react/solid';
 
-const tiers = [
-  {
-    name: 'Classic Lashes',
-    href: `tel:61466609975`,
-    price: 60,
-    description:
-      'Individual eyelash extensions are attached one by one to each natural lash.',
-    features: [
-      'It gives the most natural look',
-      'Recommended for those who have never tried eyelash extensions before',
-    ],
-  },
-  {
-    name: 'Double Lashes',
-    href: `tel:61466609975`,
-    price: 70,
-    description:
-      'The double method attaches two single eyelash extensions to each natural lash.',
-    features: [
-      'It gives the illusion of fuller and fluffy-looking lashes',
-      'Perfect for those who wear eye make-up daily',
-    ],
-  },
-  {
-    name: 'Hybrid Lashes',
-    href: `tel:61466609975`,
-    price: 80,
-    description:
-      'A mix of a single lash and a volume lash is attached to each natural lash.',
-    features: [
-      'It achieves a dense and more defined lash line',
-      'Recommended for those wishing to obtain a wow effect or those with sparse eyelashes',
-    ],
-  },
-  {
-    name: 'Volume Lashes',
-    href: `tel:61466609975`,
-    price: 90,
-    description:
-      'The volume method attaches three extra fine lashes to each natural lash.',
-    features: [
-      'The resulting bouquet of volume lashes creates a dramatic and dark lash line',
-      'Lashes look both fluffy and entirely natural',
-    ],
-  },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function Pricing() {
+  const { t } = useTranslation();
+
+  const tiers = [
+    {
+      name: `${t('pricing:classic')}`,
+      price: 60,
+      description: `${t('pricing:classic_description')}`,
+      features: [
+        `${t('pricing:classic_result_1')}`,
+        `${t('pricing:classic_result_2')}`,
+      ],
+    },
+    {
+      name: `${t('pricing:double')}`,
+      price: 70,
+      description: `${t('pricing:double_description')}`,
+      features: [
+        `${t('pricing:double_result_1')}`,
+        `${t('pricing:double_result_2')}`,
+      ],
+    },
+    {
+      name: `${t('pricing:hybrid')}`,
+      price: 80,
+      description: `${t('pricing:hybrid_description')}`,
+      features: [
+        `${t('pricing:hybrid_result_1')}`,
+        `${t('pricing:hybrid_result_2')}`,
+      ],
+    },
+    {
+      name: `${t('pricing:volume')}`,
+      price: 90,
+      description: `${t('pricing:volume_description')}`,
+      features: [
+        `${t('pricing:volume_result_1')}`,
+        `${t('pricing:volume_result_2')}`,
+      ],
+    },
+  ];
+
   return (
-    <div id="extensions" className="bg-white">
+    <Layout
+      title={t('layout:pricing_title')}
+      description={t('layout:pricing_description')}
+      keywords={t('layout:pricing_keywords')}
+      id="extensions"
+      className="bg-white"
+    >
       {/* Hero card */}
       <div className="relative">
         <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
@@ -139,7 +141,7 @@ export default function Pricing() {
                     </span>
                   </h1>
                   <a
-                    href={tier.href}
+                    href="tel:61466609975"
                     className="flex items-center justify-center w-full px-6 py-3 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full shadow bg-rose-400 hover:bg-rose-500 group"
                   >
                     {' '}
@@ -205,6 +207,6 @@ export default function Pricing() {
         </div>
       </div>
       <Lifts />
-    </div>
+    </Layout>
   );
 }

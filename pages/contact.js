@@ -1,35 +1,46 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
+import useTranslation from 'next-translate/useTranslation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { LocationMarkerIcon, PhoneIcon } from '@heroicons/react/outline';
 
-const faqs = [
-  {
-    id: 1,
-    question: `How long does an average eyelash extension or lash lift session take?`,
-    sent_1: `We use tailored Nagaraku eyelash glue to attach the ellipse eyelashes to each of your natural lashes. Since individual eyelash extensions are very delicate, initial eyelash extension treatments last for approximately 90 minutes.`,
-    sent_2: `Lash lifts involve a perming treatment to curl the eyelashes and then setting them in position. A lash lift treatment takes approximately 60 to 90 minutes to complete.`,
-  },
-  {
-    id: 2,
-    question: `Will eyelash extensions damage my natural lashes?`,
-    sent_1: `It is a common misconception that eyelash extensions damage your natural lashes. However, correct minimal glue application at the natural lash base, 0.5mm-1mm away from the eyelid, will not harm your natural lashes.`,
-    sent_2: `Since your eyes are closed for the whole duration of the treatment, glue cannot physically enter your eyes. During your treatment, however, the glue's fumes may cause a temporary stinging sensation. Just let your lash technician know so that they can use a fan or air blower to disperse the fumes.`,
-  },
-  {
-    id: 3,
-    question: `How long will my lash extensions last?`,
-    sent_1: `Your new eyelash extensions will last between 2-6 weeks, depending on how well you take care of them. Eyelash extensions will shed faster with naturally oily skin.`,
-    sent_2: `Due to natural breakages, you may want to return to the salon every three to four weeks to have your lashes filled. Regular filling of lashes will maintain your defined and glamorous look.`,
-    sent_3: `Avoiding oil-based products and make-up remover will also help to maintain your eyelash extensions. Oil-based products can cause the glue to break down and your eyelash extensions to fall out prematurely.`,
-    sent_4: `Also, avoid rubbing your eyes or pulling at your extensions after your treatment.`,
-  },
-];
-
 export default function Contact() {
+  const { t } = useTranslation();
+
+  const faqs = [
+    {
+      id: 1,
+      question: `${t('contact:faq_1')}`,
+      sent_1: `${t('contact:answer_1_1')}`,
+      sent_2: `${t('contact:answer_1_2')}`,
+    },
+    {
+      id: 2,
+      question: `${t('contact:faq_2')}`,
+      sent_1: `${t('contact:answer_2_1')}`,
+      sent_2: `${t('contact:answer_2_2')}`,
+    },
+    {
+      id: 3,
+      question: `${t('contact:faq_3')}`,
+      sent_1: `${t('contact:answer_3_1')}`,
+      sent_2: `${t('contact:answer_3_2')}`,
+      sent_3: `${t('contact:answer_3_3')}`,
+      sent_4: `${t('contact:answer_3_4')}`,
+      sent_5: `${t('contact:answer_3_5')}`,
+      sent_6: `${t('contact:answer_3_6')}`,
+    },
+  ];
+
   return (
-    <div className="bg-rose-50">
+    <Layout
+      title={t('layout:contact_title')}
+      description={t('layout:contact_description')}
+      keywords={t('layout:contact_keywords')}
+      className="bg-rose-50"
+    >
       <header className="relative bg-green-800 pb-36">
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
@@ -53,14 +64,15 @@ export default function Contact() {
         </Popover>
 
         <div className="relative max-w-md px-4 pt-32 pb-16 mx-auto mt-24 sm:max-w-3xl sm:px-6 md:mt-32 lg:max-w-7xl lg:px-8">
-          <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-6xl">
-            Get in{' '}
-            <span className="italic font-normal text-rose-200">touch</span>
+          <h1 className="max-w-lg text-5xl font-extrabold tracking-tight text-white md:text-6xl">
+            {t('contact:get_in')}
+            <span className="italic font-normal text-rose-200">
+              {t('contact:touch')}
+            </span>
           </h1>
-          <p className="max-w-3xl mt-6 text-xl text-zinc-200">
-            We skillfully attach premium Nagaraku eyelashes to your individual
-            lashes for an entirely natural and stunning look. We also offer lash
-            lifts and tints.
+          <p className="max-w-lg mt-6 text-xl text-zinc-200">
+            We’d love to hear from you! Book in for an eyelash treatment today,
+            or let us help answer any questions you have.
           </p>
         </div>
       </header>
@@ -81,14 +93,14 @@ export default function Contact() {
                 <div className="relative flex-1 px-6 pt-10 pb-8 md:px-8">
                   <div>
                     <h3 className="text-2xl font-medium leading-6 text-zinc-800">
-                      Opening{' '}
+                      {t('contact:opening')}
                       <span className="italic font-normal text-rose-400">
-                        hours
+                        {t('contact:hours')}
                       </span>
                     </h3>
                     <div className="mt-2 text-base text-zinc-500">
-                      <p>Mon-Fri 9am to 6pm</p>
-                      <p className="mt-1">Sundays by appointment only</p>
+                      <p>{t('footer:opening_hours')}</p>
+                      <p className="mt-1">{t('footer:sundays')}</p>
                     </div>
                   </div>
                 </div>
@@ -177,9 +189,9 @@ export default function Contact() {
             <div className="lg:grid lg:grid-cols-3 lg:gap-8">
               <div className="space-y-4">
                 <h3 className="text-4xl font-extrabold text-zinc-800">
-                  Frequently asked{' '}
+                  {t('contact:frequently')}
                   <span className="italic font-normal text-rose-400">
-                    questions{' '}
+                    {t('contact:questions')}{' '}
                   </span>
                 </h3>
                 <p className="text-lg text-zinc-500">
@@ -201,17 +213,23 @@ export default function Contact() {
                       <dt className="text-lg font-medium leading-6 text-zinc-800">
                         {faq.question}
                       </dt>
-                      <dd className="mt-2 text-base text-zinc-500">
+                      <dd className="mt-4 text-base text-zinc-500">
                         {faq.sent_1}
                       </dd>
-                      <dd className="mt-2 text-base text-zinc-500">
+                      <dd className="mt-4 text-base text-zinc-500">
                         {faq.sent_2}
                       </dd>
-                      <dd className="mt-2 text-base text-zinc-500">
+                      <dd className="mt-4 text-base text-zinc-500">
                         {faq.sent_3}
                       </dd>
-                      <dd className="mt-2 text-base text-zinc-500">
+                      <dd className="mt-4 text-base text-zinc-500">
                         {faq.sent_4}
+                      </dd>
+                      <dd className="mt-4 text-base text-zinc-500">
+                        {faq.sent_5}
+                      </dd>
+                      <dd className="mt-4 text-base text-zinc-500">
+                        {faq.sent_6}
                       </dd>
                     </div>
                   ))}
@@ -224,6 +242,6 @@ export default function Contact() {
         {/* CTA Section */}
         {/* <ContactCTA /> */}
       </main>
-    </div>
+    </Layout>
   );
 }

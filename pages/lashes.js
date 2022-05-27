@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
+import useTranslation from 'next-translate/useTranslation';
 import Lifts from '../components/lashes/lifts';
 import ExtensionsCTA from '../components/lashes/extensions-cta';
 import { Fragment } from 'react';
@@ -8,8 +10,14 @@ import { PhoneIcon } from '@heroicons/react/outline';
 import { EyeIcon } from '@heroicons/react/solid';
 
 export default function Lashes() {
+  const { t } = useTranslation();
+
   return (
-    <section>
+    <Layout
+      title={t('layout:lashes_title')}
+      description={t('layout:lashes_description')}
+      keywords={t('layout:lashes_keywords')}
+    >
       <main>
         <div>
           {/* Hero card */}
@@ -190,6 +198,6 @@ export default function Lashes() {
         {/* Lifts and tints */}
         <Lifts />
       </main>
-    </section>
+    </Layout>
   );
 }

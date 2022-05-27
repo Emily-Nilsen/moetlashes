@@ -1,12 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
+import useTranslation from 'next-translate/useTranslation';
 import Testimonials from '../components/about/testimonials';
 import AboutCTA from '../components/about/about-cta';
 import { BadgeCheckIcon } from '@heroicons/react/solid';
 
 export default function About() {
+  const { t } = useTranslation();
   return (
-    <section>
+    <Layout
+      title={t('layout:about_title')}
+      description={t('layout:about_description')}
+      keywords={t('layout:about_keywords')}
+    >
       <div>
         {/* Hero card */}
         <div className="relative">
@@ -32,9 +39,9 @@ export default function About() {
             </div>
             <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
               <h1 className="pt-20 mt-24 -mb-16 text-4xl font-bold tracking-tight text-left md:mt-48 sm:text-5xl lg:text-6xl">
-                <span className="text-white">Professional, skilled, </span>
+                <span className="text-white">{t('about:title_1')}</span>
                 <span className="italic font-normal text-rose-200">
-                  experienced
+                  {t('about:title_2')}
                 </span>
               </h1>
             </div>
@@ -48,12 +55,12 @@ export default function About() {
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
               <h2 className="text-base font-normal tracking-wide text-rose-400">
-                Orchid Plaza
+                {t('about:orchid_plaza')}
               </h2>
               <h3 className="py-6 text-6xl text-zinc-800">
-                <span className="font-bold">Meet </span>
+                <span className="font-bold">{t('about:meet')} </span>
                 <span className="font-bold text-rose-400">
-                  <h4 className="inline text-7xl">Moe</h4>{' '}
+                  <h4 className="inline text-7xl">{t('about:moe')}</h4>{' '}
                 </span>
               </h3>
             </div>
@@ -79,7 +86,7 @@ export default function About() {
                       aria-hidden="true"
                     />
                     <span className="ml-2 font-medium">
-                      Moe, Lash Extension Professional
+                      {t('about:fig_caption')}
                     </span>
                   </figcaption>
                 </figure>
@@ -87,30 +94,24 @@ export default function About() {
             </div>
             <div className="mt-8 lg:mt-0">
               <div className="mx-auto text-base max-w-prose lg:max-w-none">
-                <p className="text-lg text-zinc-500">
-                  Making you look and feel good is Moe’s passion, and this shows
-                  on every client that walks out of our beauty salon.
-                </p>
+                <p className="text-lg text-zinc-500">{t('about:sent_1')}</p>
               </div>
               <div className="mx-auto mt-5 prose text-zinc-500 prose-rose lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                  Through ongoing education and training, Moe stays updated on
-                  the latest styles and techniques to bring you the best{' '}
+                  {t('about:sent_2_start')}{' '}
                   <span className="font-medium text-rose-400">
-                    professional
-                  </span>{' '}
-                  lash extensions.
+                    {t('about:professional')}
+                  </span>
+                  {t('about:sent_2_end')}
                 </p>
                 <p>
-                  Moe dedicates herself to providing you with the best eyelash
-                  extensions and lash lifts in{' '}
-                  <span className="font-medium text-rose-400">Cairns</span>,
-                  emphasising professionalism, quality and artistic flair.{' '}
+                  {t('about:sent_3_start')}{' '}
+                  <span className="font-medium text-rose-400">
+                    {t('about:cairns')}
+                  </span>
+                  {t('about:sent_3_end')}{' '}
                 </p>
-                <p>
-                  Our goal at Moët Lashes is to bring out your best and have you
-                  leave our salon feeling confident and glamorous.
-                </p>
+                <p>{t('about:sent_4')}</p>
               </div>
             </div>
           </div>
@@ -118,6 +119,6 @@ export default function About() {
       </div>
       <Testimonials />
       <AboutCTA />
-    </section>
+    </Layout>
   );
 }

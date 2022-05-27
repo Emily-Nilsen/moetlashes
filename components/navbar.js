@@ -4,13 +4,6 @@ import Language from './language';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 
-const navigation = [
-  { name: 'Lashes', href: '/lashes' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -18,6 +11,12 @@ function classNames(...classes) {
 export default function Navbar() {
   const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
+  const navigation = [
+    { name: `${t('navbar:lashes')}`, href: '/lashes' },
+    { name: `${t('navbar:pricing')}`, href: '/pricing' },
+    { name: `${t('navbar:about')}`, href: '/about' },
+    { name: `${t('navbar:contact')}`, href: '/contact' },
+  ];
   return (
     <header className="absolute top-0 left-0 z-20 pb-1 lg:pb-0 bg-t">
       <nav
