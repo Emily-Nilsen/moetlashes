@@ -45,6 +45,8 @@ export default function Lashes() {
                     objectFit="cover"
                     objectPosition="center"
                     priority={true}
+                    blurDataURL="data:..."
+                    placeholder="blur"
                   />
                 </motion.div>
                 <div

@@ -40,6 +40,8 @@ export default function About() {
                   objectFit="cover"
                   objectPosition="center"
                   priority={true}
+                  blurDataURL="data:..."
+                  placeholder="blur"
                 />
               </motion.div>
               <div

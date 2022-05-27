@@ -90,6 +90,8 @@ export default function Pricing() {
                 objectFit="cover"
                 objectPosition="top"
                 priority={true}
+                blurDataURL="data:..."
+                placeholder="blur"
               />
             </motion.div>
             <div

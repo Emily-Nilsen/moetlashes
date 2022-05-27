@@ -62,6 +62,8 @@ export default function Contact() {
               objectFit="cover"
               objectPosition="center"
               priority={true}
+              blurDataURL="data:..."
+              placeholder="blur"
             />
           </motion.div>
           <div
