@@ -59,13 +59,13 @@ export default function Contact() {
     >
       <header className="relative bg-rose-300 pb-36">
         <div className="absolute inset-0">
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            transition={{
-              duration: 0.8,
-              type: 'fade',
-            }}
+          <div
+            // whileInView={{ opacity: 1 }}
+            // initial={{ opacity: 0 }}
+            // transition={{
+            //   duration: 0.8,
+            //   type: 'fade',
+            // }}
             className="object-cover w-full h-full"
           >
             <Image
@@ -80,7 +80,7 @@ export default function Contact() {
               blurDataURL={contactHeroUrlBlurred}
               placeholder="blur"
             />
-          </motion.div>
+          </div>
           <div
             className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
             aria-hidden="true"

@@ -6,9 +6,20 @@ import Testimonials from '../components/about/testimonials';
 import AboutCTA from '../components/about/about-cta';
 import { BadgeCheckIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
+import { buildUrl } from 'cloudinary-build-url';
 
 export default function About() {
   const { t } = useTranslation();
+  const aboutHeroUrlBlurred = buildUrl('moetlashes-about-hero_u5s6ec', {
+    cloud: {
+      cloudName: 'dt3k2apqd',
+    },
+    transformations: {
+      effect: 'blur:1000',
+      quality: 1,
+    },
+  });
+
   return (
     <Layout
       title={t('layout:about_title')}
@@ -22,28 +33,28 @@ export default function About() {
 
           <div className="relative">
             <div className="absolute inset-0">
-              <motion.div
-                whileInView={{ opacity: 1 }}
-                initial={{ opacity: 0 }}
-                transition={{
-                  duration: 0.8,
-                  type: 'fade',
-                }}
+              <div
+                // whileInView={{ opacity: 1 }}
+                // initial={{ opacity: 0 }}
+                // transition={{
+                //   duration: 0.8,
+                //   type: 'fade',
+                // }}
                 className="relative object-cover w-full h-full"
               >
                 <Image
                   src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moetlashes-about-hero_u5s6ec.webp"
                   alt="Eyelash extensions hero image"
-                  width={1000}
-                  height={697}
+                  // width={1000}
+                  // height={697}
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
                   priority={true}
-                  // blurDataURL="data:..."
-                  // placeholder="blur"
+                  blurDataURL={aboutHeroUrlBlurred}
+                  placeholder="blur"
                 />
-              </motion.div>
+              </div>
               <div
                 className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
                 aria-hidden="true"

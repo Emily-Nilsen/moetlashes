@@ -9,9 +9,19 @@ import { Popover, Transition } from '@headlessui/react';
 import { PhoneIcon } from '@heroicons/react/outline';
 import { EyeIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
+import { buildUrl } from 'cloudinary-build-url';
 
 export default function Lashes() {
   const { t } = useTranslation();
+  const lashesHeroUrlBlurred = buildUrl('moetlashes-img-3-gradient_qfkbz0', {
+    cloud: {
+      cloudName: 'dt3k2apqd',
+    },
+    transformations: {
+      effect: 'blur:1000',
+      quality: 1,
+    },
+  });
 
   return (
     <Layout
@@ -27,13 +37,13 @@ export default function Lashes() {
 
             <div className="relative">
               <div className="absolute inset-0">
-                <motion.div
-                  whileInView={{ opacity: 1 }}
-                  initial={{ opacity: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    type: 'fade',
-                  }}
+                <div
+                  // whileInView={{ opacity: 1 }}
+                  // initial={{ opacity: 0 }}
+                  // transition={{
+                  //   duration: 0.8,
+                  //   type: 'fade',
+                  // }}
                   className="relative object-cover w-full h-full"
                 >
                   <Image
@@ -45,10 +55,10 @@ export default function Lashes() {
                     objectFit="cover"
                     objectPosition="center"
                     priority={true}
-                    // blurDataURL="data:..."
-                    // placeholder="blur"
+                    blurDataURL={lashesHeroUrlBlurred}
+                    placeholder="blur"
                   />
-                </motion.div>
+                </div>
                 <div
                   className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
                   aria-hidden="true"
