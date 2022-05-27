@@ -45,7 +45,7 @@ export default function Testimonials() {
                         <div className="inline-flex flex-shrink-0 border-2 rounded-full border-rose-300">
                           <Image
                             className="w-12 h-12 rounded-full"
-                            src="/static/flowers-1.jpeg"
+                            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665459/flowers-1_kqgq1t.jpg"
                             alt="Su Lisa Miles"
                             width={48}
                             height={48}
@@ -88,7 +88,7 @@ export default function Testimonials() {
                         <div className="inline-flex flex-shrink-0 border-2 rounded-full border-rose-300">
                           <Image
                             className="w-12 h-12 rounded-full"
-                            src="/static/flowers-2.jpeg"
+                            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665479/flowers-2_zmi5fi.jpg"
                             alt="Asami Burke"
                             width={48}
                             height={48}
@@ -131,7 +131,7 @@ export default function Testimonials() {
                         <div className="inline-flex flex-shrink-0 border-2 rounded-full border-rose-300">
                           <Image
                             className="w-12 h-12 rounded-full"
-                            src="/static/flowers-3.jpeg"
+                            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665480/flowers-3_thxbvw.jpg"
                             alt="Catie McCullash"
                             width={48}
                             height={48}

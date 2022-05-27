@@ -10,7 +10,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/moet-favicon.svg" />
+          <link
+            rel="icon"
+            href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670636/moet-favicon_qrqvht.svg"
+          />
           <link
             rel="stylesheet"
             href="https://use.typekit.net/ccb1sla.css"

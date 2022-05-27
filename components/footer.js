@@ -56,7 +56,7 @@ export default function Footer() {
                 <Image
                   height={40}
                   width={104}
-                  src="/moet-zinc.svg"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670637/moet-zinc_oj2esw.svg"
                   alt="Moët Lashes logo"
                 />
               </div>
