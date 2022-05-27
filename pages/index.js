@@ -9,24 +9,9 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
-import { buildUrl } from 'cloudinary-build-url';
 
 export default function Home() {
   const { t } = useTranslation();
-  const homeHeroUrl = buildUrl('moe-hero_qq11pi', {
-    cloud: {
-      cloudName: 'dt3k2apqd',
-    },
-  });
-  const homeHeroUrlBlurred = buildUrl('moe-hero_qq11pi', {
-    cloud: {
-      cloudName: 'dt3k2apqd',
-    },
-    transformations: {
-      effect: 'blur:1000',
-      quality: 1,
-    },
-  });
 
   const features = [
     {

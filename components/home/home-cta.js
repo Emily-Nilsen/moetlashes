@@ -22,12 +22,11 @@ export default function HomeCTA() {
           <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moetlashes-img-2_myvur9.webp"
             alt="Add volume and length"
-            // width={2400}
-            // height={1326}
             layout="fill"
             objectFit="cover"
             objectPosition="center"
             priority={true}
+            unoptimized={true}
           />
         </motion.div>
       </div>

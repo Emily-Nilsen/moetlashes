@@ -6,24 +6,9 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { LocationMarkerIcon, PhoneIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
-import { buildUrl } from 'cloudinary-build-url';
 
 export default function Contact() {
   const { t } = useTranslation();
-  const contactHeroUrl = buildUrl('moet-hero_gkhyyy', {
-    cloud: {
-      cloudName: 'dt3k2apqd',
-    },
-  });
-  const contactHeroUrlBlurred = buildUrl('moet-hero_gkhyyy', {
-    cloud: {
-      cloudName: 'dt3k2apqd',
-    },
-    transformations: {
-      effect: 'blur:1000',
-      quality: 1,
-    },
-  });
 
   const faqs = [
     {

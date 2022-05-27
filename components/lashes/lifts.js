@@ -79,6 +79,7 @@ export default function Lifts() {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
+                  unoptimized={true}
                 />
               </motion.div>
             </div>

@@ -163,6 +163,7 @@ export default function CustomerReviews() {
                         src={review.avatarSrc}
                         alt={`${review.author}.`}
                         className="rounded-full"
+                        unoptimized={true}
                       />
                     </div>
                     <div className="ml-4">
