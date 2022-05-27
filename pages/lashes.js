@@ -22,7 +22,7 @@ export default function Lashes() {
         <div>
           {/* Hero card */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+            <div className="absolute inset-x-0 bottom-0 bg-zinc-100 h-1/2" />
 
             <div className="relative">
               <div className="absolute inset-0">
@@ -45,7 +45,7 @@ export default function Lashes() {
               <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="pt-20 mt-24 -mb-16 text-5xl font-extrabold tracking-tight text-left md:mt-48 sm:text-6xl lg:text-7xl">
                   <span className="text-white">Lash </span>
-                  <span className="italic font-normal text-rose-200">
+                  <span className="italic font-medium text-rose-200">
                     extensions
                   </span>
                 </h1>
@@ -60,12 +60,12 @@ export default function Lashes() {
             <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
               <div>
                 <h1>
-                  <span className="block text-base font-semibold tracking-wide uppercase text-rose-400">
+                  <span className="block text-base font-semibold tracking-wide uppercase text-zinc-800">
                     <h2>Premium</h2>
                   </span>
-                  <span className="block mt-2 text-4xl italic font-normal tracking-tight leading-tighter text-zinc-800 sm:text-5xl">
+                  <span className="block mt-2 text-4xl italic font-medium tracking-tight leading-tighter text-rose-400 sm:text-5xl">
                     Nagaraku{' '}
-                    <span className="block not-italic font-extrabold">
+                    <span className="block not-italic font-extrabold text-zinc-800">
                       eyelash extensions
                     </span>
                   </span>
@@ -123,13 +123,13 @@ export default function Lashes() {
                         />
                       </div>
                     </div>
-                    <figcaption className="flex mt-3 text-sm text-gray-500">
+                    <figcaption className="flex mt-3 text-sm text-zinc-500">
                       <EyeIcon
                         className="flex-none w-5 h-5 text-rose-300"
                         aria-hidden="true"
                       />
                       <span className="ml-2">
-                        Attaching individual eyelash extensions
+                        We attach eyelash extensions individually
                       </span>
                     </figcaption>
                   </figure>
@@ -137,57 +137,40 @@ export default function Lashes() {
               </div>
               <div className="mt-8 lg:mt-0">
                 <div className="mx-auto text-base max-w-prose lg:max-w-none">
-                  <p className="text-lg text-gray-500">
-                    Sagittis scelerisque nulla cursus in enim consectetur quam.
-                    Dictum urna sed consectetur neque tristique pellentesque.
-                    Blandit amet, sed aenean erat arcu morbi.
+                  <p className="text-lg text-zinc-500">
+                    Our premium Nagaraku eyelashes’ unique material ensures that
+                    each lash is soft, lightweight and flat at the base for
+                    maximum adhesion.
                   </p>
                 </div>
-                <div className="mx-auto mt-5 prose text-gray-500 prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1">
+                <div className="mx-auto mt-5 prose text-zinc-500 prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1">
                   <p>
-                    Sollicitudin tristique eros erat odio sed vitae, consequat
-                    turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
-                    Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                    We skillfully attach each ellipse eyelash to your individual
+                    lashes for an entirely natural and stunning look.
                   </p>
                   <p>
-                    Bibendum eu nulla feugiat justo, elit adipiscing. Ut
-                    tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh
-                    leo. Dictum et et et sit. Faucibus sed non gravida lectus
-                    dignissim imperdiet a.
+                    Nagaraku eyelash extensions are made from premium,
+                    high-quality PBT material. They are very soft, lightweight,
+                    natural and comfortable to wear.
                   </p>
-                  <p>
-                    Dictum magnis risus phasellus vitae quam morbi. Quis lorem
-                    lorem arcu, metus, egestas netus cursus. In.
-                  </p>
+
                   <ul role="list">
-                    <li>Quis elit egestas venenatis mattis dignissim.</li>
                     <li>
-                      Cras cras lobortis vitae vivamus ultricies facilisis
-                      tempus.
+                      SGS and MSDS certify the premium quality of Nagaraku
+                      eyelash extensions.
                     </li>
                     <li>
-                      Orci in sit morbi dignissim metus diam arcu pretium.
+                      The unique curvature technique provides a long-lasting
+                      curl.
+                    </li>
+                    <li>
+                      The high-temperature processing method sterilises each
+                      eyelash.
                     </li>
                   </ul>
                   <p>
-                    Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                    tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                    semper. Pellentesque in venenatis vestibulum consectetur
-                    nibh id. In id ut tempus egestas. Enim sit aliquam nec, a.
-                    Morbi enim fermentum lacus in. Viverra.
-                  </p>
-                  <h3>How we helped</h3>
-                  <p>
-                    Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                    Consectetur pretium in volutpat, diam. Montes, magna cursus
-                    nulla feugiat dignissim id lobortis amet. Laoreet sem est
-                    phasellus eu proin massa, lectus. Diam rutrum posuere donec
-                    ultricies non morbi. Mi a platea auctor mi.
-                  </p>
-                  <p>
-                    Sagittis scelerisque nulla cursus in enim consectetur quam.
-                    Dictum urna sed consectetur neque tristique pellentesque.
-                    Blandit amet, sed aenean erat arcu morbi.
+                    Our eyelash extensions are the best option to lengthen,
+                    define and add volume to your natural eyelashes.
                   </p>
                 </div>
               </div>

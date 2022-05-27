@@ -90,7 +90,7 @@ export default function Pricing() {
           <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 className="pt-20 mt-10 -mb-10 text-5xl font-extrabold tracking-tight text-left sm:text-6xl lg:text-7xl sm:text-center">
               <span className="text-white">Our </span>
-              <span className="italic font-normal text-rose-200">pricing</span>
+              <span className="italic font-medium text-rose-200">pricing</span>
             </h1>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Pricing() {
             </h2>
             <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
               Pricing for premium eyelash{' '}
-              <span className="italic font-normal text-rose-400">
+              <span className="italic font-medium text-rose-400">
                 extensions{' '}
               </span>
             </h1>
@@ -201,7 +201,7 @@ export default function Pricing() {
           <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 className="pt-20 text-5xl font-extrabold tracking-tight text-center mt-14 -mb-14 sm:text-6xl lg:text-7xl">
               <span className="text-white">Lift & </span>
-              <span className="italic font-normal text-rose-200">style</span>
+              <span className="italic font-medium text-rose-200">style</span>
             </h1>
           </div>
         </div>

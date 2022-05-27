@@ -80,51 +80,47 @@ export default function Lifts() {
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h3 className="text-4xl font-extrabold tracking-tight text-zinc-800 sm:text-5xl">
               Eyelash extension{' '}
-              <span className="italic font-normal text-rose-400">
+              <span className="italic font-medium text-rose-400">
                 alternative
               </span>
             </h3>
             <div className="mt-6 space-y-6 text-zinc-500">
               <p className="text-lg">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc
-                nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-                senectus vitae.
+                A lash lift is the perfect alternative for those who want the
+                styled look without using eyelash extensions.
               </p>
               <p className="text-base leading-7">
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
+                A lash lift is essentially a perming treatment to curl the
+                eyelashes and set them in position.
               </p>
               <p className="text-base leading-7">
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
+                We tint your natural eyelashes using a safe, semi-permanent,
+                black vegetable dye.
               </p>
             </div>
           </div>
 
           {/* CTA */}
           <div className="mt-10">
-            <div className="bg-rose-200 rounded-2xl">
+            <div className="bg-rose-400 rounded-2xl">
               <div className="max-w-2xl px-4 py-16 mx-auto text-center sm:py-20 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                  <span className="block">Boost your productivity.</span>
-                  <span className="block">Start using Workflow today.</span>
-                </h2>
-                <p className="mt-4 text-lg leading-6 text-zinc-500">
-                  Ac euismod vel sit maecenas id pellentesque eu sed
-                  consectetur. Malesuada adipiscing sagittis vel nulla nec.
+                <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
+                  <span className="block">
+                    <span className="italic font-medium text-white">Curl </span>
+                    your lashes.
+                  </span>
+                  <span className="block">
+                    <span className="text-zinc-800">Darken </span>your lash
+                    line.
+                  </span>
+                </h1>
+                <p className="mt-4 text-lg leading-6 text-white">
+                  Book in for an eyelash lift or tint, or spoil yourself with
+                  both.
                 </p>
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-400 hover:bg-rose-400 hover:text-white sm:w-auto"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-500 hover:bg-zinc-800 hover:text-white sm:w-auto"
                 >
                   See our pricing
                 </a>

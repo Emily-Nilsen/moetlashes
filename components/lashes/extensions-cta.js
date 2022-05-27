@@ -21,14 +21,12 @@ export default function ExtensionsCTA() {
       <div className="relative px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-24">
         <div className="lg:ml-auto lg:w-1/2 lg:pl-10">
           <h3 className="mt-2 text-4xl font-extrabold tracking-tight text-rose-200 sm:text-5xl">
-            Add volume &{' '}
-            <span className="italic font-normal text-white underline">
-              length &nbsp;&nbsp;
-            </span>
+            Accentuate your{' '}
+            <span className="italic font-medium text-white">eyes</span>
           </h3>
           <p className="mt-3 text-lg text-zinc-300">
-            Enhance your natural beauty and achieve your most becoming look with
-            an eyelash extension or a lash lift treatment.
+            Add volume, length and definition to your lash line with an eyelash
+            extension treatment.
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">

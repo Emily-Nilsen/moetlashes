@@ -30,7 +30,7 @@ export default function LiftsPricing() {
           </h2>
           <h1 className="pb-2 text-5xl font-extrabold text-zinc-900 sm:text-center">
             Price tiers for lash{' '}
-            <span className="italic font-normal text-rose-400">lifts </span>
+            <span className="italic font-medium text-rose-400">lifts </span>
             and tints
           </h1>
           <p className="max-w-4xl mx-auto mt-3 text-lg text-zinc-500 sm:mt-5 sm:text-xl">

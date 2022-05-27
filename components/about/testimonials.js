@@ -12,7 +12,7 @@ export default function Testimonials() {
             <span className="font-bold">
               What our customers are saying about{' '}
             </span>
-            <span className="italic font-normal text-white">us</span>
+            <span className="italic font-medium text-white">us</span>
           </h3>
         </div>
       </div>

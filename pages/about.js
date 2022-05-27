@@ -40,7 +40,7 @@ export default function About() {
             <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
               <h1 className="pt-20 mt-24 -mb-16 text-4xl font-bold tracking-tight text-left md:mt-48 sm:text-5xl lg:text-6xl">
                 <span className="text-white">{t('about:title_1')}</span>
-                <span className="italic font-normal text-rose-200">
+                <span className="italic font-medium text-rose-200">
                   {t('about:title_2')}
                 </span>
               </h1>
@@ -59,8 +59,8 @@ export default function About() {
               </h2>
               <h3 className="py-6 text-6xl text-zinc-800">
                 <span className="font-bold">{t('about:meet')} </span>
-                <span className="font-bold text-rose-400">
-                  <h4 className="inline text-7xl">{t('about:moe')}</h4>{' '}
+                <span className="italic font-medium text-rose-400">
+                  {t('about:moe')}
                 </span>
               </h3>
             </div>

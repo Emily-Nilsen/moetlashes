@@ -41,7 +41,7 @@ export default function Contact() {
       keywords={t('layout:contact_keywords')}
       className="bg-rose-50"
     >
-      <header className="relative bg-green-800 pb-36">
+      <header className="relative bg-rose-300 pb-36">
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
             <Image
@@ -66,7 +66,7 @@ export default function Contact() {
         <div className="relative max-w-md px-4 pt-32 pb-16 mx-auto mt-24 sm:max-w-3xl sm:px-6 md:mt-32 lg:max-w-7xl lg:px-8">
           <h1 className="max-w-lg text-5xl font-extrabold tracking-tight text-white md:text-6xl">
             {t('contact:get_in')}
-            <span className="italic font-normal text-rose-200">
+            <span className="italic font-medium text-rose-200">
               {t('contact:touch')}
             </span>
           </h1>
@@ -113,7 +113,7 @@ export default function Contact() {
                           aria-hidden="true"
                         />
                       </div>
-                      <div className="ml-3 text-base transition duration-300 ease-in-out text-zinc-700 group-hover:text-white">
+                      <div className="ml-3 text-base font-medium transition duration-300 ease-in-out text-zinc-700 group-hover:text-white">
                         <p>+61 (0) 466 609 975</p>
                       </div>
                     </div>
@@ -150,7 +150,7 @@ export default function Contact() {
                           aria-hidden="true"
                         />
                       </div>
-                      <div className="ml-3 text-base transition duration-300 ease-in-out text-zinc-700 group-hover:text-white">
+                      <div className="ml-3 text-base font-medium transition duration-300 ease-in-out text-zinc-700 group-hover:text-white">
                         <p>Moët Lashes</p>
                       </div>
                     </div>
@@ -190,7 +190,7 @@ export default function Contact() {
               <div className="space-y-4">
                 <h3 className="text-4xl font-extrabold text-zinc-800">
                   {t('contact:frequently')}
-                  <span className="italic font-normal text-rose-400">
+                  <span className="italic font-medium text-rose-400">
                     {t('contact:questions')}{' '}
                   </span>
                 </h3>

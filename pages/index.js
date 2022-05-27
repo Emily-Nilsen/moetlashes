@@ -73,7 +73,7 @@ export default function Home() {
             </h2>
             <h3 className="py-6 text-6xl text-white">
               <span className="font-bold">{t('home:eyelash')}</span>
-              <span className="italic font-normal text-rose-200">
+              <span className="italic font-medium text-rose-200">
                 {t('home:extensions')}
               </span>
             </h3>
