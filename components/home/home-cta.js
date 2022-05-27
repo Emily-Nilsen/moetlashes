@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { PhoneIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 export default function HomeCTA() {
   const { t } = useTranslation();
@@ -9,7 +10,15 @@ export default function HomeCTA() {
   return (
     <div className="relative bg-zinc-800">
       <div className="h-56 bg-rose-300 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
-        <div className="relative object-cover w-full h-full">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.3,
+            type: 'fade',
+          }}
+          className="relative object-cover w-full h-full"
+        >
           <Image
             src="/static/home/moetlashes-img-2.webp"
             alt="Add volume and length"
@@ -18,8 +27,9 @@ export default function HomeCTA() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
+            priority={true}
           />
-        </div>
+        </motion.div>
       </div>
       <div className="relative px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-24">
         <div className="lg:ml-auto lg:w-1/2 lg:pl-10">

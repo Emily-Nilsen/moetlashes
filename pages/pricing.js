@@ -10,6 +10,7 @@ import {
   ChevronDownIcon,
 } from '@heroicons/react/solid';
 import { PhoneIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -71,7 +72,15 @@ export default function Pricing() {
 
         <div className="relative">
           <div className="absolute inset-0">
-            <div className="relative object-cover w-full h-full">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+              }}
+              className="relative object-cover w-full h-full"
+            >
               <Image
                 src="/static/home/moetlashes-img-4.webp"
                 alt="Eyelash extensions hero image"
@@ -82,7 +91,7 @@ export default function Pricing() {
                 objectPosition="top"
                 priority={true}
               />
-            </div>
+            </motion.div>
             <div
               className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
               aria-hidden="true"
@@ -119,9 +128,22 @@ export default function Pricing() {
             </p>
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-            {tiers.map((tier) => (
-              <div
-                key={tier.name}
+            {tiers.map((tier, i) => (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 50,
+                  transition: { delay: 2 },
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  initialDelay: 2,
+                  duration: 0.7,
+                  delay: i * 0.3,
+                  ease: 'easeOut',
+                }}
+                key={i}
                 className="bg-white border divide-y rounded-lg shadow-lg border-rose-200 divide-rose-200"
               >
                 <div className="p-6">
@@ -171,7 +193,7 @@ export default function Pricing() {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -183,7 +205,15 @@ export default function Pricing() {
 
         <div className="relative">
           <div className="absolute inset-0">
-            <div className="relative object-cover w-full h-full">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+              }}
+              className="relative object-cover w-full h-full"
+            >
               <Image
                 src="/static/home/lift-prices-hero.webp"
                 alt="Eyelash extensions hero image"
@@ -194,7 +224,7 @@ export default function Pricing() {
                 objectPosition="top"
                 priority={true}
               />
-            </div>
+            </motion.div>
             <div
               className="absolute inset-0 opacity-50 bg-gradient-to-b from-zinc-800 to-t"
               aria-hidden="true"

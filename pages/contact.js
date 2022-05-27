@@ -5,6 +5,7 @@ import useTranslation from 'next-translate/useTranslation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { LocationMarkerIcon, PhoneIcon } from '@heroicons/react/outline';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -43,7 +44,15 @@ export default function Contact() {
     >
       <header className="relative bg-rose-300 pb-36">
         <div className="absolute inset-0">
-          <div className="object-cover w-full h-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+            }}
+            className="object-cover w-full h-full"
+          >
             <Image
               src="/static/home/moet-hero.webp"
               alt="Moët Lashes"
@@ -54,7 +63,7 @@ export default function Contact() {
               objectPosition="center"
               priority={true}
             />
-          </div>
+          </motion.div>
           <div
             className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
             aria-hidden="true"
@@ -90,7 +99,20 @@ export default function Contact() {
             </h2>
             <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
               {/* card 1 */}
-              <div className="flex flex-col bg-white shadow-xl rounded-2xl">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 50,
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.3,
+                  ease: 'easeOut',
+                }}
+                className="flex flex-col bg-white shadow-xl rounded-2xl"
+              >
                 <div className="relative flex-1 px-6 pt-10 pb-8 md:px-8">
                   <div>
                     <h3 className="text-2xl font-medium leading-6 text-zinc-800">
@@ -120,9 +142,22 @@ export default function Contact() {
                     </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
               {/* card 2 */}
-              <div className="flex flex-col bg-white shadow-xl rounded-2xl">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 50,
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.4,
+                  ease: 'easeOut',
+                }}
+                className="flex flex-col bg-white shadow-xl rounded-2xl"
+              >
                 <div className="relative flex-1 px-6 pt-10 pb-8 md:px-8">
                   <div>
                     <h3 className="text-2xl font-medium leading-6 text-zinc-800">
@@ -157,10 +192,32 @@ export default function Contact() {
                     </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
               {/* card 3 */}
-              <div className="flex flex-col shadow-xl bg-rose-400 rounded-2xl">
-                <div className="relative flex-1 object-cover object-center overflow-hidden rounded-2xl aspect-w-12 aspect-h-7 hover:mix-blend-luminosity">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 50,
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.5,
+                  ease: 'easeOut',
+                }}
+                className="flex flex-col shadow-xl bg-rose-400 rounded-2xl"
+              >
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    type: 'fade',
+                  }}
+                  className="relative flex-1 object-cover object-center overflow-hidden rounded-2xl aspect-w-12 aspect-h-7 hover:mix-blend-luminosity"
+                >
                   <a
                     href="https://goo.gl/maps/bZ8DPQgVW6a6Ux296"
                     rel="noopener noreferrer"
@@ -178,8 +235,8 @@ export default function Contact() {
                       priority={true}
                     />
                   </a>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </section>
 

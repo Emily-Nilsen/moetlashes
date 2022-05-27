@@ -49,6 +49,7 @@ export default function Testimonials() {
                             alt="Su Lisa Miles"
                             width={48}
                             height={48}
+                            priority={true}
                           />
                         </div>
                         <div className="ml-4">
@@ -91,6 +92,7 @@ export default function Testimonials() {
                             alt="Asami Burke"
                             width={48}
                             height={48}
+                            priority={true}
                           />
                         </div>
                         <div className="ml-4">
@@ -133,6 +135,7 @@ export default function Testimonials() {
                             alt="Catie McCullash"
                             width={48}
                             height={48}
+                            priority={true}
                           />
                         </div>
                         <div className="ml-4">

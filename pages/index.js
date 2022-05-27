@@ -7,6 +7,7 @@ import HomeCTA from '../components/home/home-cta';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -47,7 +48,15 @@ export default function Home() {
       <div className="bg-rose-50">
         <header className="relative pb-36 bg-blue-gray-800">
           <div className="absolute inset-0">
-            <div className="object-cover w-full h-full">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+              }}
+              className="object-cover w-full h-full"
+            >
               <Image
                 src="/static/home/moe-hero.webp"
                 alt="Moët Lashes"
@@ -58,7 +67,7 @@ export default function Home() {
                 objectPosition="center"
                 priority={true}
               />
-            </div>
+            </motion.div>
             <div
               className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
               aria-hidden="true"
@@ -98,9 +107,21 @@ export default function Home() {
                 Cairns City eyelash extensions
               </h2>
               <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
-                {features.map((feature) => (
-                  <div
-                    key={feature.name}
+                {features.map((feature, i) => (
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 50,
+                    }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      initialDelay: 0.3,
+                      duration: 0.7,
+                      delay: i * 0.3,
+                      ease: 'easeOut',
+                    }}
+                    key={i}
                     className="flex flex-col bg-white shadow-xl rounded-2xl"
                   >
                     <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
@@ -132,7 +153,7 @@ export default function Home() {
                         </a>
                       </div>
                     </Link>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </section>

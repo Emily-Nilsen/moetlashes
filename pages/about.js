@@ -5,6 +5,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Testimonials from '../components/about/testimonials';
 import AboutCTA from '../components/about/about-cta';
 import { BadgeCheckIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 export default function About() {
   const { t } = useTranslation();
@@ -21,7 +22,15 @@ export default function About() {
 
           <div className="relative">
             <div className="absolute inset-0">
-              <div className="relative object-cover w-full h-full">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.8,
+                  type: 'fade',
+                }}
+                className="relative object-cover w-full h-full"
+              >
                 <Image
                   src="/static/home/moetlashes-about-hero.webp"
                   alt="Eyelash extensions hero image"
@@ -32,7 +41,7 @@ export default function About() {
                   objectPosition="center"
                   priority={true}
                 />
-              </div>
+              </motion.div>
               <div
                 className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
                 aria-hidden="true"
@@ -70,7 +79,16 @@ export default function About() {
             <div className="relative lg:row-start-1 lg:col-start-2">
               <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                 <figure className="pb-10 lg:-mt-40 lg:pb-0">
-                  <div className="flex justify-center">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      delay: 0.3,
+                      duration: 0.8,
+                      type: 'fade',
+                    }}
+                    className="flex justify-center"
+                  >
                     <Image
                       src="/static/moe.png"
                       alt="Moe"
@@ -81,7 +99,7 @@ export default function About() {
                       objectPosition="center"
                       priority={true}
                     />
-                  </div>
+                  </motion.div>
                   <figcaption className="flex justify-center mt-3 text-sm text-zinc-800">
                     <BadgeCheckIcon
                       className="flex-none w-5 h-5 text-rose-300"

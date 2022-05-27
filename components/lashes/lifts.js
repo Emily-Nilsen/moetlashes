@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Lifts() {
   return (
@@ -63,7 +64,15 @@ export default function Lifts() {
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Image with pink flowers*/}
             <div className="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
-              <div className="absolute inset-0 object-cover w-full h-full">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.8,
+                  type: 'fade',
+                }}
+                className="absolute inset-0 object-cover w-full h-full"
+              >
                 <Image
                   src="/static/home/moetlashes-img-7.webp"
                   alt="Lift, style and tint"
@@ -71,7 +80,7 @@ export default function Lifts() {
                   objectFit="cover"
                   objectPosition="center"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -103,7 +112,20 @@ export default function Lifts() {
 
           {/* CTA */}
           <div className="mt-10">
-            <div className="bg-rose-400 rounded-2xl">
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 50,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: 'easeOut',
+              }}
+              className="bg-rose-400 rounded-2xl"
+            >
               <div className="max-w-2xl px-4 py-16 mx-auto text-center sm:py-20 sm:px-6 lg:px-8">
                 <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
                   <span className="block">
@@ -125,7 +147,7 @@ export default function Lifts() {
                   </a>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

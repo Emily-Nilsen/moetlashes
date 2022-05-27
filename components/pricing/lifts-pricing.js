@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { CheckIcon } from '@heroicons/react/outline';
 import { PhoneIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 const tintFeatures = [
   `Adds depth and a deep black colour`,
@@ -48,8 +49,22 @@ export default function LiftsPricing() {
           <div className="absolute inset-0 h-5/6 bg-rose-50 lg:h-2/3" />
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative lg:grid lg:grid-cols-7">
+              {/* Tint only */}
               <div className="max-w-md mx-auto lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                <div className="flex flex-col h-full overflow-hidden rounded-lg shadow-lg lg:rounded-none lg:rounded-l-lg">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.3,
+                    ease: 'easeOut',
+                  }}
+                  className="flex flex-col h-full overflow-hidden rounded-lg shadow-lg lg:rounded-none lg:rounded-l-lg"
+                >
                   <div className="flex flex-col flex-1">
                     <div className="px-6 py-10 bg-white">
                       <div>
@@ -106,10 +121,24 @@ export default function LiftsPricing() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
+              {/* Lift & Tint */}
               <div className="max-w-lg mx-auto mt-10 lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
-                <div className="relative z-10 rounded-lg shadow-xl">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.4,
+                    ease: 'easeOut',
+                  }}
+                  className="relative z-10 rounded-lg shadow-xl"
+                >
                   <div
                     className="absolute inset-0 border-2 rounded-lg pointer-events-none border-rose-400"
                     aria-hidden="true"
@@ -176,10 +205,24 @@ export default function LiftsPricing() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
+              {/* Lift only */}
               <div className="max-w-md mx-auto mt-10 lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
-                <div className="flex flex-col h-full overflow-hidden rounded-lg shadow-lg lg:rounded-none lg:rounded-r-lg">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.5,
+                    ease: 'easeOut',
+                  }}
+                  className="flex flex-col h-full overflow-hidden rounded-lg shadow-lg lg:rounded-none lg:rounded-r-lg"
+                >
                   <div className="flex flex-col flex-1">
                     <div className="px-6 py-10 bg-white">
                       <div>
@@ -236,7 +279,7 @@ export default function LiftsPricing() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
