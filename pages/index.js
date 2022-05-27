@@ -4,6 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import Lifts from '../components/lashes/lifts';
 import HomeCTA from '../components/home/home-cta';
+import CustomerReviews from '../components/home/customer-reviews';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline';
@@ -58,7 +59,7 @@ export default function Home() {
               className="object-cover w-full h-full"
             >
               <Image
-                src="/static/home/moe-hero.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1645616462/small_image_09_small_554564677a.jpg"
                 alt="Moët Lashes"
                 width={1500}
                 height={1000}
@@ -176,6 +177,7 @@ export default function Home() {
           </div>
           {/* <Lifts /> */}
           <HomeCTA />
+          <CustomerReviews />
         </main>
       </div>
     </Layout>
