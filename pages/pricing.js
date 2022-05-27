@@ -80,6 +80,7 @@ export default function Pricing() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="top"
+                priority={true}
               />
             </div>
             <div
@@ -191,6 +192,7 @@ export default function Pricing() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="top"
+                priority={true}
               />
             </div>
             <div

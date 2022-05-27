@@ -56,6 +56,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
+                priority={true}
               />
             </div>
             <div

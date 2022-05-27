@@ -30,6 +30,7 @@ export default function About() {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
+                  priority={true}
                 />
               </div>
               <div
@@ -78,6 +79,7 @@ export default function About() {
                       layout="intrinsic"
                       objectFit="contain"
                       objectPosition="center"
+                      priority={true}
                     />
                   </div>
                   <figcaption className="flex justify-center mt-3 text-sm text-zinc-800">

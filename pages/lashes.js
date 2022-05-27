@@ -35,6 +35,7 @@ export default function Lashes() {
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
+                    priority={true}
                   />
                 </div>
                 <div

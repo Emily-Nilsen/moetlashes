@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Lifts() {
   return (
@@ -118,12 +119,11 @@ export default function Lifts() {
                   Book in for an eyelash lift or tint, or spoil yourself with
                   both.
                 </p>
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-500 hover:bg-zinc-800 hover:text-white sm:w-auto"
-                >
-                  See our pricing
-                </a>
+                <Link href="/pricing" passHref>
+                  <a className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium transition duration-300 ease-in-out bg-white border border-transparent rounded-full text-rose-500 hover:bg-zinc-800 hover:text-white sm:w-auto">
+                    See our pricing
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
