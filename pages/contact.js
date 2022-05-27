@@ -59,28 +59,25 @@ export default function Contact() {
     >
       <header className="relative bg-rose-300 pb-36">
         <div className="absolute inset-0">
-          <div
-            // whileInView={{ opacity: 1 }}
-            // initial={{ opacity: 0 }}
-            // transition={{
-            //   duration: 0.8,
-            //   type: 'fade',
-            // }}
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+            }}
             className="object-cover w-full h-full"
           >
             <Image
-              src={contactHeroUrl}
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moet-hero_gkhyyy.webp"
               alt="Moët Lashes"
-              // width={1500}
-              // height={1000}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               priority={true}
-              blurDataURL={contactHeroUrlBlurred}
-              placeholder="blur"
+              unoptimized={true}
             />
-          </div>
+          </motion.div>
           <div
             className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
             aria-hidden="true"

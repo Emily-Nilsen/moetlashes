@@ -64,20 +64,25 @@ export default function Home() {
       <div className="bg-rose-50">
         <header className="relative pb-36 bg-blue-gray-800">
           <div className="absolute inset-0">
-            <div className="object-cover w-full h-full">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+              }}
+              className="object-cover w-full h-full"
+            >
               <Image
-                src={homeHeroUrl}
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moe-hero_qq11pi.webp"
                 alt="Moët Lashes"
-                // width={1500}
-                // height={1000}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
-                blurDataURL={homeHeroUrlBlurred}
-                placeholder="blur"
+                unoptimized={true}
                 priority={true}
               />
-            </div>
+            </motion.div>
             <div
               className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
               aria-hidden="true"
