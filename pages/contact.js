@@ -54,7 +54,7 @@ export default function Contact() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="/static/home/moet-hero.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moet-hero_gkhyyy.webp"
               alt="Moët Lashes"
               width={1500}
               height={1000}
@@ -62,8 +62,8 @@ export default function Contact() {
               objectFit="cover"
               objectPosition="center"
               priority={true}
-              blurDataURL="data:..."
-              placeholder="blur"
+              // blurDataURL="data:..."
+              // placeholder="blur"
             />
           </motion.div>
           <div
@@ -227,7 +227,7 @@ export default function Contact() {
                     className="transition duration-700 ease-in-out"
                   >
                     <Image
-                      src="/static/map-rose.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665499/map-rose_wldetk.webp"
                       alt="Attaching individual eyelash extensions"
                       width={1310}
                       height={922}

@@ -11,7 +11,7 @@ export default function PageNotFound() {
           <div className="absolute inset-0">
             <div className="object-cover w-full h-full">
               <Image
-                src="/static/page-not-found.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665524/page-not-found_rdipo7.webp"
                 alt="Moët Lashes | Page Not Found"
                 width={1500}
                 height={1000}

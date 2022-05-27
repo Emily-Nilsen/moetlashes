@@ -32,7 +32,7 @@ export default function About() {
                 className="relative object-cover w-full h-full"
               >
                 <Image
-                  src="/static/home/moetlashes-about-hero.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moetlashes-about-hero_u5s6ec.webp"
                   alt="Eyelash extensions hero image"
                   width={1000}
                   height={697}
@@ -40,8 +40,8 @@ export default function About() {
                   objectFit="cover"
                   objectPosition="center"
                   priority={true}
-                  blurDataURL="data:..."
-                  placeholder="blur"
+                  // blurDataURL="data:..."
+                  // placeholder="blur"
                 />
               </motion.div>
               <div
@@ -92,7 +92,7 @@ export default function About() {
                     className="flex justify-center"
                   >
                     <Image
-                      src="/static/moe.png"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665513/moe_ve5zpx.png"
                       alt="Moe"
                       width={400}
                       height={400}

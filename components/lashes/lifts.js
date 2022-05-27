@@ -74,7 +74,7 @@ export default function Lifts() {
                 className="absolute inset-0 object-cover w-full h-full"
               >
                 <Image
-                  src="/static/home/moetlashes-img-7.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665552/moetlashes-img-7_dp28i3.webp"
                   alt="Lift, style and tint"
                   layout="fill"
                   objectFit="cover"

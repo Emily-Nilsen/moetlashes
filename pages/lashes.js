@@ -37,7 +37,7 @@ export default function Lashes() {
                   className="relative object-cover w-full h-full"
                 >
                   <Image
-                    src="/static/home/moetlashes-img-3-gradient.webp"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/moetlashes-img-3-gradient_qfkbz0.webp"
                     alt="Eyelash extensions hero image"
                     width={1000}
                     height={697}
@@ -45,8 +45,8 @@ export default function Lashes() {
                     objectFit="cover"
                     objectPosition="center"
                     priority={true}
-                    blurDataURL="data:..."
-                    placeholder="blur"
+                    // blurDataURL="data:..."
+                    // placeholder="blur"
                   />
                 </motion.div>
                 <div
@@ -134,7 +134,7 @@ export default function Lashes() {
                         className="object-cover object-center overflow-hidden rounded-lg shadow-lg"
                       >
                         <Image
-                          src="/static/home/moetlashes-img-5.webp"
+                          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665552/moetlashes-img-5_ssdo2v.webp"
                           alt="Attaching individual eyelash extensions"
                           width={1310}
                           height={922}

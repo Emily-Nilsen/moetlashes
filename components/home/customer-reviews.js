@@ -20,7 +20,8 @@ const reviews = {
         <p>I have had eyelash extensions and eyelash perm many times with Moët Lashes. Both times they have always lasted a very long time and has come out very nice and natural. She is very quick, polite service for the customers, and fun! The location of the shop is very convenient. If my friends look for a good eyelash artist, I will definitely recommend her.</p>
       `,
       author: 'Misato Liu',
-      avatarSrc: '/static/flowers-1.jpeg',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665459/flowers-1_kqgq1t.jpg',
     },
     {
       id: 2,
@@ -29,7 +30,8 @@ const reviews = {
         <p>Great to have eyelash extensions because I don’t need to wear mascara and eyeliner anymore.  I have been experiencing eyelash extensions over 10 years and very satisfied with this beauty technique. Moet lashes is a very friendly place with good technical skill for eyelash extensions. She listens to clients and have the eyelash extensions done based on clients preferences. Never felt disappointed here. Highly recommend.</p>
       `,
       author: 'Su Lyisa Miles-Cadman',
-      avatarSrc: '/static/flowers-2.jpeg',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665479/flowers-2_zmi5fi.jpg',
     },
     {
       id: 3,
@@ -38,7 +40,8 @@ const reviews = {
         <p>Moe's eyelash extension was very thorough and perfect with great care. she was very friendly and kind to me, I had a wonderful time feeling at ease. I'd like to visit there again and really recommend her to others definitely! Thank you very much for lovely time.</p>
       `,
       author: 'Yumie Seki',
-      avatarSrc: '/static/flowers-3.jpeg',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665480/flowers-3_thxbvw.jpg',
     },
     // More reviews...
   ],

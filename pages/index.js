@@ -20,7 +20,7 @@ export default function Home() {
       description: `${t('home:extensions_text')}`,
       href: `/lashes`,
       link_name: `${t('home:extensions')}`,
-      icon: `/static/home/icon-1.svg`,
+      icon: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/icon-1_fefnul.svg`,
     },
     {
       name_start: `${t('home:lash_lift')}`,
@@ -28,7 +28,7 @@ export default function Home() {
       description: `${t('home:lift_text')}`,
       href: `/lashes/#lifts`,
       link_name: `${t('home:lifts')}`,
-      icon: `/static/home/icon-2.svg`,
+      icon: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/icon-2_rbqdgd.svg`,
     },
     {
       name_start: `${t('home:aftercare')}`,
@@ -36,7 +36,7 @@ export default function Home() {
       description: `${t('home:aftercare_text')}`,
       href: `/contact/#faqs`,
       link_name: `${t('home:faqs')}`,
-      icon: `/static/home/icon-3.svg`,
+      icon: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/icon-3_qp6h7v.svg`,
     },
   ];
 
@@ -59,15 +59,15 @@ export default function Home() {
               className="object-cover w-full h-full"
             >
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1645616462/small_image_09_small_554564677a.jpg"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moe-hero_qq11pi.webp"
                 alt="Moët Lashes"
                 width={1500}
                 height={1000}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
-                blurDataURL="data:..."
-                placeholder="blur"
+                // blurDataURL="data:..."
+                // placeholder="blur"
                 priority={true}
               />
             </motion.div>

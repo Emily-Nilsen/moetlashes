@@ -82,7 +82,7 @@ export default function Pricing() {
               className="relative object-cover w-full h-full"
             >
               <Image
-                src="/static/home/moetlashes-img-4.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/moetlashes-img-4_qqoqgb.webp"
                 alt="Eyelash extensions hero image"
                 width={1000}
                 height={697}
@@ -90,8 +90,8 @@ export default function Pricing() {
                 objectFit="cover"
                 objectPosition="top"
                 priority={true}
-                blurDataURL="data:..."
-                placeholder="blur"
+                // blurDataURL="data:..."
+                // placeholder="blur"
               />
             </motion.div>
             <div
@@ -217,7 +217,7 @@ export default function Pricing() {
               className="relative object-cover w-full h-full"
             >
               <Image
-                src="/static/home/lift-prices-hero.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/lift-prices-hero_ghdq6p.webp"
                 alt="Eyelash extensions hero image"
                 width={1000}
                 height={697}
