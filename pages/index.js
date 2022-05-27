@@ -65,6 +65,8 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
+                blurDataURL="data:..."
+                placeholder="blur"
                 priority={true}
               />
             </motion.div>
