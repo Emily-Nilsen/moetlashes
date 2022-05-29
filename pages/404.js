@@ -23,7 +23,7 @@ export default function PageNotFound() {
               className="object-cover w-full h-full"
             >
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665524/page-not-found_rdipo7.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665524/Mo%C3%ABt%20Lashes/general/page-not-found_rdipo7.webp"
                 alt="Moët Lashes | Page Not Found"
                 unoptimized={true}
                 layout="fill"

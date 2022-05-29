@@ -59,7 +59,7 @@ export default function Home() {
               className="object-cover w-full h-full"
             >
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/Mo%C3%ABt%20Lashes/moe-hero_qq11pi.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/Mo%C3%ABt%20Lashes/general/moe-hero_qq11pi.webp"
                 alt="Moët Lashes"
                 layout="fill"
                 objectFit="cover"
