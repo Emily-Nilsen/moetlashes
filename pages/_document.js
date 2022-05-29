@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="icon"
-            href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670636/moet-favicon_qrqvht.svg"
+            href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670636/Mo%C3%ABt%20Lashes/SVGs/moet-favicon_qrqvht.svg"
           />
           <link
             rel="stylesheet"

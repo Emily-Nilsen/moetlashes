@@ -20,7 +20,7 @@ export default function HomeCTA() {
           className="relative object-cover w-full h-full"
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moetlashes-img-2_myvur9.webp"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/Mo%C3%ABt%20Lashes/general/moetlashes-img-2_myvur9.webp"
             alt="Add volume and length"
             layout="fill"
             objectFit="cover"

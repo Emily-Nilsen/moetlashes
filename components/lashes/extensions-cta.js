@@ -17,7 +17,7 @@ export default function ExtensionsCTA() {
           className="relative object-cover w-full h-full"
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moetlashes-img-1_olyxfe.webp"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/Mo%C3%ABt%20Lashes/general/moetlashes-img-1_olyxfe.webp"
             alt="Add volume and length"
             layout="fill"
             objectFit="cover"

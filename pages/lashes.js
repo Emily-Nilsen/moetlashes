@@ -37,7 +37,7 @@ export default function Lashes() {
                   className="relative object-cover w-full h-full"
                 >
                   <Image
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/moetlashes-img-3-gradient_qfkbz0.webp"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/Mo%C3%ABt%20Lashes/general/moetlashes-img-3-gradient_qfkbz0.webp"
                     alt="Eyelash extensions hero image"
                     layout="fill"
                     objectFit="cover"
@@ -131,7 +131,7 @@ export default function Lashes() {
                         className="object-cover object-center overflow-hidden rounded-lg shadow-lg"
                       >
                         <Image
-                          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665552/moetlashes-img-5_ssdo2v.webp"
+                          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665552/Mo%C3%ABt%20Lashes/general/moetlashes-img-5_ssdo2v.webp"
                           alt="Attaching individual eyelash extensions"
                           width={1310}
                           height={922}

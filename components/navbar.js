@@ -32,7 +32,7 @@ export default function Navbar() {
                   <Image
                     height={40}
                     width={104}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670637/moet-pink_svy7es.svg"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670637/Mo%C3%ABt%20Lashes/SVGs/moet-pink_svy7es.svg"
                     alt="Moët Lashes logo"
                   />
                 </div>

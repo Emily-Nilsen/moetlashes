@@ -21,7 +21,7 @@ const reviews = {
       `,
       author: 'Misato Liu',
       avatarSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665459/flowers-1_kqgq1t.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665459/Mo%C3%ABt%20Lashes/flowers/flowers-1_kqgq1t.jpg',
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const reviews = {
       `,
       author: 'Su Lyisa Miles-Cadman',
       avatarSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665479/flowers-2_zmi5fi.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665479/Mo%C3%ABt%20Lashes/flowers/flowers-2_zmi5fi.jpg',
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const reviews = {
       `,
       author: 'Yumie Seki',
       avatarSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665480/flowers-3_thxbvw.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665480/Mo%C3%ABt%20Lashes/flowers/flowers-3_thxbvw.jpg',
     },
     // More reviews...
   ],

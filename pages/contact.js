@@ -54,7 +54,7 @@ export default function Contact() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/moet-hero_gkhyyy.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/Mo%C3%ABt%20Lashes/general/moet-hero_gkhyyy.webp"
               alt="Moët Lashes"
               layout="fill"
               objectFit="cover"
@@ -224,10 +224,9 @@ export default function Contact() {
                     className="transition duration-700 ease-in-out"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665499/map-rose_wldetk.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665499/Mo%C3%ABt%20Lashes/general/map-rose_wldetk.webp"
                       alt="Attaching individual eyelash extensions"
-                      width={1310}
-                      height={922}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"

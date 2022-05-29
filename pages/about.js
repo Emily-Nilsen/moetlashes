@@ -33,7 +33,7 @@ export default function About() {
                 className="relative object-cover w-full h-full"
               >
                 <Image
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/moetlashes-about-hero_u5s6ec.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/Mo%C3%ABt%20Lashes/general/moetlashes-about-hero_u5s6ec.webp"
                   alt="Eyelash extensions hero image"
                   layout="fill"
                   objectFit="cover"
@@ -90,7 +90,7 @@ export default function About() {
                     className="flex justify-center"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665513/moe_ve5zpx.png"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665513/Mo%C3%ABt%20Lashes/general/moe_ve5zpx.png"
                       alt="Moe"
                       width={400}
                       height={400}
