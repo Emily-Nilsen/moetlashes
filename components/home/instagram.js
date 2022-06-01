@@ -20,7 +20,7 @@ export default function Instagram() {
         </div>
       </div>
       {/* Video promotion */}
-      <div className="relative bg-gray-900">
+      <div className="relative bg-zinc-800">
         {/* Decorative image and overlay */}
         <motion.div
           whileInView={{ opacity: 1 }}
@@ -34,11 +34,11 @@ export default function Instagram() {
           className="absolute inset-0 overflow-hidden"
         >
           {/* Mobile screen */}
-          <div className="object-cover object-center w-full h-full sm:hidden">
+          <div className="flex items-center object-cover object-center w-full h-full overflow-hidden sm:hidden">
             <video
               autoPlay
               muted
-              src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654067079/Mo%C3%ABt%20Lashes/video/Instagram_mobile_dbtldh.mp4"
+              src="/static/instagram-mobile.mp4"
               alt="Moët Lashes Eyelash Salon"
               type="video/mp4"
             />
