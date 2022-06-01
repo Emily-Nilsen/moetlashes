@@ -38,7 +38,7 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654077858/Mo%C3%ABt%20Lashes/video/Instagram-mobile-compressed_lave5z.gif"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084513/Mo%C3%ABt%20Lashes/video/pink-pink_bjpdw3.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
@@ -46,20 +46,9 @@ export default function Instagram() {
               unoptimized={true}
             />
           </div>
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            transition={{
-              delay: 6.4,
-              duration: 0.3,
-              type: 'fade',
-            }}
-            aria-hidden="true"
-            className="absolute inset-0 opacity-100 bg-zinc-800"
-          />
         </motion.div>
         {/* Image 2 */}
-        {/* <motion.div
+        <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
@@ -79,15 +68,41 @@ export default function Instagram() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              unoptimized={true}
             />
           </div>
-        </motion.div> */}
+        </motion.div>
         {/* Image 3 */}
-        {/* <motion.div
+        <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 2.2,
+            delay: 2.3,
+            duration: 0.7,
+            type: 'fade',
+          }}
+          aria-hidden="true"
+          className="absolute inset-0 overflow-hidden"
+        >
+          <div className="flex items-center object-cover object-center w-full h-full overflow-hidden sm:hidden">
+            <Image
+              width={640}
+              height={512}
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084524/Mo%C3%ABt%20Lashes/video/pink-black_znsbxj.png"
+              alt="Moët Lashes Eyelash Salon"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              unoptimized={true}
+            />
+          </div>
+        </motion.div>
+        {/* Image 4 */}
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            delay: 2.8,
             duration: 1.5,
             type: 'fade',
           }}
@@ -103,27 +118,53 @@ export default function Instagram() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              unoptimized={true}
+            />
+          </div>
+        </motion.div>
+        {/* Image 5 */}
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            delay: 4.1,
+            duration: 0.7,
+            type: 'fade',
+          }}
+          aria-hidden="true"
+          className="absolute inset-0 overflow-hidden"
+        >
+          <div className="flex items-center object-cover object-center w-full h-full overflow-hidden sm:hidden">
+            <Image
+              width={640}
+              height={512}
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084532/Mo%C3%ABt%20Lashes/video/black-pink_nbhbew.png"
+              alt="Moët Lashes Eyelash Salon"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              unoptimized={true}
             />
           </div>
           <motion.div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{
-              delay: 3.5,
+              delay: 4.7,
               duration: 0.5,
               type: 'fade',
             }}
             aria-hidden="true"
             className="absolute inset-0 opacity-50 bg-zinc-800"
           />
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 6.8,
+            delay: 5.2,
             duration: 0.8,
             type: 'fade',
           }}
