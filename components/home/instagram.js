@@ -38,9 +38,9 @@ export default function Instagram() {
             <video
               autoPlay
               muted
-              src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654074819/Mo%C3%ABt%20Lashes/video/Instagram_mobile_a1orm7.webm"
+              src="/static/Instagram-mobile.webm"
               alt="Moët Lashes Eyelash Salon"
-              type="video/mp4"
+              type="video/webm"
             />
           </div>
           {/* Large screen */}
