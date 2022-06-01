@@ -21,16 +21,16 @@ export default function Instagram() {
       </div>
       {/* Video promotion */}
       {/* Mobile & iPad screens */}
-      <div className="relative bg-zinc-800 md:hidden">
+      <div className="relative overflow-x-hidden bg-zinc-800 md:hidden">
         {/* Image 1 */}
         <motion.div
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -150 }}
           viewport={{ once: true }}
           transition={{
             delay: 0.5,
             duration: 0.7,
-            type: 'fade',
+            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -50,13 +50,13 @@ export default function Instagram() {
         </motion.div>
         {/* Image 2 */}
         <motion.div
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 150 }}
           viewport={{ once: true }}
           transition={{
-            delay: 1,
+            delay: 1.4,
             duration: 1.5,
-            type: 'fade',
+            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -76,13 +76,13 @@ export default function Instagram() {
         </motion.div>
         {/* Image 3 */}
         <motion.div
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 150 }}
           viewport={{ once: true }}
           transition={{
-            delay: 2.3,
+            delay: 3.1,
             duration: 0.7,
-            type: 'fade',
+            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -102,13 +102,13 @@ export default function Instagram() {
         </motion.div>
         {/* Image 4 */}
         <motion.div
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 150 }}
           viewport={{ once: true }}
           transition={{
-            delay: 2.8,
+            delay: 4.0,
             duration: 1.5,
-            type: 'fade',
+            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -128,13 +128,13 @@ export default function Instagram() {
         </motion.div>
         {/* Image 5 */}
         <motion.div
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -150 }}
           viewport={{ once: true }}
           transition={{
-            delay: 4.1,
+            delay: 5.7,
             duration: 0.7,
-            type: 'fade',
+            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -156,7 +156,7 @@ export default function Instagram() {
             initial={{ opacity: 0 }}
             viewport={{ once: true }}
             transition={{
-              delay: 4.7,
+              delay: 6.4,
               duration: 0.5,
               type: 'fade',
             }}
@@ -170,7 +170,7 @@ export default function Instagram() {
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 5.2,
+            delay: 6.9,
             duration: 0.8,
             type: 'fade',
           }}
@@ -195,6 +195,7 @@ export default function Instagram() {
           </a>
         </motion.div>
       </div>
+
       {/* Large screen */}
       <div className="relative hidden bg-zinc-800 md:block">
         {/* Decorative image and overlay */}
