@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import Testimonials from '../components/about/testimonials';
+import Moe from '../components/about/moe';
 import AboutCTA from '../components/about/about-cta';
 import { BadgeCheckIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
@@ -138,7 +139,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <Testimonials />
+      <Moe />
       <AboutCTA />
     </Layout>
   );
