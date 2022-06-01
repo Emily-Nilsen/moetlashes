@@ -38,16 +38,28 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654082252/Mo%C3%ABt%20Lashes/video/Instagram_promo_img_2_royjpa.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654077858/Mo%C3%ABt%20Lashes/video/Instagram-mobile-compressed_lave5z.gif"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              unoptimized={true}
             />
           </div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 6.4,
+              duration: 0.3,
+              type: 'fade',
+            }}
+            aria-hidden="true"
+            className="absolute inset-0 opacity-100 bg-zinc-800"
+          />
         </motion.div>
         {/* Image 2 */}
-        <motion.div
+        {/* <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
@@ -69,9 +81,9 @@ export default function Instagram() {
               objectPosition="center"
             />
           </div>
-        </motion.div>
+        </motion.div> */}
         {/* Image 3 */}
-        <motion.div
+        {/* <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
@@ -104,14 +116,14 @@ export default function Instagram() {
             aria-hidden="true"
             className="absolute inset-0 opacity-50 bg-zinc-800"
           />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 4,
+            delay: 6.8,
             duration: 0.8,
             type: 'fade',
           }}
