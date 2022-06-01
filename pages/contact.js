@@ -298,7 +298,57 @@ export default function Contact() {
 
         {/* CTA Section */}
         {/* <ContactCTA /> */}
+        <header className="relative pb-36 bg-blue-gray-800">
+          <div className="absolute inset-0">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+              }}
+              className="object-cover w-full h-full"
+            >
+              <Image
+                src="https://media.giphy.com/media/nj0XPti0kpg5i/giphy.gif"
+                alt="Moët Lashes"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                unoptimized={true}
+                priority={true}
+              />
+            </motion.div>
+            <div
+              className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-t"
+              aria-hidden="true"
+            />
+          </div>
+          <Popover as="div" className="relative z-10">
+            <div className="relative flex items-center justify-between px-4 pt-6 pb-2 mx-auto max-w-7xl sm:px-6 lg:px-8"></div>
+          </Popover>
+
+          <div className="relative max-w-md px-4 pt-32 pb-16 mx-auto mt-24 sm:max-w-3xl sm:px-6 md:mt-32 lg:max-w-7xl lg:px-8">
+            <h2 id="features-heading" className="font-medium text-rose-200">
+              {t('home:cairns_city')}
+            </h2>
+            <h3 className="py-6 text-6xl text-white">
+              <span className="font-bold">{t('home:eyelash')}</span>
+              <span className="italic font-medium text-rose-200">
+                {t('home:extensions')}
+              </span>
+            </h3>
+            <p className="max-w-md mt-3 text-lg font-normal text-white sm:text-xl md:mt-5 md:max-w-xl">
+              We skillfully attach each premium{' '}
+              <span className="font-medium"> Nagaraku</span> eyelash to your
+              individual lashes for an entirely natural and stunning look. We
+              also offer lash lifts and tints.
+            </p>
+          </div>
+        </header>
       </main>
     </Layout>
   );
 }
+
+//https://media.giphy.com/media/nj0XPti0kpg5i/giphy.gif
