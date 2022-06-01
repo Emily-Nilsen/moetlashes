@@ -259,7 +259,7 @@ export default function Instagram() {
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
         >
-          <div className="hidden object-cover object-center w-full h-full sm:block">
+          <div className="object-cover object-center w-full h-full">
             <video
               autoPlay
               controls
