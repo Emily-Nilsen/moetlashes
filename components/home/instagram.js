@@ -38,6 +38,8 @@ export default function Instagram() {
             <video
               autoPlay
               muted
+              // playsInline
+              controls
               src="/static/Instagram-mobile.webm"
               alt="Moët Lashes Eyelash Salon"
               type="video/webm"
