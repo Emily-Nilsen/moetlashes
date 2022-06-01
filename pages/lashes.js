@@ -138,6 +138,7 @@ export default function Lashes() {
                           layout="responsive"
                           objectFit="cover"
                           objectPosition="center"
+                          unoptimized={true}
                         />
                       </motion.div>
                     </div>

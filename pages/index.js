@@ -4,6 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import Lifts from '../components/lashes/lifts';
 import HomeCTA from '../components/home/home-cta';
+import Instagram from '../components/home/instagram';
 import CustomerReviews from '../components/home/customer-reviews';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -174,6 +175,7 @@ export default function Home() {
           </div>
           {/* <Lifts /> */}
           <HomeCTA />
+          <Instagram />
           <CustomerReviews />
         </main>
       </div>

@@ -43,6 +43,115 @@ const reviews = {
       avatarSrc:
         'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665480/Mo%C3%ABt%20Lashes/flowers/flowers-3_thxbvw.jpg',
     },
+    {
+      id: 4,
+      rating: 5,
+      content: `
+        <p>Highly recommended.
+        She does very professional job. The eye lashes last longer compare to other salons.
+        Also Moe always remembers our eyelashes condition and give us some advice to keep healthy eyelash.</p>
+      `,
+      author: 'Yuka Avard',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968475/Mo%C3%ABt%20Lashes/flowers/flowers-4_jwnnuc.jpg',
+    },
+    {
+      id: 5,
+      rating: 5,
+      content: `
+        <p>Best eyelash extensions and lush lift in Cairns with prompt treatment and great quality which lasted longer. Moe is very professional and always welcoming. Definitely recommend to others!</p>
+      `,
+      author: 'Chika Ritchie',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968475/Mo%C3%ABt%20Lashes/flowers/flowers-5_c1rg9z.jpg',
+    },
+    {
+      id: 6,
+      rating: 5,
+      content: `
+        <p>I have done eyelashes lift and eyelashes extensions many times in here. Her treatment was really gentle and high quality. My eyelashes became gorgeous!! I like this salon.</p>
+      `,
+      author: 'Natsumi Ota',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968475/Mo%C3%ABt%20Lashes/flowers/flowers-6_s6cfdz.jpg',
+    },
+    {
+      id: 7,
+      rating: 5,
+      content: `
+        <p>Moe does very good looking eyelash extensions !
+        Always last quite long for me.
+        I’m always happy with her service.
+        She is very warm and  friendly!</p>
+      `,
+      author: 'Yukie KloostermanHaneda',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968475/Mo%C3%ABt%20Lashes/flowers/flowers-7_o6qg5s.jpg',
+    },
+    {
+      id: 8,
+      rating: 5,
+      content: `
+        <p>I get treated for classic lashes regularly. Always looks great and I’m always so relaxed during the treatment.I highly recommend Moe to everyone.</p>
+      `,
+      author: 'Sarah & Reina',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968476/Mo%C3%ABt%20Lashes/flowers/flowers-8_kgvook.jpg',
+    },
+    {
+      id: 9,
+      rating: 5,
+      content: `
+        <p>My eyelashes has done with her many times.
+        She is always quick, beautiful and punctual.
+        I strongly believe that she is the best eyelash artist in Far North Queensland.</p>
+      `,
+      author: 'Yuko Haintz',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968475/Mo%C3%ABt%20Lashes/flowers/flowers-9_tfh3jf.jpg',
+    },
+    {
+      id: 10,
+      rating: 5,
+      content: `
+        <p>I had lash done by Moët lashes and she was very gentle and I slept most of the time. Eyelash extensions was looking awesome too.</p>
+      `,
+      author: 'Masako Yamada',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968475/Mo%C3%ABt%20Lashes/flowers/flowers-10_pumgy8.jpg',
+    },
+    {
+      id: 11,
+      rating: 5,
+      content: `
+        <p>I Finally found good eyelash salon!!!!
+        Totally recommend Moët lashes.
+        Great skills and very professional.</p>
+      `,
+      author: 'Tomomi Killian',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968476/Mo%C3%ABt%20Lashes/flowers/flowers-11_wmhazs.jpg',
+    },
+    {
+      id: 12,
+      rating: 5,
+      content: `
+        <p>I treated my wife with a full set of volume lashes. She was pretty before, but now she's stunning. Great work!</p>
+      `,
+      author: 'Bernt Nilsen',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968501/Mo%C3%ABt%20Lashes/flowers/flowers-12_nkyabh.jpg',
+    },
+    {
+      id: 13,
+      rating: 5,
+      content: `
+        <p></p>
+      `,
+      author: 'nikita yonzone',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968501/Mo%C3%ABt%20Lashes/flowers/flowers-13_syzof9.jpg',
+    },
     // More reviews...
   ],
 };
@@ -156,14 +265,15 @@ export default function CustomerReviews() {
               {reviews.featured.map((review) => (
                 <div key={review.id} className="py-12">
                   <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full">
+                    <div className="relative w-12 h-12 rounded-full">
                       <Image
-                        width={48}
-                        height={48}
                         src={review.avatarSrc}
                         alt={`${review.author}.`}
                         className="rounded-full"
                         unoptimized={true}
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
                       />
                     </div>
                     <div className="ml-4">

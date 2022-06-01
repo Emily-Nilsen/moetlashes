@@ -133,7 +133,7 @@ export default function Footer() {
                         />
                       </div>
                       <div className="ml-3 text-base transition duration-300 ease-in-out text-zinc-500 group-hover:text-rose-400">
-                        <p>+61 (0) 466 609 975</p>
+                        <p>0466 609 975</p>
                       </div>
                     </div>
                   </a>
