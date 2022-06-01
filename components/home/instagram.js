@@ -33,7 +33,18 @@ export default function Instagram() {
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
         >
-          <div className="object-cover object-center w-full h-full">
+          {/* Mobile screen */}
+          <div className="object-cover object-center w-full h-full sm:hidden">
+            <video
+              autoPlay
+              muted
+              src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654067079/Mo%C3%ABt%20Lashes/video/Instagram_mobile_dbtldh.mp4"
+              alt="Moët Lashes Eyelash Salon"
+              type="video/mp4"
+            />
+          </div>
+          {/* Large screen */}
+          <div className="hidden object-cover object-center w-full h-full sm:block">
             <video
               autoPlay
               muted
