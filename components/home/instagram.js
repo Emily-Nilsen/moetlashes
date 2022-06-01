@@ -46,6 +46,7 @@ export default function Instagram() {
 
         <motion.div
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           initial={{ opacity: 0 }}
           transition={{
             delay: 6,
