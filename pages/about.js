@@ -59,6 +59,55 @@ export default function About() {
           </div>
         </div>
       </div>
+      {/* My experiment */}
+      <div className="w-full my-10">
+        <motion.div
+          whileInView={{ opacity: 1, scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          viewport={{ once: true }}
+          transition={{
+            delay: 0.1,
+            duration: 0.5,
+            ease: 'easeIn',
+          }}
+          className="relative mx-auto overflow-hidden rounded-lg h-72 w-96 bg-instagram-angle"
+        >
+          {/* Shutters */}
+          <motion.div
+            initial={{ x: 0 }}
+            whileInView={{
+              x: -192,
+              backgroundColor: '#818cf8',
+              color: '#fff',
+            }}
+            transition={{
+              delay: 1.5,
+              duration: 0.6,
+              ease: 'linear',
+            }}
+            className="absolute flex items-center justify-center w-1/2 h-full bg-indigo-200 rounded-none"
+          >
+            <h1 className="text-3xl font-bold">Solveig</h1>
+          </motion.div>
+          <motion.div
+            initial={{ x: 0 }}
+            whileInView={{
+              x: 192,
+              backgroundColor: '#f472b6',
+              color: '#fff',
+            }}
+            transition={{
+              delay: 1.5,
+              duration: 0.6,
+              ease: 'linear',
+            }}
+            className="absolute bottom-0 right-0 flex items-center justify-center w-1/2 h-full bg-pink-200 rounded-none"
+          >
+            <h1 className="text-3xl font-bold">Synnøve</h1>
+          </motion.div>
+        </motion.div>
+      </div>
+
       {/* About Moe */}
       <div className="overflow-hidden">
         <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -76,6 +125,7 @@ export default function About() {
               </h3>
             </div>
           </div>
+
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
             <div className="relative lg:row-start-1 lg:col-start-2">
               <div className="relative mx-auto text-base max-w-prose lg:max-w-none">

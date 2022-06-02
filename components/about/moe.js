@@ -22,7 +22,7 @@ export default function Moe() {
               <video
                 autoPlay
                 muted
-                src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654110819/Mo%C3%ABt%20Lashes/video/Moe_desktop_trimmed_swmget.mp4"
+                src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654110819/Mo%C3%ABt%20Lashes/promos/Moe_desktop_trimmed_swmget.mp4"
                 alt="Moët Lashes Eyelash Salon"
                 type="video/mp4"
               />
