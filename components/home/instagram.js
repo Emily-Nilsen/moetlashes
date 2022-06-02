@@ -24,7 +24,7 @@ export default function Instagram() {
       <div className="relative overflow-x-hidden bg-zinc-800 md:hidden">
         {/* Image 1 */}
         <motion.div
-          whileInView={{ opacity: 1, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1.15 }}
           initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
@@ -82,7 +82,7 @@ export default function Instagram() {
         </motion.div>
         {/* Image 3 */}
         <motion.div
-          whileInView={{ opacity: 1, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1.15 }}
           initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
@@ -135,7 +135,7 @@ export default function Instagram() {
         </motion.div>
         {/* Image 5 */}
         <motion.div
-          whileInView={{ opacity: 1, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1.15 }}
           initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{

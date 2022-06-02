@@ -14,7 +14,7 @@ export default function HomeCTA() {
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
-            duration: 0.3,
+            duration: 0.7,
             type: 'fade',
           }}
           className="relative object-cover w-full h-full"
