@@ -9,7 +9,7 @@ export default function HomeCTA() {
 
   return (
     <div className="relative bg-zinc-800">
-      <div className="h-56 bg-rose-300 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+      <div className="h-56 bg-zinc-800 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}

@@ -47,8 +47,8 @@ export default function Home() {
       description={t('layout:home_description')}
       keywords={t('layout:home_keywords')}
     >
-      <div className="bg-rose-50">
-        <header className="relative pb-36 bg-blue-gray-800">
+      <div className="bg-rose-50 sm:mb-20">
+        <header className="relative bg-zinc-800 pb-36">
           <div className="absolute inset-0">
             <motion.div
               whileInView={{ opacity: 1 }}
@@ -173,7 +173,6 @@ export default function Home() {
               </h1>
             </div>
           </div>
-          {/* <Lifts /> */}
           <HomeCTA />
           <Instagram />
           <CustomerReviews />
