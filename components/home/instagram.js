@@ -24,12 +24,13 @@ export default function Instagram() {
       <div className="relative overflow-x-hidden bg-zinc-800 md:hidden">
         {/* Image 1 */}
         <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, scale: 1.3 }}
+          initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 0.5,
+            delay: 0.3,
             duration: 0.7,
+            ease: 'easeInOut',
             // type: 'fade',
           }}
           aria-hidden="true"
@@ -39,7 +40,7 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084513/Mo%C3%ABt%20Lashes/video/pink-pink_bjpdw3.png"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084524/Mo%C3%ABt%20Lashes/promos/pink-black_znsbxj.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
@@ -50,13 +51,18 @@ export default function Instagram() {
         </motion.div>
         {/* Image 2 */}
         <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 150 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            y: 0,
+            scale: 1.1,
+          }}
+          initial={{ opacity: 0, x: -70, y: -70, scale: 2.5 }}
           viewport={{ once: true }}
           transition={{
-            delay: 1.4,
-            duration: 1.5,
-            // type: 'fade',
+            delay: 0.8,
+            duration: 2.6,
+            ease: 'easeOut',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -65,7 +71,7 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654082891/Mo%C3%ABt%20Lashes/video/Instagram_promo_img_4_nfrpa8.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654082252/Mo%C3%ABt%20Lashes/promos/Instagram_promo_img_2_royjpa.jpg"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
@@ -76,13 +82,14 @@ export default function Instagram() {
         </motion.div>
         {/* Image 3 */}
         <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, scale: 1.3 }}
+          initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 3.1,
+            delay: 3.3,
             duration: 0.7,
             // type: 'fade',
+            ease: 'easeInOut',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -91,7 +98,7 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084524/Mo%C3%ABt%20Lashes/video/pink-black_znsbxj.png"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084532/Mo%C3%ABt%20Lashes/promos/black-pink_nbhbew.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
@@ -102,13 +109,13 @@ export default function Instagram() {
         </motion.div>
         {/* Image 4 */}
         <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, x: [80, 0], scale: [3, 1] }}
+          initial={{ opacity: 0, x: 100, scale: 3.5 }}
           viewport={{ once: true }}
           transition={{
-            delay: 4.0,
-            duration: 1.5,
-            // type: 'fade',
+            delay: 3.9,
+            duration: 2.6,
+            ease: 'easeOut',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
@@ -117,7 +124,7 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654082252/Mo%C3%ABt%20Lashes/video/Instagram_promo_img_3_czpf5e.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654082252/Mo%C3%ABt%20Lashes/promos/Instagram_promo_img_3_czpf5e.jpg"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
@@ -128,12 +135,13 @@ export default function Instagram() {
         </motion.div>
         {/* Image 5 */}
         <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -150 }}
+          whileInView={{ opacity: 1, scale: 1.3 }}
+          initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 5.7,
+            delay: 6.4,
             duration: 0.7,
+            ease: 'easeInOut',
             // type: 'fade',
           }}
           aria-hidden="true"
@@ -143,7 +151,7 @@ export default function Instagram() {
             <Image
               width={640}
               height={512}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084532/Mo%C3%ABt%20Lashes/video/black-pink_nbhbew.png"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084513/Mo%C3%ABt%20Lashes/promos/pink-pink_bjpdw3.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
               objectFit="cover"
@@ -152,12 +160,13 @@ export default function Instagram() {
             />
           </div>
           <motion.div
-            whileInView={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, backgroundColor: '#27272a' }}
+            initial={{ opacity: 0, backgroundColor: '#f43f5e' }}
             viewport={{ once: true }}
             transition={{
-              delay: 6.4,
-              duration: 0.5,
+              delay: 7.4,
+              duration: 1,
+              ease: 'easeIn',
               type: 'fade',
             }}
             aria-hidden="true"
@@ -170,7 +179,7 @@ export default function Instagram() {
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 6.9,
+            delay: 8.4,
             duration: 0.8,
             type: 'fade',
           }}
@@ -214,7 +223,7 @@ export default function Instagram() {
             <video
               autoPlay
               muted
-              src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654028899/Mo%C3%ABt%20Lashes/video/Moe%CC%88t_Lashes_Instagram_cuyzzr.mp4"
+              src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1654028899/Mo%C3%ABt%20Lashes/promos/Moe%CC%88t_Lashes_Instagram_cuyzzr.mp4"
               alt="Moët Lashes Eyelash Salon"
               type="video/mp4"
             />
