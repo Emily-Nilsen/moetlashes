@@ -27,19 +27,16 @@ export default function Instagram() {
             delay: 0.3,
             duration: 0.7,
             ease: 'easeInOut',
-            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
         >
           <div className="flex items-center object-cover object-center w-full h-full overflow-hidden ">
             <Image
-              width={640}
-              height={512}
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084524/Mo%C3%ABt%20Lashes/promos/pink-black_znsbxj.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               objectPosition="center"
               unoptimized={true}
             />
@@ -64,8 +61,6 @@ export default function Instagram() {
         >
           <div className="flex items-center object-cover object-center w-full h-full overflow-hidden ">
             <Image
-              width={640}
-              height={512}
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654165363/Mo%C3%ABt%20Lashes/promos/Instagram_start_V2_oq51rk.gif"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
@@ -76,14 +71,13 @@ export default function Instagram() {
           </div>
         </motion.div>
         {/* Image 3 */}
-        <motion.div
+        {/* <motion.div
           whileInView={{ opacity: 1, scale: 1.15 }}
           initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
             delay: 1.7,
             duration: 0.7,
-            // type: 'fade',
             ease: 'easeInOut',
           }}
           aria-hidden="true"
@@ -91,25 +85,23 @@ export default function Instagram() {
         >
           <div className="flex items-center object-cover object-center w-full h-full overflow-hidden ">
             <Image
-              width={640}
-              height={512}
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084532/Mo%C3%ABt%20Lashes/promos/black-pink_nbhbew.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               objectPosition="center"
               unoptimized={true}
             />
           </div>
-        </motion.div>
+        </motion.div> */}
         {/* Image 4 */}
         <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           viewport={{ once: true }}
           transition={{
-            delay: 2.4,
-            duration: 1,
+            delay: 1.7,
+            duration: 0.8,
             ease: 'easeOut',
           }}
           aria-hidden="true"
@@ -117,8 +109,6 @@ export default function Instagram() {
         >
           <div className="flex items-center object-cover object-center w-full h-full overflow-hidden ">
             <Image
-              width={640}
-              height={512}
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654164759/Mo%C3%ABt%20Lashes/promos/Instagram_end_v2_smdcky.gif"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
@@ -134,22 +124,19 @@ export default function Instagram() {
           initial={{ opacity: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 3.4,
+            delay: 2.5,
             duration: 0.7,
             ease: 'easeInOut',
-            // type: 'fade',
           }}
           aria-hidden="true"
           className="absolute inset-0 overflow-hidden"
         >
           <div className="flex items-center object-cover object-center w-full h-full overflow-hidden ">
             <Image
-              width={640}
-              height={512}
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654084513/Mo%C3%ABt%20Lashes/promos/pink-pink_bjpdw3.png"
               alt="Moët Lashes Eyelash Salon"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               objectPosition="center"
               unoptimized={true}
             />
@@ -159,7 +146,7 @@ export default function Instagram() {
             initial={{ opacity: 0, backgroundColor: '#f43f5e' }}
             viewport={{ once: true }}
             transition={{
-              delay: 4.1,
+              delay: 3,
               duration: 1,
               ease: 'easeIn',
               type: 'fade',
@@ -174,7 +161,7 @@ export default function Instagram() {
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 5.1,
+            delay: 4,
             duration: 0.8,
             type: 'fade',
           }}

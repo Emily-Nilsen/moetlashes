@@ -4,6 +4,7 @@
   "pages": {
     "*": ["common", "navbar", "footer", "layout"],
     "/": ["home"],
+    "/lashes": ["lashes"],
     "/about": ["about"],
     "/pricing": ["pricing"],
     "/contact": ["contact"]

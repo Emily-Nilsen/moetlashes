@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import Lifts from '../components/lashes/lifts';
 import ExtensionsCTA from '../components/lashes/extensions-cta';
+import Faqs from '../components/lashes/faqs';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { PhoneIcon } from '@heroicons/react/outline';
@@ -199,6 +200,7 @@ export default function Lashes() {
         <ExtensionsCTA />
         {/* Lifts and tints */}
         <Lifts />
+        <Faqs />
       </main>
     </Layout>
   );

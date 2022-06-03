@@ -47,7 +47,7 @@ export default function Home() {
       description={t('layout:home_description')}
       keywords={t('layout:home_keywords')}
     >
-      <div className="bg-rose-50 sm:mb-20">
+      <div className="pb-6 bg-rose-50 sm:pb-10">
         <header className="relative bg-zinc-800 pb-36">
           <div className="absolute inset-0">
             <motion.div

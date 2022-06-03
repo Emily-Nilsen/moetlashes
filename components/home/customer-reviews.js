@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { StarIcon } from '@heroicons/react/solid';
+import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/solid';
 
 const reviews = {
   average: 5,
@@ -156,6 +159,9 @@ const reviews = {
   ],
 };
 
+const reviewPreviews = reviews.featured.slice(0, 3);
+const reviewRemaining = reviews.featured.slice(4);
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -163,9 +169,9 @@ function classNames(...classes) {
 export default function CustomerReviews() {
   return (
     <div className="bg-rose-50">
-      <div className="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:py-32 lg:px-8 lg:grid lg:grid-cols-12 lg:gap-x-8">
+      <div className="max-w-2xl px-4 pt-16 pb-6 mx-auto sm:pt-24 sm:pb-10 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-12 lg:gap-x-8">
         <div className="lg:col-span-4">
-          <h3 className="text-2xl font-extrabold tracking-tight sm:text-3xl text-neutral-900">
+          <h3 className="text-2xl font-extrabold tracking-tight sm:text-3xl text-zinc-900">
             Customer Reviews
           </h3>
 
@@ -178,7 +184,7 @@ export default function CustomerReviews() {
                     className={classNames(
                       reviews.average > rating
                         ? 'text-rose-400'
-                        : 'text-neutral-300',
+                        : 'text-zinc-300',
                       'flex-shrink-0 h-5 w-5'
                     )}
                     aria-hidden="true"
@@ -187,19 +193,19 @@ export default function CustomerReviews() {
               </div>
               <p className="sr-only">{reviews.average} out of 5 stars</p>
             </div>
-            <p className="ml-2 text-sm text-neutral-900">
+            <p className="ml-2 text-sm text-zinc-900">
               Based on {reviews.totalCount} reviews
             </p>
           </div>
 
           <div className="mt-6">
-            <h3 className="sr-only">Review data</h3>
+            <h3 className="sr-only">Google reviews for Moët Lashes</h3>
 
             <dl className="space-y-3">
               {reviews.counts.map((count) => (
                 <div key={count.rating} className="flex items-center text-sm">
                   <dt className="flex items-center flex-1">
-                    <p className="w-3 font-medium text-neutral-900">
+                    <p className="w-3 font-medium text-zinc-900">
                       {count.rating}
                       <span className="sr-only"> star reviews</span>
                     </p>
@@ -209,16 +215,14 @@ export default function CustomerReviews() {
                     >
                       <StarIcon
                         className={classNames(
-                          count.count > 0
-                            ? 'text-rose-400'
-                            : 'text-neutral-300',
+                          count.count > 0 ? 'text-rose-400' : 'text-zinc-300',
                           'flex-shrink-0 h-5 w-5'
                         )}
                         aria-hidden="true"
                       />
 
                       <div className="relative flex-1 ml-3">
-                        <div className="h-3 border rounded-full bg-neutral-50 border-neutral-200" />
+                        <div className="h-3 border rounded-full bg-zinc-50 border-zinc-200" />
                         {count.count > 0 ? (
                           <div
                             className="absolute inset-y-0 border rounded-full bg-rose-400 border-rose-400"
@@ -230,7 +234,7 @@ export default function CustomerReviews() {
                       </div>
                     </div>
                   </dt>
-                  <dd className="w-10 ml-3 text-sm text-right tabular-nums text-neutral-900">
+                  <dd className="w-10 ml-3 text-sm text-right tabular-nums text-zinc-900">
                     {Math.round((count.count / reviews.totalCount) * 100)}%
                   </dd>
                 </div>
@@ -239,10 +243,10 @@ export default function CustomerReviews() {
           </div>
 
           <div className="mt-10">
-            <h3 className="text-xl font-medium text-neutral-900">
+            <h3 className="text-xl font-medium text-zinc-900">
               Share your thoughts
             </h3>
-            <p className="mt-1 text-sm text-neutral-600">
+            <p className="mt-1 text-sm text-zinc-600">
               Please feel free to write your own Google review!
             </p>
 
@@ -250,7 +254,7 @@ export default function CustomerReviews() {
               href="https://www.google.com/search?q=moet+lashes+cairns&sxsrf=ALiCzsbHz1T1TU9NE5phVzZgocO6-tS8vg%3A1653657673106&source=hp&ei=SNCQYqCwOrqRxc8Pye2b2Ak&iflsig=AJiK0e8AAAAAYpDeWbYSzNNWZTtLSBEl7vu2H1U9uIqJ&oq=moe&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIECAAQQzIKCC4QxwEQ0QMQQzIOCC4QgAQQxwEQ0QMQ1AIyCwguEIAEEMcBENEDMgUILhCABDIICC4QgAQQ1AIyCwguEIAEEMcBEK8BMgsILhCABBDHARCvATIFCAAQgAQ6BAguECc6CwguEIAEEMcBEKMCUABY2ANgxSFoAHAAeACAAW2IAasCkgEDMS4ymAEAoAEB&sclient=gws-wiz#lrd=0x697867d234fcefb7:0x6a54fdadd7fc308d,1,,,"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center w-full px-8 py-2 mt-6 text-sm font-medium transition duration-300 ease-in-out bg-white border rounded-full border-neutral-300 text-neutral-900 hover:bg-rose-400 sm:w-auto lg:w-full hover:text-white"
+              className="inline-flex items-center justify-center w-full px-8 py-2 mt-6 text-sm font-medium transition duration-300 ease-in-out bg-white border rounded-full border-zinc-300 text-zinc-900 hover:bg-rose-400 sm:w-auto lg:w-full hover:text-white"
             >
               Write a review
             </a>
@@ -258,11 +262,11 @@ export default function CustomerReviews() {
         </div>
 
         <div className="mt-16 lg:mt-0 lg:col-start-6 lg:col-span-7">
-          <h3 className="sr-only">Recent reviews</h3>
+          <h3 className="sr-only">Recent Google reviews for Moët Lashes</h3>
 
           <div className="flow-root">
-            <div className="-my-12 divide-y divide-neutral-200">
-              {reviews.featured.map((review) => (
+            <div className="-my-12 divide-y divide-zinc-200">
+              {reviewPreviews.map((review) => (
                 <div key={review.id} className="py-12">
                   <div className="flex items-center">
                     <div className="relative w-12 h-12 rounded-full">
@@ -277,7 +281,7 @@ export default function CustomerReviews() {
                       />
                     </div>
                     <div className="ml-4">
-                      <h2 className="text-sm font-bold text-neutral-900">
+                      <h2 className="text-sm font-bold text-zinc-900">
                         {review.author}
                       </h2>
                       <div className="flex items-center mt-1">
@@ -287,7 +291,7 @@ export default function CustomerReviews() {
                             className={classNames(
                               review.rating > rating
                                 ? 'text-rose-400'
-                                : 'text-neutral-300',
+                                : 'text-zinc-300',
                               'h-5 w-5 flex-shrink-0'
                             )}
                             aria-hidden="true"
@@ -299,7 +303,7 @@ export default function CustomerReviews() {
                   </div>
 
                   <div
-                    className="mt-4 space-y-6 text-base italic text-neutral-600"
+                    className="mt-4 space-y-6 text-base italic text-zinc-600"
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
                 </div>
@@ -307,6 +311,83 @@ export default function CustomerReviews() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Read more functionality */}
+      <div className="flex lg:mt-0">
+        <Menu as="div" className="relative flex justify-end mt-4">
+          <div>
+            <Menu.Button className="left-0 flex justify-end w-screen px-4 py-2 text-sm font-semibold transition duration-300 ease-in-out rounded-full shadow-none bg-t text-zinc-700 focus:outline-none focus:ring-0 sm:pr-6 lg:pr-8 hover:text-rose-500">
+              Read more reviews
+              <ChevronDownIcon
+                className="w-5 h-5 ml-2 -mr-1"
+                aria-hidden="true"
+              />
+            </Menu.Button>
+          </div>
+
+          <Transition
+            as={Fragment}
+            enter="transition ease-out duration-100"
+            enterFrom="transform opacity-0 scale-95"
+            enterTo="transform opacity-100 scale-100"
+            leave="transition ease-in duration-75"
+            leaveFrom="transform opacity-100 scale-100"
+            leaveTo="transform opacity-0 scale-95"
+          >
+            <Menu.Items className="absolute inset-x-0 left-0 z-10 w-screen mt-12 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <div className="py-10">
+                <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+                  <div className="-my-12 divide-y divide-zinc-200">
+                    {reviewRemaining.map((review) => (
+                      <div key={review.id} className="py-12">
+                        <div className="flex items-center">
+                          <div className="relative w-12 h-12 rounded-full">
+                            <Image
+                              src={review.avatarSrc}
+                              alt={`${review.author}.`}
+                              className="rounded-full"
+                              unoptimized={true}
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center"
+                            />
+                          </div>
+                          <div className="ml-4">
+                            <h2 className="text-sm font-bold text-zinc-900">
+                              {review.author}
+                            </h2>
+                            <div className="flex items-center mt-1">
+                              {[0, 1, 2, 3, 4].map((rating) => (
+                                <StarIcon
+                                  key={rating}
+                                  className={classNames(
+                                    review.rating > rating
+                                      ? 'text-rose-400'
+                                      : 'text-zinc-300',
+                                    'h-5 w-5 flex-shrink-0'
+                                  )}
+                                  aria-hidden="true"
+                                />
+                              ))}
+                            </div>
+                            <p className="sr-only">
+                              {review.rating} out of 5 stars
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          className="mt-4 space-y-6 text-base italic text-zinc-600"
+                          dangerouslySetInnerHTML={{ __html: review.content }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Menu.Items>
+          </Transition>
+        </Menu>
       </div>
     </div>
   );
