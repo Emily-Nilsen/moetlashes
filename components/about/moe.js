@@ -128,10 +128,10 @@ export default function Moe() {
   }, [inView, removeImageOverlay]);
 
   return (
-    <div className="bg-rose-50">
+    <div className="bg-zinc-800">
       {/* Moe the professional */}
       <div ref={ref} className="w-screen bg-zinc-50">
-        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-zinc-800 lg:h-[40vh] w-[100vw] h-[30vh]">
+        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-zinc-800 lg:h-[50vh] w-[100vw] h-[35vh] sm:h-[30vh]">
           <div>
             <div className="relative flex items-center object-cover object-center w-full h-full overflow-hidden overflow-x-hidden bg-zinc-800">
               {/* Moe */}
@@ -156,20 +156,20 @@ export default function Moe() {
                 <div className="w-full h-[41.666667%] bg-t"></div>
                 <motion.h3
                   animate={textMain}
-                  className="pb-6 text-3xl text-left text-white sm:text-4xl md:text-5xl"
+                  className="pb-6 text-2xl font-medium leading-7 text-left text-white sm:pb-6 sm:text-4xl md:text-5xl sm:leading-normal sm:font-bold"
                 >
-                  <span className="font-bold">Eyelash </span>
-                  <span className="block font-bold">Extension </span>
-
-                  <span className="block italic font-medium text-rose-200">
+                  Eyelash
+                  <span className="block">Extension </span>
+                  <span className="block italic font-normal sm:font-medium text-rose-200">
                     Professional
                   </span>
                 </motion.h3>
                 <motion.h2
                   animate={textSecondary}
-                  className="pt-20 font-medium text-left text-rose-200 sm:text-base"
+                  className="pt-10 text-sm font-medium text-left sm:pt-20 text-rose-200 sm:text-base"
                 >
-                  Book a treatment today @ Moët Lashes
+                  Book a treatment today{' '}
+                  <span className="block sm:inline-block">@ Moët Lashes </span>
                 </motion.h2>
               </div>
             </div>
