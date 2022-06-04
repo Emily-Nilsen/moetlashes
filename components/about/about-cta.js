@@ -4,7 +4,7 @@ import { ExternalLinkIcon } from '@heroicons/react/solid';
 
 export default function AboutCTA() {
   return (
-    <div className="pt-4 pb-6 sm:pt-0 sm:pb-16 bg-rose-50">
+    <div className="py-6 sm:py-12 bg-rose-50">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
         <h2 className="text-3xl font-light tracking-tight text-zinc-800 sm:text-4xl">
           <span className="block">
