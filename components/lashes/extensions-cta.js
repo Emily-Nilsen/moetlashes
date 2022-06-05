@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function ExtensionsCTA() {
   return (
     <div className="relative bg-zinc-800">
-      <div className="h-56 bg-rose-300 sm:h-96 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+      <div className="h-96 bg-rose-300 sm:absolute sm:left-0 sm:h-full sm:w-1/2">
         <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -27,15 +27,15 @@ export default function ExtensionsCTA() {
           />
         </motion.div>
       </div>
-      <div className="relative px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-24">
-        <div className="lg:ml-auto lg:w-1/2 lg:pl-10">
+      <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-20">
+        <div className="sm:ml-auto sm:w-1/2 sm:pl-10">
           <h3 className="mt-2 text-4xl font-extrabold tracking-tight text-rose-200 sm:text-5xl">
             Accentuate your{' '}
             <span className="italic font-medium text-white">eyes</span>
           </h3>
           <p className="mt-3 text-lg text-zinc-300">
             Add volume, length and definition to your lash line with an eyelash
-            extension treatment.
+            extension treatment or a lift & tint @ Moët Lashes.
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">

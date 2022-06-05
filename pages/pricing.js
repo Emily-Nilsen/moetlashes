@@ -79,7 +79,7 @@ export default function Pricing() {
             />
           </div>
           <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-            <h1 className="pt-20 mt-10 -mb-10 text-5xl font-extrabold tracking-tight text-left sm:text-6xl lg:text-7xl sm:text-center">
+            <h1 className="pt-20 mt-10 -mb-10 text-5xl font-extrabold tracking-tight text-center sm:text-6xl lg:text-7xl">
               <span className="text-white">Our </span>
               <span className="italic font-medium text-rose-200">pricing</span>
             </h1>
@@ -89,17 +89,14 @@ export default function Pricing() {
       {/* Pricing with four tiers and toggle */}
       <div className="py-16 bg-rose-50">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="sm:flex sm:flex-col sm:align-center">
-            <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider uppercase sm:text-lg sm:text-center text-rose-400">
+          <div className="sm:flex sm:flex-col align-center">
+            <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider text-center uppercase sm:text-lg text-rose-400">
               price list
             </h2>
-            <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
-              Premium eyelash{' '}
-              <span className="italic font-medium text-rose-400">
-                extensions{' '}
-              </span>
+            <h1 className="text-5xl font-extrabold text-center text-zinc-900">
+              Premium eyelash extensions{' '}
             </h1>
-            <p className="max-w-4xl mx-auto mt-5 text-lg text-zinc-500 sm:text-center sm:text-xl">
+            <p className="max-w-4xl mx-auto mt-5 text-lg text-center text-zinc-500 sm:text-xl">
               Choose between our{' '}
               <span className="font-medium text-rose-500">Full </span>Set (60
               minutes) or{' '}
@@ -129,7 +126,7 @@ export default function Pricing() {
                             selected
                               ? 'focus:outline-none focus:ring-2 focus:ring-rose-500 focus:z-10'
                               : 'border-transparent text-zinc-500 hover:text-zinc-700 hover:border-zinc-300 focus:outline-none focus:ring-0 bg-rose-200',
-                            'relative w-1/2 py-2 text-sm font-medium bg-white rounded-full shadow-sm text-zinc-800 border-rose-200 whitespace-nowrap sm:w-auto sm:px-8'
+                            'relative w-1/2 py-2 text-sm font-medium bg-white rounded-full shadow-none text-zinc-800 border-rose-200 whitespace-nowrap sm:w-auto sm:px-8'
                           )
                         }
                       >

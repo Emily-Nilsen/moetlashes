@@ -80,10 +80,10 @@ export default function FullSet() {
             className="bg-white border divide-y rounded-lg shadow-lg border-rose-200 divide-rose-200"
           >
             <div className="p-6">
-              <h1 className="text-2xl font-medium leading-6 sm:text-3xl text-zinc-800">
+              <h1 className="text-3xl font-medium leading-6 text-zinc-800">
                 {tier.name}
               </h1>
-              <h2 className="flex pt-2 text-xs font-bold tracking-wide align-center text-rose-300">
+              <h2 className="flex pt-4 text-xs font-bold tracking-wide align-center text-rose-300">
                 <span>
                   <ClockIcon
                     className="w-4 h-4 mr-1 text-rose-200"

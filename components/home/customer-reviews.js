@@ -308,10 +308,6 @@ export default function CustomerReviews() {
                     className="mt-4 space-y-6 text-base italic text-zinc-600"
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
-                  {/* <Disclosure>
-                    <Disclosure.Button>Read more</Disclosure.Button>
-                    <Disclosure.Panel>{review.content}</Disclosure.Panel>
-                  </Disclosure> */}
                 </div>
               ))}
             </div>

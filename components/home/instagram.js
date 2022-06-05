@@ -13,16 +13,16 @@ export default function Instagram() {
   });
 
   // Shows animation once only
-  const useHasBeenViewed = () => {
-    const [ref, inView] = useInView();
-    const prevInView = useRef(false);
-    const hasBeenViewed = prevInView.current || inView;
-    useEffect(() => {
-      prevInView.current = inView;
-    });
+  // const useHasBeenViewed = () => {
+  //   const [ref, inView] = useInView();
+  //   const prevInView = useRef(false);
+  //   const hasBeenViewed = prevInView.current || inView;
+  //   useEffect(() => {
+  //     prevInView.current = inView;
+  //   }, [inView]);
 
-    return [hasBeenViewed, ref];
-  };
+  //   return [hasBeenViewed, ref];
+  // };
 
   const shutterLeft = useAnimation();
   const shutterRight = useAnimation();

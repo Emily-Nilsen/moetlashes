@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
-import Lifts from '../components/lashes/lifts';
 import HomeCTA from '../components/home/home-cta';
 import Instagram from '../components/home/instagram';
 import CustomerReviews from '../components/home/customer-reviews';
