@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
-import Testimonials from '../components/about/testimonials';
 import AboutMoe from '../components/about/about-moe';
 import Moe from '../components/about/moe';
 import AboutCTA from '../components/about/about-cta';
@@ -66,7 +65,6 @@ export default function About() {
       </div>
 
       <AboutMoe />
-
       <Moe />
       <AboutCTA />
     </Layout>

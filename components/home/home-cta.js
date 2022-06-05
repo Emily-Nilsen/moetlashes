@@ -30,7 +30,7 @@ export default function HomeCTA() {
           />
         </motion.div>
       </div>
-      <div className="relative px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-24">
+      <div className="relative px-4 py-10 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-20">
         <div className="lg:ml-auto lg:w-1/2 lg:pl-10">
           <h3 className="mt-2 text-4xl font-extrabold tracking-tight text-rose-200 sm:text-5xl">
             Add volume &{' '}

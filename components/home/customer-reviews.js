@@ -4,6 +4,8 @@ import { StarIcon } from '@heroicons/react/solid';
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import React, { useState } from 'react';
+import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
@@ -306,6 +308,10 @@ export default function CustomerReviews() {
                     className="mt-4 space-y-6 text-base italic text-zinc-600"
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
+                  {/* <Disclosure>
+                    <Disclosure.Button>Read more</Disclosure.Button>
+                    <Disclosure.Panel>{review.content}</Disclosure.Panel>
+                  </Disclosure> */}
                 </div>
               ))}
             </div>

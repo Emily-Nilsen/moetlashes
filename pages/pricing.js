@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
+import FullSet from '../components/pricing/full-set';
+import MegaSet from '../components/pricing/mega-set';
 import Lifts from '../components/pricing/lifts-pricing';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -11,6 +13,7 @@ import {
 } from '@heroicons/react/solid';
 import { PhoneIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
+import { Tab } from '@headlessui/react';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -18,42 +21,21 @@ function classNames(...classes) {
 
 export default function Pricing() {
   const { t } = useTranslation();
-
-  const tiers = [
+  const tabs = [
     {
-      name: `${t('pricing:classic')}`,
-      price: 60,
-      description: `${t('pricing:classic_description')}`,
+      name: `Full Set`,
       features: [
-        `${t('pricing:classic_result_1')}`,
-        `${t('pricing:classic_result_2')}`,
+        {
+          component: <FullSet />,
+        },
       ],
     },
     {
-      name: `${t('pricing:double')}`,
-      price: 70,
-      description: `${t('pricing:double_description')}`,
+      name: `Mega Set`,
       features: [
-        `${t('pricing:double_result_1')}`,
-        `${t('pricing:double_result_2')}`,
-      ],
-    },
-    {
-      name: `${t('pricing:hybrid')}`,
-      price: 80,
-      description: `${t('pricing:hybrid_description')}`,
-      features: [
-        `${t('pricing:hybrid_result_1')}`,
-        `${t('pricing:hybrid_result_2')}`,
-      ],
-    },
-    {
-      name: `${t('pricing:volume')}`,
-      price: 90,
-      description: `${t('pricing:volume_description')}`,
-      features: [
-        `${t('pricing:volume_result_1')}`,
-        `${t('pricing:volume_result_2')}`,
+        {
+          component: <MegaSet />,
+        },
       ],
     },
   ];
@@ -68,7 +50,7 @@ export default function Pricing() {
     >
       {/* Hero card */}
       <div className="relative">
-        <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+        <div className="absolute inset-x-0 bottom-0 bg-zinc-100 h-1/2" />
 
         <div className="relative">
           <div className="absolute inset-0">
@@ -109,98 +91,74 @@ export default function Pricing() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center">
             <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider uppercase sm:text-lg sm:text-center text-rose-400">
-              price tiers
+              price list
             </h2>
             <h1 className="text-5xl font-extrabold text-zinc-900 sm:text-center">
-              Pricing for premium eyelash{' '}
+              Premium eyelash{' '}
               <span className="italic font-medium text-rose-400">
                 extensions{' '}
               </span>
             </h1>
             <p className="max-w-4xl mx-auto mt-5 text-lg text-zinc-500 sm:text-center sm:text-xl">
-              Our premium{' '}
-              <span className="font-medium text-rose-400">Nagaraku</span>{' '}
-              eyelashes’ unique material ensures that each lash is soft,
-              lightweight and flat at the base for maximum adhesion. We
-              skillfully attach each ellipse eyelash to your individual lashes
-              for an entirely natural and stunning look.
+              Choose between our{' '}
+              <span className="font-medium text-rose-500">Full </span>Set (60
+              minutes) or{' '}
+              <span className="font-medium text-rose-500">Mega </span>Set (90
+              minutes) eyelash extension treatments. For customers returning
+              within three weeks of their last treatment, we also provide an
+              eyelash <span className="font-medium text-rose-500">infill</span>{' '}
+              option to help maintain lash volume and definition even longer.
             </p>
           </div>
-          <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-            {tiers.map((tier, i) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 50,
-                  transition: { delay: 2 },
-                }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  initialDelay: 2,
-                  duration: 0.7,
-                  delay: i * 0.3,
-                  ease: 'easeOut',
-                }}
-                key={i}
-                className="bg-white border divide-y rounded-lg shadow-lg border-rose-200 divide-rose-200"
-              >
-                <div className="p-6">
-                  <h1 className="text-xl font-medium leading-6 text-zinc-800">
-                    {tier.name}
-                  </h1>
-                  <p className="mt-4 text-sm text-zinc-500">
-                    {tier.description}
-                  </p>
-                  <h1 className="mt-8">
-                    <span className="flex items-start text-5xl tracking-tight text-zinc-800">
-                      <h1>
-                        <span className="mt-2 mr-2 text-3xl font-medium">
-                          $
-                        </span>
-                        <span className="font-extrabold">{tier.price}</span>
-                      </h1>
-                    </span>
-                  </h1>
-                  <a
-                    href="tel:61466609975"
-                    className="flex items-center justify-center w-full px-6 py-3 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full shadow bg-rose-400 hover:bg-rose-500 group"
-                  >
-                    {' '}
-                    <p className="text-base font-medium">{tier.name}</p>
-                    <span>
-                      <PhoneIcon
-                        className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
-                        aria-hidden="true"
-                      />
-                    </span>
-                  </a>
-                </div>
-                <div className="px-6 pt-6 pb-8">
-                  <h2 className="text-xs font-bold tracking-wide uppercase text-zinc-800">
-                    The result
-                  </h2>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {tier.features.map((feature) => (
-                      <li key={feature} className="flex space-x-3">
-                        <CheckIconSolid
-                          className="flex-shrink-0 w-5 h-5 text-lime-500"
-                          aria-hidden="true"
-                        />
-                        <span className="text-sm text-zinc-500">{feature}</span>
-                      </li>
+
+          {/* Extensions and infills pricing */}
+
+          <section
+            aria-labelledby="features-heading"
+            className="py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
+          >
+            <div className="max-w-2xl px-4 mx-auto lg:px-0 lg:max-w-none">
+              <Tab.Group as="div" className="mt-4">
+                <div className="relative self-center mt-6 bg-rose-200 rounded-full p-0.5 flex sm:mt-8 w-fit min-w-[238px] mx-auto pb-[3px]">
+                  <Tab.List className="flex justify-between w-full -mb-px lg:justify-evenly">
+                    {tabs.map((tab) => (
+                      <Tab
+                        key={tab.name}
+                        className={({ selected }) =>
+                          classNames(
+                            selected
+                              ? 'focus:outline-none focus:ring-2 focus:ring-rose-500 focus:z-10'
+                              : 'border-transparent text-zinc-500 hover:text-zinc-700 hover:border-zinc-300 focus:outline-none focus:ring-0 bg-rose-200',
+                            'relative w-1/2 py-2 text-sm font-medium bg-white rounded-full shadow-sm text-zinc-800 border-rose-200 whitespace-nowrap sm:w-auto sm:px-8'
+                          )
+                        }
+                      >
+                        {tab.name}
+                      </Tab>
                     ))}
-                  </ul>
+                  </Tab.List>
                 </div>
-              </motion.div>
-            ))}
-          </div>
+
+                <Tab.Panels as={Fragment}>
+                  {tabs.map((tab) => (
+                    <Tab.Panel key={tab.name}>
+                      {tab.features.map((feature) => (
+                        <div key={feature.name}>
+                          <div>{feature.component}</div>
+                        </div>
+                      ))}
+                    </Tab.Panel>
+                  ))}
+                </Tab.Panels>
+              </Tab.Group>
+            </div>
+          </section>
         </div>
       </div>
 
       {/* Lifts Hero card */}
       <div className="relative">
-        <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+        <div className="absolute inset-x-0 bottom-0 bg-zinc-100 h-1/2" />
 
         <div className="relative">
           <div className="absolute inset-0">

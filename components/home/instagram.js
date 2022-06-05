@@ -11,6 +11,19 @@ export default function Instagram() {
   const { ref, inView } = useInView({
     threshold: 0.7,
   });
+
+  // Shows animation once only
+  const useHasBeenViewed = () => {
+    const [ref, inView] = useInView();
+    const prevInView = useRef(false);
+    const hasBeenViewed = prevInView.current || inView;
+    useEffect(() => {
+      prevInView.current = inView;
+    });
+
+    return [hasBeenViewed, ref];
+  };
+
   const shutterLeft = useAnimation();
   const shutterRight = useAnimation();
   const imageReelOne = useAnimation();
@@ -148,25 +161,6 @@ export default function Instagram() {
     }
   }, [inView, shutterRightClosing]);
 
-  // Cover animation
-  // useEffect(() => {
-  //   if (inView) {
-  //     coverAnimation.start({
-  //       opacity: 1,
-  //       viewport: { once: true },
-  //       transition: {
-  //         delay: 5.9,
-  //         duration: 0.1,
-  //         ease: 'easeIn',
-  //         type: 'fade',
-  //       },
-  //     });
-  //   }
-  //   if (!inView) {
-  //     coverAnimation.start({ opacity: 0 });
-  //   }
-  // }, [inView, coverAnimation]);
-
   // Social Media Icon
   useEffect(() => {
     if (inView) {
@@ -202,10 +196,11 @@ export default function Instagram() {
 
       {/* New Instagram promotion */}
       <div
+        // animate={{ opacity: useHasBeenViewed ? 1 : 0 }}
         ref={ref}
         className="w-screen pb-0 my-0 overflow-x-hidden bg-zinc-50"
       >
-        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-rose-300 lg:h-[50vh] w-[100vw] h-[30vh]">
+        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-rose-300 lg:h-[50vh] w-[100vw] h-[50vh]">
           <div>
             <div className="flex items-center object-cover object-center w-full h-full overflow-hidden overflow-x-hidden bg-zinc-800">
               <Image
@@ -221,11 +216,13 @@ export default function Instagram() {
           {/* Shutters opening */}
           <motion.div
             animate={shutterLeft}
-            className="absolute z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-zinc-800"
+            viewport={{ once: true }}
+            className="absolute z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-rose-300"
           ></motion.div>
           <motion.div
             animate={shutterRight}
-            className="absolute bottom-0 right-0 z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-zinc-800"
+            viewport={{ once: true }}
+            className="absolute bottom-0 right-0 z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-rose-300"
           >
             <div className="flex flex-col items-start justify-center"></div>
           </motion.div>
@@ -233,6 +230,7 @@ export default function Instagram() {
           {/* Image Reel One */}
           <motion.div
             animate={imageReelOne}
+            viewport={{ once: true }}
             className="absolute grid w-[140vw] grid-cols-7 overflow-hidden h-1/3"
           >
             <div className="relative flex justify-center object-cover object-center w-full h-full col-span-1 overflow-hidden">
@@ -310,6 +308,7 @@ export default function Instagram() {
           {/* Image Reel Two */}
           <motion.div
             animate={imageReelTwo}
+            viewport={{ once: true }}
             className="z-10 shadow-lg absolute grid w-[140vw] grid-cols-7 overflow-hidden h-1/3 top-1/3 right-0"
           >
             <div className="relative flex justify-center object-cover object-center w-full h-full col-span-1 overflow-hidden bg-rose-100">
@@ -387,6 +386,7 @@ export default function Instagram() {
           {/* Image Reel Three */}
           <motion.div
             animate={imageReelThree}
+            viewport={{ once: true }}
             className="absolute bottom-0 grid w-[140vw] grid-cols-7 overflow-hidden h-1/3"
           >
             <div className="relative flex justify-center object-cover object-center w-full h-full col-span-1 overflow-hidden bg-purple-400">
@@ -464,31 +464,28 @@ export default function Instagram() {
           {/* Shutters closing */}
           <motion.div
             animate={shutterLeftClosing}
-            className="absolute z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-zinc-800"
+            viewport={{ once: true }}
+            className="absolute z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-rose-300"
           ></motion.div>
           <motion.div
             animate={shutterRightClosing}
-            className="absolute bottom-0 right-0 z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-zinc-800"
+            viewport={{ once: true }}
+            className="absolute bottom-0 right-0 z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-rose-300"
           >
             <div className="flex flex-col items-start justify-center"></div>
           </motion.div>
 
-          {/* Cover animation */}
-          {/* <motion.div
-            animate={coverAnimation}
-            className="z-30 flex w-full h-full bg-zinc-800"
-          ></motion.div> */}
-
           {/* Social media icon */}
           <motion.div
             animate={socialMediaIcon}
+            viewport={{ once: true }}
             className="absolute z-40 flex items-center justify-center w-full h-full"
           >
             <a
               href="https://www.instagram.com/moet_lashes/"
               target="_blank"
               rel="noreferrer"
-              className="transition duration-300 ease-in-out text-rose-300 hover:text-rose-400"
+              className="text-white transition duration-300 ease-in-out hover:text-zinc-800"
             >
               <span className="sr-only">Instagram</span>
               <div className="w-20 h-20" aria-hidden="true">
