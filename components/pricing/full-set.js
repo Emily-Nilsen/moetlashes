@@ -18,8 +18,7 @@ export default function FullSet() {
   const tiers = [
     {
       name: `${t('pricing:classic')}`,
-      price: 60,
-      infill: 50,
+      price: 70,
       description: `${t('pricing:classic_description')}`,
       features: [
         `${t('pricing:classic_result_1')}`,
@@ -28,8 +27,7 @@ export default function FullSet() {
     },
     {
       name: `${t('pricing:double')}`,
-      price: 70,
-      infill: 60,
+      price: 80,
       description: `${t('pricing:double_description')}`,
       features: [
         `${t('pricing:double_result_1')}`,
@@ -38,8 +36,7 @@ export default function FullSet() {
     },
     {
       name: `${t('pricing:hybrid')}`,
-      price: 80,
-      infill: 70,
+      price: 90,
       description: `${t('pricing:hybrid_description')}`,
       features: [
         `${t('pricing:hybrid_result_1')}`,
@@ -48,8 +45,7 @@ export default function FullSet() {
     },
     {
       name: `${t('pricing:volume')}`,
-      price: 90,
-      infill: 80,
+      price: 100,
       description: `${t('pricing:volume_description')}`,
       features: [
         `${t('pricing:volume_result_1')}`,
@@ -101,30 +97,12 @@ export default function FullSet() {
                   </h1>
                 </span>
               </h1>
-
-              <p className="mt-8">
-                <span className="flex items-start text-4xl tracking-tight text-rose-400">
-                  <h1>
-                    <span className="mt-2 mr-2 text-2xl font-medium">$</span>
-                    <span className="font-extrabold">{tier.infill}</span>
-                    <span className="inline-block pl-2 text-base font-medium tracking-normal text-zinc-500">
-                      <p>/ infills within 3 weeks</p>
-                    </span>
-                  </h1>
-                </span>
-              </p>
               <a
                 href="tel:61466609975"
                 className="flex items-center justify-center w-full px-6 py-3 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full shadow bg-rose-400 hover:bg-rose-500 group"
               >
                 {' '}
                 <p className="text-base font-medium">{tier.name}</p>
-                <span>
-                  <PhoneIcon
-                    className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
-                    aria-hidden="true"
-                  />
-                </span>
               </a>
             </div>
             <div className="px-6 pt-6 pb-8">

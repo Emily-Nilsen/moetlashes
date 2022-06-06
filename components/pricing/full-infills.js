@@ -12,45 +12,41 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function MegaSet() {
+export default function FullInfills() {
   const { t } = useTranslation();
 
   const tiers = [
     {
-      name: `Classic Mega Set`,
-      price: 90,
-      infill: 70,
-      description: `${t('pricing:classic_description')}`,
+      name: `Classic Full Infills`,
+      price: 50,
+      description: `For customers returning within three weeks of their Classic Full Set treatment.`,
       features: [
         `${t('pricing:classic_result_1')}`,
         `${t('pricing:classic_result_2')}`,
       ],
     },
     {
-      name: `Double Mega Set`,
-      price: 100,
-      infill: 80,
-      description: `${t('pricing:double_description')}`,
+      name: `Double Full Infills`,
+      price: 60,
+      description: `For customers returning within three weeks of their Double Full Set treatment.`,
       features: [
         `${t('pricing:double_result_1')}`,
         `${t('pricing:double_result_2')}`,
       ],
     },
     {
-      name: `Hybrid Mega Set`,
-      price: 110,
-      infill: 90,
-      description: `${t('pricing:hybrid_description')}`,
+      name: `Hybrid Full Infills`,
+      price: 70,
+      description: `For customers returning within three weeks of their Hybrid Full Set treatment.`,
       features: [
         `${t('pricing:hybrid_result_1')}`,
         `${t('pricing:hybrid_result_2')}`,
       ],
     },
     {
-      name: `Volume Mega Set`,
-      price: 120,
-      infill: 100,
-      description: `${t('pricing:volume_description')}`,
+      name: `Volume Full Infills`,
+      price: 80,
+      description: `For customers returning within three weeks of their Volume Full Set treatment.`,
       features: [
         `${t('pricing:volume_result_1')}`,
         `${t('pricing:volume_result_2')}`,
@@ -90,7 +86,7 @@ export default function MegaSet() {
                     aria-hidden="true"
                   />
                 </span>
-                90 min
+                60 min
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">
@@ -101,30 +97,12 @@ export default function MegaSet() {
                   </h1>
                 </span>
               </h1>
-
-              {/* <p className="mt-8">
-                <span className="flex items-start text-4xl tracking-tight text-rose-400">
-                  <h1>
-                    <span className="mt-2 mr-2 text-2xl font-medium">$</span>
-                    <span className="font-extrabold">{tier.infill}</span>
-                    <span className="inline-block pl-2 text-base font-medium tracking-normal text-zinc-500">
-                      <p>/ infills within 3 weeks</p>
-                    </span>
-                  </h1>
-                </span>
-              </p> */}
               <a
                 href="tel:61466609975"
                 className="flex items-center justify-center w-full px-6 py-3 mt-8 text-sm font-semibold text-center text-white transition duration-300 ease-in-out border border-transparent rounded-full shadow bg-rose-400 hover:bg-rose-500 group"
               >
                 {' '}
                 <p className="text-base font-medium">{tier.name}</p>
-                {/* <span>
-                  <PhoneIcon
-                    className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
-                    aria-hidden="true"
-                  />
-                </span> */}
               </a>
             </div>
             <div className="px-6 pt-6 pb-8">

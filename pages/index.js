@@ -106,7 +106,7 @@ export default function Home() {
               <h2 className="sr-only" id="contact-heading">
                 Cairns City eyelash extensions
               </h2>
-              <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+              <div className="grid grid-cols-1 gap-y-12 sm:gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
                 {features.map((feature, i) => (
                   <motion.div
                     initial={{

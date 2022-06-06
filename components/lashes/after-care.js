@@ -96,9 +96,9 @@ export default function AfterCare() {
           </p>
           <section
             aria-labelledby="features-heading"
-            className="py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
+            className="z-20 py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
           >
-            <div className="max-w-2xl px-4 mx-auto lg:px-0 lg:max-w-none">
+            <div className="max-w-2xl px-0 mx-auto lg:px-0 lg:max-w-none">
               <Tab.Group as="div" className="mt-4">
                 <div className="relative self-center mt-6 bg-t rounded-full p-1 px-1.2 flex sm:mt-8 w-fit min-w-[238px] mx-auto pb-[4px]">
                   <Tab.List className="flex justify-between w-full -mb-px lg:justify-evenly">
@@ -108,14 +108,14 @@ export default function AfterCare() {
                         className={({ selected }) =>
                           classNames(
                             selected
-                              ? 'focus:outline-none focus:ring-2 focus:ring-rose-500 focus:z-10'
+                              ? 'focus:outline-none focus:ring-1 focus:ring-rose-400 focus:z-10 border-rose-400 border-2'
                               : ' text-zinc-500 hover:text-zinc-700 hover:border-rose-300 focus:outline-none focus:ring-0 bg-rose-100',
                             'relative w-1/2 py-2 text-sm font-medium rounded-full shadow-none text-zinc-800 border-rose-200 whitespace-nowrap sm:w-auto sm:px-1 bg-white border-2'
                           )
                         }
                       >
                         {' '}
-                        <p className="px-4 py-2 mr-0.5 ml-0.5 rounded-full bg-t">
+                        <p className="px-3 sm:px-4 sm:py-2 mr-0.5 ml-0.5 rounded-full bg-t">
                           {tab.name}
                         </p>
                       </Tab>

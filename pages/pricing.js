@@ -4,6 +4,8 @@ import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import FullSet from '../components/pricing/full-set';
 import MegaSet from '../components/pricing/mega-set';
+import FullInfills from '../components/pricing/full-infills';
+import MegaInfills from '../components/pricing/mega-infills';
 import Lifts from '../components/pricing/lifts-pricing';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -35,6 +37,22 @@ export default function Pricing() {
       features: [
         {
           component: <MegaSet />,
+        },
+      ],
+    },
+    {
+      name: `Full Infills`,
+      features: [
+        {
+          component: <FullInfills />,
+        },
+      ],
+    },
+    {
+      name: `Mega Infills`,
+      features: [
+        {
+          component: <MegaInfills />,
         },
       ],
     },
@@ -93,18 +111,13 @@ export default function Pricing() {
             <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider text-center uppercase sm:text-lg text-rose-400">
               price list
             </h2>
-            <h1 className="text-5xl font-extrabold text-center text-zinc-900">
+            <h1 className="text-4xl font-extrabold text-center sm:text-5xl text-zinc-900">
               Premium eyelash extensions{' '}
             </h1>
             <p className="max-w-4xl mx-auto mt-5 text-lg text-center text-zinc-500 sm:text-xl">
-              Choose between our{' '}
-              <span className="font-medium text-rose-500">Full </span>Set (60
-              minutes) or{' '}
-              <span className="font-medium text-rose-500">Mega </span>Set (90
-              minutes) eyelash extension treatments. For customers returning
-              within three weeks of their last treatment, we also provide an
-              eyelash <span className="font-medium text-rose-500">infill</span>{' '}
-              option to help maintain lash volume and definition even longer.
+              Choose between our 60 min Full Set or 90 min Mega Set treatments.
+              We also offer an infill option for customers returning within
+              three weeks of their last visit.
             </p>
           </div>
 
@@ -112,11 +125,11 @@ export default function Pricing() {
 
           <section
             aria-labelledby="features-heading"
-            className="py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
+            className="py-4 mx-auto overflow-x-hidden max-w-7xl sm:py-8 sm:px-2 lg:px-8"
           >
-            <div className="max-w-2xl px-4 mx-auto lg:px-0 lg:max-w-none">
+            <div className="max-w-2xl px-0 mx-auto lg:px-0 lg:max-w-none">
               <Tab.Group as="div" className="mt-4">
-                <div className="relative self-center mt-6 bg-rose-200 rounded-full p-0.5 flex sm:mt-8 w-fit min-w-[238px] mx-auto pb-[3px]">
+                <div className="relative self-center mt-6 bg-rose-200 rounded-full p-0.5 flex sm:mt-8 w-full sm:w-fit mx-auto pb-[3px]">
                   <Tab.List className="flex justify-between w-full -mb-px lg:justify-evenly">
                     {tabs.map((tab) => (
                       <Tab
@@ -126,7 +139,7 @@ export default function Pricing() {
                             selected
                               ? 'focus:outline-none focus:ring-2 focus:ring-rose-500 focus:z-10'
                               : 'border-transparent text-zinc-500 hover:text-zinc-700 hover:border-zinc-300 focus:outline-none focus:ring-0 bg-rose-200',
-                            'relative w-1/2 py-2 text-sm font-medium bg-white rounded-full shadow-none text-zinc-800 border-rose-200 whitespace-nowrap sm:w-auto sm:px-8'
+                            'relative w-1/2 py-2 sm:text-sm text-xs font-medium bg-white rounded-full shadow-none text-zinc-800 border-rose-200 whitespace-nowrap sm:w-auto sm:px-8'
                           )
                         }
                       >

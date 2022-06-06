@@ -8,6 +8,7 @@ export default function Footer() {
   const { t } = useTranslation();
   const navigation = {
     links: [
+      { name: `${t('footer:home')}`, href: '/' },
       { name: `${t('footer:lashes')}`, href: '/lashes' },
       { name: `${t('footer:pricing')}`, href: '/pricing' },
       { name: `${t('footer:about')}`, href: '/about' },

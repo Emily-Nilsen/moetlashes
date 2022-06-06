@@ -2,6 +2,7 @@ const footer = {
   catchline: `まつげは、お顔の印象を大きく左右する重要なパーツのひとつです。 あなたにぴったり合うアイラッシュメニューを選び、あなたの瞳の魅力を最大限にひきだします。`,
 
   moet_lashes: `Moët Lashes`,
+  home: `ホームページ`,
   lashes: `まつ毛`,
   pricing: `メニュー`,
   about: `スタッフ`,

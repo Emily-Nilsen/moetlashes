@@ -39,7 +39,6 @@ export default function Instagram() {
     if (inView) {
       shutterLeft.start({
         x: '-50vw',
-        viewport: { once: true },
         transition: {
           delay: 1,
           duration: 0.5,
@@ -57,7 +56,6 @@ export default function Instagram() {
     if (inView) {
       shutterRight.start({
         x: '50vw',
-        viewport: { once: true },
         transition: {
           delay: 1,
           duration: 0.5,
@@ -75,7 +73,6 @@ export default function Instagram() {
     if (inView) {
       imageReelOne.start({
         x: '-20vw',
-        viewport: { once: true },
         transition: {
           delay: 1,
           duration: 5,
@@ -94,7 +91,6 @@ export default function Instagram() {
       imageReelTwo.start({
         x: '20vw',
         scale: 1.1,
-        viewport: { once: true },
         transition: {
           delay: 1,
           duration: 5,
@@ -112,7 +108,6 @@ export default function Instagram() {
     if (inView) {
       imageReelThree.start({
         x: '-20vw',
-        viewport: { once: true },
         transition: {
           delay: 1,
           duration: 5,
@@ -130,7 +125,6 @@ export default function Instagram() {
     if (inView) {
       shutterLeftClosing.start({
         x: 0,
-        viewport: { once: true },
         transition: {
           delay: 5.4,
           duration: 0.5,
@@ -148,7 +142,6 @@ export default function Instagram() {
     if (inView) {
       shutterRightClosing.start({
         x: 0,
-        viewport: { once: true },
         transition: {
           delay: 5.4,
           duration: 0.5,
@@ -166,7 +159,6 @@ export default function Instagram() {
     if (inView) {
       socialMediaIcon.start({
         opacity: 1,
-        viewport: { once: true },
         transition: {
           delay: 5.9,
           duration: 0.8,
@@ -216,7 +208,6 @@ export default function Instagram() {
           {/* Shutters opening */}
           <motion.div
             animate={shutterLeft}
-            viewport={{ once: true }}
             className="absolute z-20 flex items-center justify-center w-1/2 h-full text-white rounded-none bg-rose-300"
           ></motion.div>
           <motion.div

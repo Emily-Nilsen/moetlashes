@@ -2,6 +2,7 @@ const footer = {
   catchline: `Whether you’re looking to add subtle eye definition or a dramatic and defined lash line, we have your look covered.`,
 
   moet_lashes: `Moët Lashes`,
+  home: `Home`,
   lashes: `Lashes`,
   pricing: `Pricing`,
   about: `About`,

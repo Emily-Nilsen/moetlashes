@@ -29,17 +29,14 @@ export default function LiftsPricing() {
           <h2 className="pb-2 text-lg font-semibold leading-6 tracking-wider uppercase text-rose-400">
             Pricing
           </h2>
-          <h1 className="pb-2 text-5xl font-extrabold text-zinc-900 sm:text-center">
+          <h1 className="pb-2 text-4xl font-extrabold sm:text-5xl text-zinc-900 sm:text-center">
             Price tiers for lash{' '}
             <span className="italic font-medium text-rose-400">lifts </span>
             and tints
           </h1>
           <p className="max-w-4xl mx-auto mt-3 text-lg text-zinc-500 sm:mt-5 sm:text-xl">
-            A lash lift is the perfect alternative for those who want the styled
-            look without using eyelash extensions. A lash lift is essentially a
-            perming treatment to curl the eyelashes and set them in position. We
-            tint your natural eyelashes using a safe, semi-permanent, black
-            vegetable dye.
+            We use a perming treatment to curl your natural lashes and tint them
+            using a safe, semi-permanent, black vegetable dye.
           </p>
         </div>
       </div>
@@ -110,12 +107,12 @@ export default function LiftsPricing() {
                             aria-describedby="tier-tint"
                           >
                             <p className="text-base font-medium">Tint</p>
-                            <span>
+                            {/* <span>
                               <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
                                 aria-hidden="true"
                               />
-                            </span>
+                            </span> */}
                           </a>
                         </div>
                       </div>
@@ -195,12 +192,12 @@ export default function LiftsPricing() {
                         >
                           {' '}
                           <p>Lift & Tint</p>
-                          <span>
+                          {/* <span>
                             <PhoneIcon
                               className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
                               aria-hidden="true"
                             />
-                          </span>
+                          </span> */}
                         </a>
                       </div>
                     </div>
@@ -268,12 +265,12 @@ export default function LiftsPricing() {
                             aria-describedby="tier-lift"
                           >
                             <p className="text-base font-medium">Lift</p>
-                            <span>
+                            {/* <span>
                               <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
                                 aria-hidden="true"
                               />
-                            </span>
+                            </span> */}
                           </a>
                         </div>
                       </div>

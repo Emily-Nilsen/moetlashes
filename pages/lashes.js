@@ -247,7 +247,9 @@ export default function Lashes() {
                 and add volume to your natural eyelashes.
               </p>
 
-              <h1>Lift, style & tint</h1>
+              <h1 className="pt-6 text-4xl font-extrabold leading-8 tracking-tight text-zinc-800 sm:text-5xl">
+                Lift, style & tint
+              </h1>
               <p>
                 A lash lift is the perfect alternative for those who want the
                 styled look without using eyelash extensions. A lash lift is
