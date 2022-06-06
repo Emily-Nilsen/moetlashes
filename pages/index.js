@@ -159,9 +159,9 @@ export default function Home() {
             </section>
           </div>
           {/* Lashes */}
-          <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
+          <div className="px-6 py-12 mx-auto max-w-7xl sm:py-20 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="max-w-3xl mx-auto mt-1 text-5xl font-normal text-rose-400 sm:text-6xl sm:tracking-tight lg:text-7xl">
+              <h1 className="max-w-3xl mx-auto mt-1 text-4xl font-normal text-rose-400 sm:text-5xl sm:tracking-tight lg:text-6xl">
                 Treat yourself,
                 <span className="italic font-semibold text-zinc-900">
                   {' '}

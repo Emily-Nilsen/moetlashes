@@ -131,7 +131,7 @@ export default function Moe() {
     <div className="bg-zinc-800">
       {/* Moe the professional */}
       <div ref={ref} className="w-screen bg-zinc-50">
-        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-zinc-800 lg:h-[50vh] w-[100vw] h-[35vh] sm:h-[30vh]">
+        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-zinc-800 lg:h-[52vh] w-[100vw] h-[38vh] sm:h-[40vh]">
           <div>
             <div className="relative flex items-center object-cover object-center w-full h-full overflow-hidden overflow-x-hidden bg-zinc-800">
               {/* Moe */}
@@ -151,12 +151,12 @@ export default function Moe() {
             className="absolute flex items-center justify-end w-2/3 h-full text-white rounded-none bg-zinc-800"
           >
             <div className="flex w-[88%] bg-zinc-800 h-5/6">
-              <div className="flex flex-col items-start justify-start h-full bg-t">
+              <div className="flex flex-col items-start justify-between h-full bg-t">
                 {/* Empty div to push down text */}
-                <div className="w-full h-[41.666667%] bg-t"></div>
+                {/* <div className="w-full h-[41.666667%] bg-t"></div> */}
                 <motion.h3
                   animate={textMain}
-                  className="pb-6 text-2xl font-medium leading-7 text-left text-white sm:pb-6 sm:text-4xl md:text-5xl sm:leading-normal sm:font-bold"
+                  className="pt-4 text-2xl font-medium leading-7 text-left text-white md:pt-16 sm:pb-6 sm:text-4xl md:text-5xl sm:leading-normal sm:font-bold"
                 >
                   Eyelash
                   <span className="block">Extension </span>
@@ -166,10 +166,12 @@ export default function Moe() {
                 </motion.h3>
                 <motion.h2
                   animate={textSecondary}
-                  className="pt-10 text-sm font-medium text-left sm:pt-20 text-rose-200 sm:text-base"
+                  className="pt-4 text-sm font-medium text-left sm:pt-20 text-rose-200 sm:text-base"
                 >
                   Book a treatment today{' '}
-                  <span className="block sm:inline-block">@ Moët Lashes </span>
+                  <span className="block pb-4 md:pb-10 sm:inline-block">
+                    @ Moët Lashes{' '}
+                  </span>
                 </motion.h2>
               </div>
             </div>

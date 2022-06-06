@@ -52,7 +52,7 @@ export default function Map() {
   return (
     <section>
       <div className="bg-white">
-        <div className="px-4 py-16 mx-auto max-w-7xl sm:pt-24 sm:pb-16 sm:px-6 lg:px-8">
+        <div className="px-4 py-12 mx-auto sm:py-16 max-w-7xl sm:pt-24 sm:pb-16 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base font-semibold tracking-wide uppercase text-rose-500">
               orchid plaza
@@ -69,8 +69,8 @@ export default function Map() {
       </div>
 
       {/* Find Us! */}
-      <div ref={ref} className="w-screen pb-10 my-0 bg-zinc-50">
-        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-rose-300 lg:h-[50vh] w-[100vw] h-[30vh]">
+      <div ref={ref} className="w-screen pb-2 my-0 sm:pb-10 bg-zinc-50">
+        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-rose-300 lg:h-[50vh] w-[100vw] h-[40vh]">
           <div>
             <div className="flex items-center object-cover object-center w-full h-full overflow-hidden overflow-x-hidden bg-zinc-800">
               <GoogleMap />
@@ -102,7 +102,7 @@ export default function Map() {
               <h2 className="font-medium text-left text-rose-200">
                 Cairns City
               </h2>
-              <h3 className="py-6 text-5xl text-left text-white sm:text-6xl">
+              <h3 className="pb-6 mt-2 text-4xl text-left text-white sm:text-5xl">
                 <span className="font-bold">Orchid </span>
 
                 <span className="block italic font-medium text-rose-200">

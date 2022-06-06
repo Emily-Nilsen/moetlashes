@@ -105,7 +105,7 @@ export default function Pricing() {
         </div>
       </div>
       {/* Pricing with four tiers and toggle */}
-      <div className="py-16 bg-rose-50">
+      <div className="py-12 bg-rose-50">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col align-center">
             <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider text-center uppercase sm:text-lg text-rose-400">

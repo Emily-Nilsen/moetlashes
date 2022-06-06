@@ -4,7 +4,7 @@ export default function AboutMoe() {
   const { t } = useTranslation();
 
   return (
-    <div className="relative py-16 overflow-hidden bg-white">
+    <div className="relative py-12 overflow-hidden bg-white">
       <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
         <div
           className="relative h-full mx-auto text-lg max-w-prose"
@@ -82,7 +82,7 @@ export default function AboutMoe() {
             <span className="block text-base font-semibold tracking-wide text-center uppercase text-rose-500">
               <h2>{t('about:orchid_plaza')}</h2>
             </span>
-            <span className="block py-4 mt-2 text-6xl font-extrabold leading-8 tracking-tight text-center text-zinc-900">
+            <span className="block mt-3 text-5xl font-extrabold leading-8 tracking-tight text-center sm:text-6xl text-zinc-900">
               <span className="font-bold">{t('about:meet')} </span>
               <span className="italic font-medium text-rose-400">
                 {t('about:moe')}

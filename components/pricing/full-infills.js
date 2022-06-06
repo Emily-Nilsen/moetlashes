@@ -59,19 +59,19 @@ export default function FullInfills() {
       <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
         {tiers.map((tier, i) => (
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 50,
-              transition: { delay: 2 },
-            }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              initialDelay: 2,
-              duration: 0.7,
-              delay: i * 0.3,
-              ease: 'easeOut',
-            }}
+            // initial={{
+            //   opacity: 0,
+            //   y: 50,
+            //   transition: { delay: 2 },
+            // }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
+            // transition={{
+            //   initialDelay: 2,
+            //   duration: 0.7,
+            //   delay: i * 0.3,
+            //   ease: 'easeOut',
+            // }}
             key={i}
             className="bg-white border divide-y rounded-lg shadow-lg border-rose-200 divide-rose-200"
           >

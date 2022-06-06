@@ -64,7 +64,7 @@ export default function Lashes() {
           </div>
         </div>
         {/* New lashes content */}
-        <div className="relative py-16 overflow-hidden bg-white">
+        <div className="relative py-12 overflow-hidden bg-white">
           <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
             <div
               className="relative h-full mx-auto text-lg max-w-prose"

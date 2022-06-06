@@ -101,7 +101,7 @@ export default function Contact() {
               <h2 className="sr-only" id="contact-heading">
                 Contact us
               </h2>
-              <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-y-0 md:gap-x-8">
+              <div className="grid grid-cols-1 gap-y-6 sm:gap-y-12 md:grid-cols-3 md:gap-y-0 md:gap-x-8">
                 {/* card 1 */}
                 <motion.div
                   initial={{
