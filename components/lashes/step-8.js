@@ -7,7 +7,7 @@ export default function Step8() {
   return (
     <div className="relative z-10 pt-10 sm:pt-12">
       <div className="sm:max-w-xl max-w-sm px-4 mx-auto bg-white shadow-lg rounded-3xl sm:h-96 h-[50vh] sm:px-6 lg:px-8">
-        <div className="relative w-full h-full p-6 mx-auto sm:max-w-lg sm:p-10">
+        <div className="relative w-full h-full p-4 mx-auto sm:max-w-lg sm:p-10">
           <div className="grid w-full h-full grid-cols-1 gap-0 sm:gap-10 sm:grid-cols-2">
             <div className="relative flex items-center w-full h-full col-span-1 px-0">
               <div className="relative flex items-center justify-center w-full h-1/2">
@@ -40,7 +40,25 @@ export default function Step8() {
                 </motion.div>
               </div>
             </div>
-            <div className="flex flex-col justify-center h-full col-span-1 px-6 text-left">
+            <div className="flex flex-col justify-center h-full col-span-1 px-6 text-center sm:text-left">
+              <span>
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 1,
+                    duration: 0.5,
+                    type: 'fade',
+                    ease: 'linear',
+                  }}
+                  className="flex items-start justify-center w-full h-full sm:hidden"
+                >
+                  <CheckIcon
+                    className="w-16 h-16 -mt-5 text-lime-500"
+                    aria-hidden="true"
+                  />
+                </motion.div>
+              </span>
               <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 100 }}
@@ -49,27 +67,9 @@ export default function Step8() {
                   duration: 0.5,
                   type: 'spring',
                 }}
-                className="flex items-center mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
+                className="flex items-center justify-center mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
               >
                 Step 8
-                <span>
-                  <motion.div
-                    whileInView={{ opacity: 1 }}
-                    initial={{ opacity: 0 }}
-                    transition={{
-                      delay: 1,
-                      duration: 0.5,
-                      type: 'fade',
-                      ease: 'linear',
-                    }}
-                    className="flex items-start justify-center w-full h-full sm:hidden"
-                  >
-                    <CheckIcon
-                      className="w-16 h-16 ml-3 text-lime-500"
-                      aria-hidden="true"
-                    />
-                  </motion.div>
-                </span>
               </motion.h1>
               <motion.p
                 whileInView={{ opacity: 1, y: 0 }}

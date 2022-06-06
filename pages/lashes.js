@@ -172,15 +172,15 @@ export default function Lashes() {
             <div className="mx-auto text-lg max-w-prose">
               <h1>
                 <span className="block text-base font-semibold tracking-wide text-center uppercase text-rose-500">
-                  <h2>Nagaraku</h2>
+                  <h2>Flat-based</h2>
                 </span>
                 <span className="block mt-2 text-4xl font-extrabold leading-8 tracking-tight text-center text-zinc-800 sm:text-5xl">
                   Eyelash extensions
                 </span>
               </h1>
               <p className="mt-8 text-xl leading-8 text-zinc-500">
-                Our premium Nagaraku eyelashes’ unique material ensures that
-                each lash is soft, lightweight and flat at the base for maximum
+                The unique material of our premium eyelashes ensures that each
+                lash is soft, lightweight and flat at the base for maximum
                 adhesion.
               </p>
             </div>
@@ -224,14 +224,14 @@ export default function Lashes() {
                 </figcaption>
               </figure>
               <p>
-                Nagaraku eyelash extensions are made from premium, high-quality
-                PBT material. They are very soft, lightweight, natural and
+                Our eyelash extensions are made from premium, high-quality PBT
+                material. They are very soft, lightweight, natural and
                 comfortable to wear.
               </p>
 
               <ul role="list">
                 <li>
-                  SGS and MSDS certify the premium quality of Nagaraku eyelash
+                  SGS and MSDS certify the premium quality of our eyelash
                   extensions.
                 </li>
                 <li>
@@ -247,7 +247,10 @@ export default function Lashes() {
                 and add volume to your natural eyelashes.
               </p>
 
-              <h1 className="pt-6 text-4xl font-extrabold leading-8 tracking-tight text-zinc-800 sm:text-5xl">
+              <h1
+                id="lifts"
+                className="pt-6 text-4xl font-extrabold leading-8 tracking-tight text-zinc-800 sm:text-5xl"
+              >
                 Lift, style & tint
               </h1>
               <p>

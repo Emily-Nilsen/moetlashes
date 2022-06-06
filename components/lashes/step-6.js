@@ -40,7 +40,25 @@ export default function Step4() {
                 </motion.div>
               </div>
             </div>
-            <div className="flex flex-col justify-center h-full col-span-1 px-6 text-left">
+            <div className="flex flex-col justify-center h-full col-span-1 px-6 text-center sm:text-left">
+              <span>
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 1,
+                    duration: 0.5,
+                    type: 'fade',
+                    ease: 'linear',
+                  }}
+                  className="flex items-start justify-center w-full h-full sm:hidden"
+                >
+                  <CheckIcon
+                    className="w-16 h-16 -mt-5 text-lime-500"
+                    aria-hidden="true"
+                  />
+                </motion.div>
+              </span>
               <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 100 }}
@@ -49,27 +67,9 @@ export default function Step4() {
                   duration: 0.5,
                   type: 'spring',
                 }}
-                className="flex items-center mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
+                className="flex items-center justify-center mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
               >
                 Step 6
-                <span>
-                  <motion.div
-                    whileInView={{ opacity: 1 }}
-                    initial={{ opacity: 0 }}
-                    transition={{
-                      delay: 1,
-                      duration: 0.5,
-                      type: 'fade',
-                      ease: 'linear',
-                    }}
-                    className="flex items-start justify-center w-full h-full sm:hidden"
-                  >
-                    <CheckIcon
-                      className="w-16 h-16 ml-3 text-lime-500"
-                      aria-hidden="true"
-                    />
-                  </motion.div>
-                </span>
               </motion.h1>
               <motion.p
                 whileInView={{ opacity: 1, y: 0 }}

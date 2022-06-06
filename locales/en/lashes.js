@@ -6,7 +6,7 @@ const lashes = {
   faq_contact: `contact`,
   faq_us: ` us`,
   faq_1: `How long does an average eyelash extension or lash lift session take?`,
-  answer_1_1: `We use tailored Nagaraku eyelash glue to attach the ellipse eyelashes to each of your natural lashes. Since individual eyelash extensions are very delicate, initial eyelash extension treatments last for approximately 90 minutes.`,
+  answer_1_1: `We use spesialised eyelash glue to attach the ellipse eyelashes to each of your natural lashes. Since individual eyelash extensions are very delicate, initial eyelash extension treatments last for approximately 90 minutes.`,
   answer_1_2: `Lash lifts involve a perming treatment to curl the eyelashes and then setting them in position. A lash lift treatment takes approximately 60 to 90 minutes to complete.`,
   faq_2: `Will eyelash extensions damage my natural lashes?`,
   answer_2_1: `It is a common misconception that eyelash extensions damage your natural lashes. However, correct minimal glue application at the natural lash base, 0.5mm-1mm away from the eyelid, will not harm your natural lashes.`,

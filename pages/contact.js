@@ -223,7 +223,7 @@ export default function Contact() {
                       <div className="mt-2 text-base text-zinc-500">
                         <p>Eyelash extensions</p>
                         <p className="mt-1">Lifts & tints</p>
-                        <p className="mt-1">In-fills</p>
+                        <p className="mt-1">Infills</p>
                       </div>
                     </div>
                   </div>

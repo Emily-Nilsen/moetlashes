@@ -87,7 +87,7 @@ export default function AfterCare() {
   ];
 
   return (
-    <section className="bg-rose-50">
+    <section id="aftercare" className="bg-rose-50">
       <div className="px-4 pt-16 mx-auto max-w-7xl sm:pt-24 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* <h2 className="text-base font-semibold tracking-wide uppercase text-rose-500">
@@ -98,8 +98,7 @@ export default function AfterCare() {
             Aftercare Steps
           </h1>
           <p className="max-w-xl mx-auto mt-5 text-xl text-zinc-500">
-            Keep your new eyelash extensions looking long, voluminous and
-            perfectly manicured with these eight easy steps!
+            Keep your new lashes looking their best with these eight easy steps!
           </p>
           <section
             aria-labelledby="features-heading"

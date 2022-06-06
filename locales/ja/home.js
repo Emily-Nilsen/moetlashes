@@ -1,7 +1,7 @@
 const home = {
   cairns_city: `ケアンズシティ`,
-  eyelash: `まつ毛`,
-  extensions: `エクステ`,
+  eyelash: `マツエク`,
+  extensions: ``,
   hero_text_start: `We skillfully attach each premium`,
   nagaraku: `Nagaraku`,
   hero_text_end: `eyelash to your individual lashes for an entirely natural and stunning look. We also offer lash lifts and tints.`,

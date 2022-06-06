@@ -34,7 +34,7 @@ export default function Home() {
       name_start: `${t('home:aftercare')}`,
       name_end: `${t('home:advice')}`,
       description: `${t('home:aftercare_text')}`,
-      href: `/contact/#faqs`,
+      href: `/lashes/#aftercare`,
       link_name: `${t('home:faqs')}`,
       icon: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665549/Mo%C3%ABt%20Lashes/SVGs/icon-3_qp6h7v.svg`,
     },
@@ -88,10 +88,9 @@ export default function Home() {
               </span>
             </h3>
             <p className="max-w-md mt-3 text-lg font-normal text-white sm:text-xl md:mt-5 md:max-w-xl">
-              We skillfully attach each premium{' '}
-              <span className="font-medium"> Nagaraku</span> eyelash to your
-              individual lashes for an entirely natural and stunning look. We
-              also offer lash lifts and tints.
+              {t('home:hero_text_start')}{' '}
+              <span className="font-medium">{t('home:nagaraku')}</span>{' '}
+              {t('home:hero_text_end')}
             </p>
           </div>
         </header>

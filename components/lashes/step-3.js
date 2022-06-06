@@ -45,7 +45,7 @@ export default function Step3() {
                 </motion.div>
               </div>
             </div>
-            <div className="flex flex-col justify-center h-full col-span-1 px-6 text-left">
+            <div className="flex flex-col justify-center h-full col-span-1 px-6 text-center sm:text-left">
               <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 100 }}
