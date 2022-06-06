@@ -2,7 +2,7 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
 
-export default function Step1() {
+export default function Step7() {
   return (
     <div className="relative z-10 pt-10 sm:pt-12">
       <div className="sm:max-w-xl max-w-sm px-4 mx-auto bg-white shadow-lg rounded-3xl sm:h-96 h-[50vh] sm:px-6 lg:px-8">
@@ -11,10 +11,10 @@ export default function Step1() {
             <div className="relative flex items-center w-full h-full col-span-1 px-0">
               <div className="relative flex items-center justify-center w-full h-1/2">
                 <Image
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654528754/Mo%C3%ABt%20Lashes/SVGs/shower-light_n3inrs.svg"
-                  alt="Avoid getting wet for 24 hours"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654535852/Mo%C3%ABt%20Lashes/SVGs/cream_qand2l.svg"
+                  alt="Do not use oil-based creams near eyes"
                   unoptimized={true}
-                  width="80%"
+                  width="100%"
                   height="100%"
                   layout="intrinsic"
                   objectFit="contain"
@@ -34,7 +34,7 @@ export default function Step1() {
                 >
                   <Image
                     src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1654526568/Mo%C3%ABt%20Lashes/SVGs/ban_ysgzhb.svg"
-                    alt="Avoid getting wet for 24 hours"
+                    alt="Do not use oil-based creams near eyes"
                     unoptimized={true}
                     width="130%"
                     height="130%"
@@ -56,7 +56,7 @@ export default function Step1() {
                 }}
                 className="mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
               >
-                Step 1
+                Step 7
               </motion.h1>
               <motion.p
                 whileInView={{ opacity: 1, y: 0 }}
@@ -68,11 +68,11 @@ export default function Step1() {
                 }}
                 className="text-lg text-zinc-600"
               >
-                Avoid getting your lashes wet for{' '}
+                Do not use{' '}
                 <span className="font-bold tracking-tight text-rose-400">
-                  24
+                  oil-based
                 </span>{' '}
-                hours.
+                products near your lashes.
               </motion.p>
             </div>
           </div>

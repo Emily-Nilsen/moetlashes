@@ -5,6 +5,13 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Tab } from '@headlessui/react';
 import Step1 from './step-1';
+import Step2 from './step-2';
+import Step3 from './step-3';
+import Step4 from './step-4';
+import Step5 from './step-5';
+import Step6 from './step-6';
+import Step7 from './step-7';
+import Step8 from './step-8';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -25,7 +32,7 @@ export default function AfterCare() {
       name: `2`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step2 />,
         },
       ],
     },
@@ -33,7 +40,7 @@ export default function AfterCare() {
       name: `3`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step3 />,
         },
       ],
     },
@@ -41,7 +48,7 @@ export default function AfterCare() {
       name: `4`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step4 />,
         },
       ],
     },
@@ -49,7 +56,7 @@ export default function AfterCare() {
       name: `5`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step5 />,
         },
       ],
     },
@@ -57,7 +64,7 @@ export default function AfterCare() {
       name: `6`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step6 />,
         },
       ],
     },
@@ -65,7 +72,7 @@ export default function AfterCare() {
       name: `7`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step7 />,
         },
       ],
     },
@@ -73,7 +80,7 @@ export default function AfterCare() {
       name: `8`,
       features: [
         {
-          // component: <MegaSet />,
+          component: <Step8 />,
         },
       ],
     },
