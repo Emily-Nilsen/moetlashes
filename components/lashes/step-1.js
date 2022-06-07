@@ -3,6 +3,8 @@ import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
 
 export default function Step1() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative z-10 pt-10 sm:pt-12">
       <div className="sm:max-w-xl max-w-sm px-4 mx-auto bg-white shadow-lg rounded-3xl sm:h-96 h-[50vh] sm:px-6 lg:px-8">
@@ -56,7 +58,7 @@ export default function Step1() {
                 }}
                 className="mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
               >
-                Step 1
+                {t('lashes:step_1')}
               </motion.h1>
               <motion.p
                 whileInView={{ opacity: 1, y: 0 }}
@@ -68,11 +70,11 @@ export default function Step1() {
                 }}
                 className="text-lg text-zinc-600"
               >
-                Avoid getting your lashes wet for{' '}
+                {t('lashes:step_1_text_start')}{' '}
                 <span className="font-bold tracking-tight text-rose-400">
-                  24
+                  {t('lashes:step_1_text_bold')}
                 </span>{' '}
-                hours.
+                {t('lashes:step_1_text_end')}
               </motion.p>
             </div>
           </div>

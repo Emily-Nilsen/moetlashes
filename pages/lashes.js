@@ -54,9 +54,11 @@ export default function Lashes() {
               </div>
               <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="pt-20 mt-24 -mb-16 text-5xl font-extrabold tracking-tight text-left md:mt-48 sm:text-6xl lg:text-7xl">
-                  <span className="text-white">Lash </span>
+                  <span className="text-white">
+                    {t('lashes:hero_title_1')}{' '}
+                  </span>
                   <span className="italic font-medium text-rose-200">
-                    extensions
+                    {t('lashes:hero_title_2')}
                   </span>
                 </h1>
               </div>
@@ -172,23 +174,18 @@ export default function Lashes() {
             <div className="mx-auto text-lg max-w-prose">
               <h1>
                 <span className="block text-base font-semibold tracking-wide text-center uppercase text-rose-500">
-                  <h2>Flat-based</h2>
+                  <h2>{t('lashes:flat_based')}</h2>
                 </span>
                 <span className="block mt-2 text-4xl font-extrabold leading-8 tracking-tight text-center text-zinc-800 sm:text-5xl">
-                  Eyelash extensions
+                  {t('lashes:extensions_title')}
                 </span>
               </h1>
               <p className="mt-8 text-xl leading-8 text-zinc-500">
-                The unique material of our premium eyelashes ensures that each
-                lash is soft, lightweight and flat at the base for maximum
-                adhesion.
+                {t('lashes:sent_1')}
               </p>
             </div>
             <div className="mx-auto mt-6 prose prose-lg text-zinc-500 prose-rose">
-              <p>
-                We skillfully attach each ellipse eyelash to your individual
-                lashes for an entirely natural and stunning look.
-              </p>
+              <p>{t('lashes:sent_2')}</p>
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <motion.div
@@ -218,47 +215,25 @@ export default function Lashes() {
                     className="flex-none w-5 h-5 text-rose-300"
                     aria-hidden="true"
                   />
-                  <span className="ml-2">
-                    We attach eyelash extensions individually
-                  </span>
+                  <span className="ml-2">{t('lashes:image_caption_1')}</span>
                 </figcaption>
               </figure>
-              <p>
-                Our eyelash extensions are made from premium, high-quality PBT
-                material. They are very soft, lightweight, natural and
-                comfortable to wear.
-              </p>
+              <p>{t('lashes:sent_3')}</p>
 
               <ul role="list">
-                <li>
-                  SGS and MSDS certify the premium quality of our eyelash
-                  extensions.
-                </li>
-                <li>
-                  The unique curvature technique provides a long-lasting curl.
-                </li>
-                <li>
-                  The high-temperature processing method sterilises each
-                  eyelash.
-                </li>
+                <li>{t('lashes:list_item_1')}</li>
+                <li>{t('lashes:list_item_2')}</li>
+                <li>{t('lashes:list_item_3')}</li>
               </ul>
-              <p>
-                Our eyelash extensions are the best option to lengthen, define
-                and add volume to your natural eyelashes.
-              </p>
+              <p>{t('lashes:sent_4')}</p>
 
               <h1
                 id="lifts"
                 className="pt-6 text-4xl font-extrabold leading-8 tracking-tight text-zinc-800 sm:text-5xl"
               >
-                Lift, style & tint
+                {t('lashes:lift_title')}
               </h1>
-              <p>
-                A lash lift is the perfect alternative for those who want the
-                styled look without using eyelash extensions. A lash lift is
-                essentially a perming treatment to curl the eyelashes and set
-                them in position.
-              </p>
+              <p>{t('lashes:sent_5')}</p>
               <div className="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
                 <motion.div
                   whileInView={{ opacity: 1 }}
@@ -284,14 +259,9 @@ export default function Lashes() {
                   className="flex-none w-5 h-5 text-rose-300"
                   aria-hidden="true"
                 />
-                <span className="ml-2">
-                  The perfect eyelash extension alternative
-                </span>
+                <span className="ml-2">{t('lashes:image_caption_2')}</span>
               </figcaption>
-              <p>
-                At Moët Lashes, we tint your natural eyelashes using a safe,
-                semi-permanent, black vegetable dye.
-              </p>
+              <p>{t('lashes:sent_6')}</p>
             </div>
           </div>
         </div>

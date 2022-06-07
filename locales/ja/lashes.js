@@ -1,4 +1,86 @@
 const lashes = {
+  // Lash extensions
+  hero_title_1: `マツエク`,
+  hero_title_2: ``,
+  flat_based: `Flat-based`,
+  extensions_title: `マツエク`,
+  sent_1: `Moët lashesのまつ毛エクステは
+  【フラットラッシュ】のみ使用しております。`,
+  sent_2: `Jカール、Cカール、Dカール
+  3種類をご用意しております。
+  太さは0.12mm、0.15mm、0.2mm。
+  長さは8mm～15mm。`,
+  image_caption_1: `We attach eyelash extensions individually`,
+  sent_3: `超軽量かしたエクステフラットラッシュ
+  通常のエクステの根元がフラットにカットしてあり最大50%軽量化。 `,
+  list_item_1: `リフトアップ効果
+  くぼみがあるので自まつげにフィット！
+  自まつ毛ごとに引き上げられ、リフトアップします！`,
+  list_item_2: `くぼみで高持続性
+  根元が平たなフラットラッシュは通常のエクステより
+  装着面積が2倍も増えてるのでエクステが長持ちします`,
+  list_item_3: `柔らかな自然な仕上がり
+  毛先が細かい先端になっているので、
+  つけ心地もかなり柔らかいです(≧∀≦)`,
+  sent_4: `★安定感と持続力が欲しい方
+  ★自まつ毛が弱く、負担をかけたくない方
+  ★より軽い付け心地が欲しい方
+  ★より自然に仕上げたい方
+  ★自まつ毛の下がりが気になる方、
+  などなど、フラットラッシュのメリットはたくさん。`,
+
+  // Lift, style & tint
+  lift_title: `まつ毛パーマ`,
+  sent_5: `まつ毛パーマとは自まつ毛に専用のパーマ液でパーマをかけ、まつ毛をカールさせる施術のことを言います。`,
+  image_caption_2: `The perfect eyelash extension alternative`,
+  sent_6: `専用のパーマ液を使用し、ロットでまつ毛をカールさせます。ここで重要なのが、“自まつ毛に直接施す施術“ということです。
+  自まつ毛に直接施術をすることで、派手すぎず、ナチュラルな仕上がりになります。`,
+
+  // 8 Aftercare steps
+  aftercare_8: `8`,
+  aftercare_title: `Aftercare Steps`,
+  aftercare_subtitle: `Keep your new lashes looking their best with these eight easy steps!`,
+  // Step 1
+  step_1: `Step 1`,
+  step_1_text_start: `Avoid getting your lashes wet for`,
+  step_1_text_bold: `24`,
+  step_1_text_end: `hours.`,
+  // Step 2
+  step_2: `Step 2`,
+  step_2_text_start: `Sleep on your`,
+  step_2_text_bold: `back`,
+  step_2_text_end: `to protect your lashes.`,
+  // Step 3
+  step_3: `Step 3`,
+  step_3_text_start: `Do`,
+  step_3_text_bold: `not`,
+  step_3_text_end: `use a curler or apply mascara.`,
+  // Step 4
+  step_4: `Step 4`,
+  step_4_text_start: `Brush your lashes`,
+  step_4_text_bold: `twice`,
+  step_4_text_end: `daily with a spoolie.`,
+  // Step 5
+  step_5: `Step 5`,
+  step_5_text_start: `Avoid tugging lashes or`,
+  step_5_text_bold: `rubbing`,
+  step_5_text_end: `your eyes excessively.`,
+  // Step 6
+  step_6: `Step 6`,
+  step_6_text_start: `Only allow a`,
+  step_6_text_bold: `professional`,
+  step_6_text_end: `to remove your lashes.`,
+  // Step 7
+  step_7: `Step 7`,
+  step_7_text_start: `Do not use`,
+  step_7_text_bold: `oil-based`,
+  step_7_text_end: `products near your lashes.`,
+  // Step 8
+  step_8: `Step 8`,
+  step_8_text_start: `Schedule your infill treatment for every`,
+  step_8_text_bold: `2-3`,
+  step_8_text_end: `weeks.`,
+
   // FAQs
   frequently: `よくある`,
   questions: `質問`,

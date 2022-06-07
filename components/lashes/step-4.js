@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { CheckIcon } from '@heroicons/react/outline';
 
 export default function Step4() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative z-10 pt-10 sm:pt-12">
       <div className="sm:max-w-xl max-w-sm px-4 mx-auto bg-white shadow-lg rounded-3xl sm:h-96 h-[50vh] sm:px-6 lg:px-8">
@@ -67,9 +69,9 @@ export default function Step4() {
                   duration: 0.5,
                   type: 'spring',
                 }}
-                className="flex items-center justify-center mb-6 text-3xl font-bold sm:text-4xl text-zinc-800"
+                className="flex items-center justify-center mb-6 text-3xl font-bold sm:text-4xl text-zinc-800 sm:justify-start"
               >
-                Step 4
+                {t('lashes:step_4')}
               </motion.h1>
               <motion.p
                 whileInView={{ opacity: 1, y: 0 }}
@@ -81,11 +83,11 @@ export default function Step4() {
                 }}
                 className="text-lg text-zinc-600"
               >
-                Brush your lashes{' '}
+                {t('lashes:step_4_text_start')}{' '}
                 <span className="font-bold tracking-tight text-rose-400">
-                  twice
+                  {t('lashes:step_4_text_bold')}
                 </span>{' '}
-                daily with a spoolie.
+                {t('lashes:step_4_text_end')}
               </motion.p>
             </div>
           </div>

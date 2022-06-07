@@ -1,23 +1,23 @@
 const layout = {
   // Home
-  home_title: `Moët Lashes | Eyelash Extensions Salon, Cairns, Australia`,
-  home_description: `まつげは、お顔の印象を大きく左右する重要なパーツのひとつです。 あなたにぴったり合うアイラッシュメニューを選び、あなたの瞳の魅力を最大限にひきだします。`,
-  home_keywords: ``,
+  home_title: `Moët lashes | ケアンズのマツエクとまつ毛パーマ`,
+  home_description: `Moët Lashesは、オーストラリアのケアンズでまつげエクステとまつ毛パーマのサービスを提供しています。`,
+  home_keywords: `まつげエクステ、マツエク、ラッシュリフト、まつ毛パーマ、ケアンズ、クイーンズランド、ケアンズマツエクサロン、マツエクサロン、ケアンズ　マツエク、ケアンズ　まつ毛パーマ`,
   // Lashes
-  lashes_title: `Moët Lashes | Eyelashes & Tints`,
-  lashes_description: ``,
+  lashes_title: `Moët lashes | マツエクトまつ毛パーマ`,
+  lashes_description: `マツエクトまつ毛パーマ。`,
   lashes_keywords: ``,
   // Pricing
-  pricing_title: `Moët Lashes | Pricing`,
-  pricing_description: ``,
+  pricing_title: `Moët lashes | まつ毛エクステとまつ毛パーマの料金表`,
+  pricing_description: `Moët lashesは最高の技術によるまつ毛エクステとまつ毛パーマを提供しています。`,
   pricing_keywords: ``,
   // About
-  about_title: `Moët Lashes | About Us`,
-  about_description: ``,
+  about_title: `Moët lashesのまつ毛エクステ&まつ毛パーマ`,
+  about_description: `Moët lashesは最高の技術によるまつ毛エクステとまつ毛パーマを提供しています。`,
   about_keywords: ``,
   // Contact
-  contact_title: `Moët Lashes | Contact Us`,
-  contact_description: ``,
+  contact_title: `Moët lashes | ご予約はこちらまで、ご連絡ください`,
+  contact_description: `まつ毛エクステとまつ毛パーマの予約はこちらからお願いします。`,
   contact_keywords: ``,
 };
 
