@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { CheckIcon } from '@heroicons/react/outline';
-import { PhoneIcon } from '@heroicons/react/solid';
+import { PhoneIcon, ClockIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
 
 const tintFeatures = [
@@ -77,13 +77,22 @@ export default function LiftsPricing() {
                               <span className="mt-2 mr-2 text-4xl font-medium">
                                 $
                               </span>
-                              <span className="font-extrabold">20</span>
+                              <span className="font-extrabold">30</span>
                             </h1>
                           </span>
                         </div>
                       </div>
                     </div>
                     <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-rose-200 bg-zinc-50 sm:p-10 lg:p-6 xl:p-10">
+                      <h2 className="flex pb-8 text-xs font-bold tracking-wide align-center text-rose-300">
+                        <span>
+                          <ClockIcon
+                            className="w-4 h-4 mr-1 text-rose-200"
+                            aria-hidden="true"
+                          />
+                        </span>
+                        30 min
+                      </h2>
                       <ul role="list" className="space-y-4">
                         {tintFeatures.map((feature) => (
                           <li key={feature} className="flex items-start">
@@ -107,12 +116,12 @@ export default function LiftsPricing() {
                             aria-describedby="tier-tint"
                           >
                             <p className="text-base font-medium">Tint</p>
-                            {/* <span>
+                            <span>
                               <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
                                 aria-hidden="true"
                               />
-                            </span> */}
+                            </span>
                           </a>
                         </div>
                       </div>
@@ -161,13 +170,22 @@ export default function LiftsPricing() {
                             <span className="mt-2 mr-2 text-4xl font-medium">
                               $
                             </span>
-                            <span className="font-extrabold">65</span>
+                            <span className="font-extrabold">80</span>
                           </h1>
                         </span>
                       </div>
                     </div>
                   </div>
                   <div className="px-6 pt-10 pb-8 border-t-2 rounded-b-lg border-rose-200 bg-zinc-50 sm:px-10 sm:py-10">
+                    <h2 className="flex pb-8 text-xs font-bold tracking-wide align-center text-rose-300">
+                      <span>
+                        <ClockIcon
+                          className="w-4 h-4 mr-1 text-rose-200"
+                          aria-hidden="true"
+                        />
+                      </span>
+                      90 min
+                    </h2>
                     <ul role="list" className="space-y-4">
                       {liftTintFeatures.map((feature) => (
                         <li key={feature} className="flex items-start">
@@ -192,12 +210,12 @@ export default function LiftsPricing() {
                         >
                           {' '}
                           <p>Lift & Tint</p>
-                          {/* <span>
+                          <span>
                             <PhoneIcon
                               className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
                               aria-hidden="true"
                             />
-                          </span> */}
+                          </span>
                         </a>
                       </div>
                     </div>
@@ -235,13 +253,22 @@ export default function LiftsPricing() {
                               <span className="mt-2 mr-2 text-4xl font-medium">
                                 $
                               </span>
-                              <span className="font-extrabold">50</span>
+                              <span className="font-extrabold">60</span>
                             </h1>
                           </span>
                         </div>
                       </div>
                     </div>
                     <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-rose-200 bg-zinc-50 sm:p-10 lg:p-6 xl:p-10">
+                      <h2 className="flex pb-8 text-xs font-bold tracking-wide align-center text-rose-300">
+                        <span>
+                          <ClockIcon
+                            className="w-4 h-4 mr-1 text-rose-200"
+                            aria-hidden="true"
+                          />
+                        </span>
+                        60 min
+                      </h2>
                       <ul role="list" className="space-y-4">
                         {liftFeatures.map((feature) => (
                           <li key={feature} className="flex items-start">
@@ -265,12 +292,12 @@ export default function LiftsPricing() {
                             aria-describedby="tier-lift"
                           >
                             <p className="text-base font-medium">Lift</p>
-                            {/* <span>
+                            <span>
                               <PhoneIcon
                                 className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-50"
                                 aria-hidden="true"
                               />
-                            </span> */}
+                            </span>
                           </a>
                         </div>
                       </div>
