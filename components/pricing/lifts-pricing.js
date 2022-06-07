@@ -84,10 +84,10 @@ export default function LiftsPricing() {
                       </div>
                     </div>
                     <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-rose-200 bg-zinc-50 sm:p-10 lg:p-6 xl:p-10">
-                      <h2 className="flex pb-8 text-xs font-bold tracking-wide align-center text-rose-300">
+                      <h2 className="flex pb-6 text-xs font-bold tracking-wide align-center text-rose-400">
                         <span>
                           <ClockIcon
-                            className="w-4 h-4 mr-1 text-rose-200"
+                            className="w-4 h-4 mr-1 text-rose-300"
                             aria-hidden="true"
                           />
                         </span>
@@ -177,10 +177,10 @@ export default function LiftsPricing() {
                     </div>
                   </div>
                   <div className="px-6 pt-10 pb-8 border-t-2 rounded-b-lg border-rose-200 bg-zinc-50 sm:px-10 sm:py-10">
-                    <h2 className="flex pb-8 text-xs font-bold tracking-wide align-center text-rose-300">
+                    <h2 className="flex pb-6 text-xs font-bold tracking-wide align-center text-rose-400">
                       <span>
                         <ClockIcon
-                          className="w-4 h-4 mr-1 text-rose-200"
+                          className="w-4 h-4 mr-1 text-rose-300"
                           aria-hidden="true"
                         />
                       </span>
@@ -260,10 +260,10 @@ export default function LiftsPricing() {
                       </div>
                     </div>
                     <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-rose-200 bg-zinc-50 sm:p-10 lg:p-6 xl:p-10">
-                      <h2 className="flex pb-8 text-xs font-bold tracking-wide align-center text-rose-300">
+                      <h2 className="flex pb-6 text-xs font-bold tracking-wide align-center text-rose-400">
                         <span>
                           <ClockIcon
-                            className="w-4 h-4 mr-1 text-rose-200"
+                            className="w-4 h-4 mr-1 text-rose-300"
                             aria-hidden="true"
                           />
                         </span>

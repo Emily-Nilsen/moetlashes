@@ -1,0 +1,69 @@
+(Insert into head, above body)
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "logo": [
+        "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670637/Mo%C3%ABt%20Lashes/SVGs/moet-rose-400_xnflnb.svg",
+        "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653670636/Mo%C3%ABt%20Lashes/SVGs/moet-favicon_qrqvht.svg"
+        ],
+      "image": [
+        "https://res.cloudinary.com/dt3k2apqd/image/upload/v1654287946/Mo%C3%ABt%20Lashes/general/Moe_circle_animation_t3ysw6.png",
+        "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665551/Mo%C3%ABt%20Lashes/general/moetlashes-img-2_myvur9.webp",
+        "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653665550/Mo%C3%ABt%20Lashes/general/moetlashes-img-3-gradient_qfkbz0.webp"
+      ],
+      "@id": "https://www.moet-lashes.com/",
+      "name": "Moët Lashes",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop 19, Orchid Plaza, 58 Lake Street",
+        "addressLocality": "Cairns City",
+        "addressRegion": "QLD",
+        "postalCode": "4870",
+        "addressCountry": "Australia"
+      },
+
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-16.92273",
+        "longitude": "145.777216"
+      },
+      "url": "https://www.moet-lashes.com/",
+      "telephone": "+61466609975",
+      "priceRange": "$30-$120",
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }]
+    }
+  </script>
+
+  Domain name servers from Netlify:
+  dns1.p02.nsone.net
+  dns2.p02.nsone.net
+  dns3.p02.nsone.net
+  dns4.p02.nsone.net
+
+  G-TAG from Google Analytics:
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK7P130KRG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XK7P130KRG');
+  </script>

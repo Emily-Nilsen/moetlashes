@@ -115,7 +115,7 @@ export default function Pricing() {
               Premium eyelash extensions{' '}
             </h1>
             <p className="max-w-4xl mx-auto mt-5 text-lg text-center text-zinc-500 sm:text-xl">
-              Choose between our 60 min Full Set or 90 min Mega Set treatments.
+              Choose between our Full Set or our ultimate Mega Set treatments.
               We also offer an infill option for customers returning within
               three weeks of their last visit.
             </p>

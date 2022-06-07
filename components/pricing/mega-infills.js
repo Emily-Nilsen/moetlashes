@@ -18,6 +18,7 @@ export default function MegaInfills() {
   const tiers = [
     {
       name: `Classic Mega Infills`,
+      time: 90,
       price: 70,
       description: `For customers returning within three weeks of their Classic Mega Set treatment.`,
       features: [
@@ -27,6 +28,7 @@ export default function MegaInfills() {
     },
     {
       name: `Double Mega Infills`,
+      time: 105,
       price: 80,
       description: `For customers returning within three weeks of their Double Mega Set treatment.`,
       features: [
@@ -36,6 +38,7 @@ export default function MegaInfills() {
     },
     {
       name: `Hybrid Mega Infills`,
+      time: 105,
       price: 90,
       description: `For customers returning within three weeks of their Hybrid Mega Set treatment.`,
       features: [
@@ -45,6 +48,7 @@ export default function MegaInfills() {
     },
     {
       name: `Volume Mega Infills`,
+      time: 120,
       price: 100,
       description: `For customers returning within three weeks of their Volume Mega Set treatment.`,
       features: [
@@ -86,7 +90,7 @@ export default function MegaInfills() {
                     aria-hidden="true"
                   />
                 </span>
-                90 min
+                {tier.time} min
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">
@@ -103,6 +107,12 @@ export default function MegaInfills() {
               >
                 {' '}
                 <p className="text-base font-medium">{tier.name}</p>
+                <span>
+                  <PhoneIcon
+                    className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
+                    aria-hidden="true"
+                  />
+                </span>
               </a>
             </div>
             <div className="px-6 pt-6 pb-8">

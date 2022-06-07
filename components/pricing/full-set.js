@@ -18,6 +18,7 @@ export default function FullSet() {
   const tiers = [
     {
       name: `${t('pricing:classic')}`,
+      time: 60,
       price: 70,
       description: `${t('pricing:classic_description')}`,
       features: [
@@ -27,6 +28,7 @@ export default function FullSet() {
     },
     {
       name: `${t('pricing:double')}`,
+      time: 75,
       price: 80,
       description: `${t('pricing:double_description')}`,
       features: [
@@ -36,6 +38,7 @@ export default function FullSet() {
     },
     {
       name: `${t('pricing:hybrid')}`,
+      time: 75,
       price: 90,
       description: `${t('pricing:hybrid_description')}`,
       features: [
@@ -45,6 +48,7 @@ export default function FullSet() {
     },
     {
       name: `${t('pricing:volume')}`,
+      time: 90,
       price: 100,
       description: `${t('pricing:volume_description')}`,
       features: [
@@ -86,7 +90,7 @@ export default function FullSet() {
                     aria-hidden="true"
                   />
                 </span>
-                60 min
+                {tier.time} min
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">
@@ -103,6 +107,12 @@ export default function FullSet() {
               >
                 {' '}
                 <p className="text-base font-medium">{tier.name}</p>
+                <span>
+                  <PhoneIcon
+                    className="w-5 h-5 ml-3 text-rose-200 group-hover:text-rose-100"
+                    aria-hidden="true"
+                  />
+                </span>
               </a>
             </div>
             <div className="px-6 pt-6 pb-8">
