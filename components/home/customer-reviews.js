@@ -169,6 +169,13 @@ function classNames(...classes) {
 }
 
 export default function CustomerReviews() {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = (event) => {
+    // 👇️ toggle isActive state on click
+    setIsActive((current) => !current);
+  };
+
   return (
     <div className="bg-rose-50">
       <div className="max-w-2xl px-4 pt-16 pb-6 mx-auto sm:pt-24 sm:pb-10 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-12 lg:gap-x-8">
@@ -305,9 +312,19 @@ export default function CustomerReviews() {
                   </div>
 
                   <div
-                    className="mt-4 space-y-6 text-base italic text-zinc-600"
+                    className={`${'mt-4 space-y-6 text-base italic text-zinc-600'} ${
+                      isActive ? '' : 'line-clamp-2'
+                    }`}
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
+                  <span>
+                    <button
+                      className="pt-2 text-sm font-semibold text-rose-300"
+                      onClick={handleClick}
+                    >
+                      {isActive ? '' : 'Read more'}
+                    </button>
+                  </span>
                 </div>
               ))}
             </div>
