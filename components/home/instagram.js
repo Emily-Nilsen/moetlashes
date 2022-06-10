@@ -10,19 +10,8 @@ export default function Instagram() {
   // Specify a number between 0 and 1
   const { ref, inView } = useInView({
     threshold: 0.7,
+    triggerOnce: true,
   });
-
-  // Shows animation once only
-  // const useHasBeenViewed = () => {
-  //   const [ref, inView] = useInView();
-  //   const prevInView = useRef(false);
-  //   const hasBeenViewed = prevInView.current || inView;
-  //   useEffect(() => {
-  //     prevInView.current = inView;
-  //   }, [inView]);
-
-  //   return [hasBeenViewed, ref];
-  // };
 
   const shutterLeft = useAnimation();
   const shutterRight = useAnimation();
@@ -188,7 +177,7 @@ export default function Instagram() {
 
       {/* New Instagram promotion */}
       <div
-        // animate={{ opacity: useHasBeenViewed ? 1 : 0 }}
+        id="instagram"
         ref={ref}
         className="w-screen pb-0 my-0 overflow-x-hidden bg-zinc-50"
       >

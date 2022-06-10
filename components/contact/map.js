@@ -11,6 +11,7 @@ export default function Map() {
   // Specify a number between 0 and 1
   const { ref, inView } = useInView({
     threshold: 0.7,
+    triggerOnce: true,
   });
   const shutterLeft = useAnimation();
   const shutterRight = useAnimation();

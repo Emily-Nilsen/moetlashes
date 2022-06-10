@@ -9,6 +9,7 @@ export default function Moe() {
   // Specify a number between 0 and 1
   const { ref, inView } = useInView({
     threshold: 0.9,
+    triggerOnce: true,
   });
   const textMain = useAnimation();
   const textSecondary = useAnimation();
