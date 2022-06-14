@@ -25,7 +25,7 @@ export default function Pricing() {
   const { t } = useTranslation();
   const tabs = [
     {
-      name: `Full Set`,
+      name: `${t('pricing:full_set')}`,
       features: [
         {
           component: <FullSet />,
@@ -33,7 +33,7 @@ export default function Pricing() {
       ],
     },
     {
-      name: `Mega Set`,
+      name: `${t('pricing:mega_set')}`,
       features: [
         {
           component: <MegaSet />,
@@ -41,7 +41,7 @@ export default function Pricing() {
       ],
     },
     {
-      name: `Full Infills`,
+      name: `${t('pricing:full_infills')}`,
       features: [
         {
           component: <FullInfills />,
@@ -49,7 +49,7 @@ export default function Pricing() {
       ],
     },
     {
-      name: `Mega Infills`,
+      name: `${t('pricing:mega_infills')}`,
       features: [
         {
           component: <MegaInfills />,
@@ -98,8 +98,10 @@ export default function Pricing() {
           </div>
           <div className="relative px-4 py-24 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 className="pt-20 mt-10 -mb-10 text-5xl font-extrabold tracking-tight text-center sm:text-6xl lg:text-7xl">
-              <span className="text-white">Our </span>
-              <span className="italic font-medium text-rose-200">pricing</span>
+              <span className="text-white">{t('pricing:our')}</span>
+              <span className="italic font-medium text-rose-200">
+                {t('pricing:pricing')}
+              </span>
             </h1>
           </div>
         </div>
@@ -109,15 +111,13 @@ export default function Pricing() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col align-center">
             <h2 className="pb-2 text-base font-semibold leading-6 tracking-wider text-center uppercase sm:text-lg text-rose-400">
-              price list
+              {t('pricing:price_list')}
             </h2>
             <h1 className="text-4xl font-extrabold text-center sm:text-5xl text-zinc-900">
-              Premium eyelash extensions{' '}
+              {t('pricing:premium_subtitle')}{' '}
             </h1>
             <p className="max-w-4xl mx-auto mt-5 text-lg text-center text-zinc-500 sm:text-xl">
-              Choose between our Full Set or our ultimate Mega Set treatments.
-              We also offer an infill option for customers returning within
-              three weeks of their last visit.
+              {t('pricing:premium_text')}
             </p>
           </div>
 

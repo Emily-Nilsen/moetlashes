@@ -90,7 +90,7 @@ export default function FullSet() {
                     aria-hidden="true"
                   />
                 </span>
-                {tier.time} min
+                {tier.time} {t('pricing:min')}
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">

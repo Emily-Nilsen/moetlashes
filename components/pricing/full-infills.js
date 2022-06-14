@@ -17,40 +17,40 @@ export default function FullInfills() {
 
   const tiers = [
     {
-      name: `Classic Full Infills`,
+      name: `${t('pricing:classic_full_infills')}`,
       time: 60,
       price: 50,
-      description: `For customers returning within three weeks of their Classic Full Set treatment.`,
+      description: `${t('pricing:classic_full_infills_description')}`,
       features: [
         `${t('pricing:classic_result_1')}`,
         `${t('pricing:classic_result_2')}`,
       ],
     },
     {
-      name: `Double Full Infills`,
+      name: `${t('pricing:double_full_infills')}`,
       time: 75,
       price: 60,
-      description: `For customers returning within three weeks of their Double Full Set treatment.`,
+      description: `${t('pricing:double_full_infills_description')}`,
       features: [
         `${t('pricing:double_result_1')}`,
         `${t('pricing:double_result_2')}`,
       ],
     },
     {
-      name: `Hybrid Full Infills`,
+      name: `${t('pricing:hybrid_full_infills')}`,
       time: 75,
       price: 70,
-      description: `For customers returning within three weeks of their Hybrid Full Set treatment.`,
+      description: `${t('pricing:hybrid_full_infills_description')}`,
       features: [
         `${t('pricing:hybrid_result_1')}`,
         `${t('pricing:hybrid_result_2')}`,
       ],
     },
     {
-      name: `Volume Full Infills`,
+      name: `${t('pricing:volume_full_infills')}`,
       time: 90,
       price: 80,
-      description: `For customers returning within three weeks of their Volume Full Set treatment.`,
+      description: `${t('pricing:volume_full_infills_description')}`,
       features: [
         `${t('pricing:volume_result_1')}`,
         `${t('pricing:volume_result_2')}`,
@@ -90,7 +90,7 @@ export default function FullInfills() {
                     aria-hidden="true"
                   />
                 </span>
-                {tier.time} min
+                {tier.time} {t('pricing:min')}
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">

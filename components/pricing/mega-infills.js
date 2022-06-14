@@ -17,40 +17,40 @@ export default function MegaInfills() {
 
   const tiers = [
     {
-      name: `Classic Mega Infills`,
+      name: `${t('pricing:classic_mega_infills')}`,
       time: 90,
       price: 70,
-      description: `For customers returning within three weeks of their Classic Mega Set treatment.`,
+      description: `${t('pricing:classic_mega_infills_description')}`,
       features: [
         `${t('pricing:classic_result_1')}`,
         `${t('pricing:classic_result_2')}`,
       ],
     },
     {
-      name: `Double Mega Infills`,
+      name: `${t('pricing:double_mega_infills')}`,
       time: 105,
       price: 80,
-      description: `For customers returning within three weeks of their Double Mega Set treatment.`,
+      description: `${t('pricing:double_mega_infills_description')}`,
       features: [
         `${t('pricing:double_result_1')}`,
         `${t('pricing:double_result_2')}`,
       ],
     },
     {
-      name: `Hybrid Mega Infills`,
+      name: `${t('pricing:hybrid_mega_infills')}`,
       time: 105,
       price: 90,
-      description: `For customers returning within three weeks of their Hybrid Mega Set treatment.`,
+      description: `${t('pricing:hybrid_mega_infills_description')}`,
       features: [
         `${t('pricing:hybrid_result_1')}`,
         `${t('pricing:hybrid_result_2')}`,
       ],
     },
     {
-      name: `Volume Mega Infills`,
+      name: `${t('pricing:volume_mega_infills')}`,
       time: 120,
       price: 100,
-      description: `For customers returning within three weeks of their Volume Mega Set treatment.`,
+      description: `${t('pricing:volume_mega_infills_description')}`,
       features: [
         `${t('pricing:volume_result_1')}`,
         `${t('pricing:volume_result_2')}`,
@@ -90,7 +90,7 @@ export default function MegaInfills() {
                     aria-hidden="true"
                   />
                 </span>
-                {tier.time} min
+                {tier.time} {t('pricing:min')}
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">

@@ -17,7 +17,7 @@ export default function MegaSet() {
 
   const tiers = [
     {
-      name: `Classic Mega Set`,
+      name: `${t('pricing:classic_mega_set')}`,
       time: 90,
       price: 100,
       description: `${t('pricing:classic_description')}`,
@@ -27,7 +27,7 @@ export default function MegaSet() {
       ],
     },
     {
-      name: `Double Mega Set`,
+      name: `${t('pricing:double_mega_set')}`,
       time: 105,
       price: 110,
       description: `${t('pricing:double_description')}`,
@@ -37,7 +37,7 @@ export default function MegaSet() {
       ],
     },
     {
-      name: `Hybrid Mega Set`,
+      name: `${t('pricing:hybrid_mega_set')}`,
       time: 105,
       price: 120,
       description: `${t('pricing:hybrid_description')}`,
@@ -47,7 +47,7 @@ export default function MegaSet() {
       ],
     },
     {
-      name: `Volume Mega Set`,
+      name: `${t('pricing:volume_mega_set')}`,
       time: 120,
       price: 130,
       description: `${t('pricing:volume_description')}`,
@@ -90,7 +90,7 @@ export default function MegaSet() {
                     aria-hidden="true"
                   />
                 </span>
-                {tier.time} min
+                {tier.time} {t('pricing:min')}
               </h2>
               <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <h1 className="mt-8">
