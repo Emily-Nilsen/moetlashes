@@ -14,7 +14,6 @@ export default function Navbar() {
   const navigation = [
     { name: `${t('navbar:lashes')}`, href: '/lashes' },
     { name: `${t('navbar:pricing')}`, href: '/pricing' },
-    { name: `${t('navbar:about')}`, href: '/about' },
     { name: `${t('navbar:contact')}`, href: '/contact' },
   ];
   return (

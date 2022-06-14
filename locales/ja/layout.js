@@ -11,10 +11,7 @@ const layout = {
   pricing_title: `Moët lashes | まつ毛エクステとまつ毛パーマの料金表`,
   pricing_description: `Moët lashesは最高の技術によるまつ毛エクステとまつ毛パーマを提供しています。`,
   pricing_keywords: ``,
-  // About
-  about_title: `Moët lashesのまつ毛エクステ&まつ毛パーマ`,
-  about_description: `Moët lashesは最高の技術によるまつ毛エクステとまつ毛パーマを提供しています。`,
-  about_keywords: ``,
+
   // Contact
   contact_title: `Moët lashes | ご予約はこちらまで、ご連絡ください`,
   contact_description: `まつ毛エクステとまつ毛パーマの予約はこちらからお願いします。`,

@@ -11,7 +11,6 @@ export default function Footer() {
       { name: `${t('footer:home')}`, href: '/' },
       { name: `${t('footer:lashes')}`, href: '/lashes' },
       { name: `${t('footer:pricing')}`, href: '/pricing' },
-      { name: `${t('footer:about')}`, href: '/about' },
       { name: `${t('footer:contact')}`, href: '/contact' },
     ],
 

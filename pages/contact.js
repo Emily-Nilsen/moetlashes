@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import Map from '../components/contact/map';
+import About from '../components/contact/about';
 import useTranslation from 'next-translate/useTranslation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -250,6 +251,7 @@ export default function Contact() {
 
             <Map />
           </div>
+          <About />
         </section>
       </main>
     </Layout>

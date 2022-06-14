@@ -70,7 +70,7 @@ export default function Map() {
       </div>
 
       {/* Find Us! */}
-      <div ref={ref} className="w-screen pb-2 my-0 sm:pb-10 bg-zinc-50">
+      <div ref={ref} className="w-screen pb-0 my-0 sm:pb-0 bg-zinc-50">
         <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-rose-300 lg:h-[50vh] w-[100vw] h-[40vh]">
           <div>
             <div className="flex items-center object-cover object-center w-full h-full overflow-hidden overflow-x-hidden bg-zinc-800">

@@ -11,14 +11,11 @@ const layout = {
   pricing_title: `Moët Lashes | Price list of eyelash extensions and lash lifts treatments`,
   pricing_description: `Eyelash extensions and lash lifts services on offer at Moët Lashes, the best eyelash extensions salon in Cairns.`,
   pricing_keywords: `eyelash extensions prices, prices of lash extensions, lash lifts prices, price list of eyelash extensions`,
-  // About
-  about_title: `Moët Lashes | Professional and experienced eyelash extensions technician`,
-  about_description: `Moët Lashes offers professional eyelash extensions and lash lifts services by our qualified and experienced eyelash technician.`,
-  about_keywords: `professional, qualified, experienced, eyelash technician, eyelash extensions technician, lash lift technician, Cairns, best service, customer satisfaction`,
+
   // Contact
   contact_title: `Moët Lashes | Contact us and book your lashes today`,
   contact_description: `Ring or Facebook Moët Lashes to book your eyelash extensions or lash lifts appointment today.`,
-  contact_keywords: `contact us, ring us, telephone for booking, book lashes, book eyelashes, book eyelash extensions, book lash lifts, Cairns, QLD, Australia, make appointment`,
+  contact_keywords: `contact us, ring us, telephone for booking, book lashes, book eyelashes, book eyelash extensions, book lash lifts, Cairns, QLD, Australia, make appointment, professional, qualified, experienced, eyelash technician, eyelash extensions technician, lash lift technician, Cairns, best service, customer satisfaction`,
 };
 
 export default layout;

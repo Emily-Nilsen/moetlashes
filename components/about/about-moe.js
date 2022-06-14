@@ -80,35 +80,35 @@ export default function AboutMoe() {
         <div className="mx-auto text-lg max-w-prose">
           <h1>
             <span className="block text-base font-semibold tracking-wide text-center uppercase text-rose-500">
-              <h2>{t('about:orchid_plaza')}</h2>
+              <h2>{t('contact:orchid_plaza')}</h2>
             </span>
-            <span className="block mt-3 text-5xl font-extrabold leading-8 tracking-tight text-center sm:text-6xl text-zinc-900">
-              <span className="font-bold">{t('about:meet')} </span>
+            <span className="block mt-3 text-4xl font-extrabold tracking-tight text-center leading-12 sm:text-5xl text-zinc-900">
+              <span className="font-bold">{t('contact:meet')} </span>
               <span className="italic font-medium text-rose-400">
-                {t('about:moe')}
+                {t('contact:moe')}
               </span>
             </span>
           </h1>
           <p className="mt-8 text-xl leading-8 text-zinc-500">
-            {t('about:sent_1')}
+            {t('contact:sent_1')}
           </p>
         </div>
         <div className="mx-auto mt-6 prose prose-lg prose-rose text-zinc-500">
           <p>
-            {t('about:sent_2_start')}{' '}
+            {t('contact:sent_2_start')}{' '}
             <span className="font-medium text-rose-400">
-              {t('about:professional')}
+              {t('contact:professional')}
             </span>
-            {t('about:sent_2_end')}
+            {t('contact:sent_2_end')}
           </p>
           <p>
-            {t('about:sent_3_start')}{' '}
+            {t('contact:sent_3_start')}{' '}
             <span className="font-medium text-rose-400">
-              {t('about:cairns')}
+              {t('contact:cairns')}
             </span>
-            {t('about:sent_3_end')}{' '}
+            {t('contact:sent_3_end')}{' '}
           </p>
-          <p>{t('about:sent_4')}</p>
+          <p>{t('contact:sent_4')}</p>
         </div>
       </div>
     </div>
