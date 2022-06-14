@@ -17,8 +17,7 @@ export default function About() {
 
   return (
     <section>
-      <div>
-        {/* Hero card */}
+      {/* <div>
         <div className="relative">
           <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
 
@@ -58,7 +57,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <AboutMoe />
       <Moe />
