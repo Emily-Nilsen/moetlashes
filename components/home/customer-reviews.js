@@ -9,15 +9,35 @@ import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
-  totalCount: 13,
+  totalCount: 15,
   counts: [
-    { rating: 5, count: 13 },
+    { rating: 5, count: 15 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
     { rating: 1, count: 0 },
   ],
   featured: [
+    {
+      id: 15,
+      rating: 5,
+      content: `
+        <p>I always have eyelash extensions with her she is the best</p>
+      `,
+      author: '内村葉',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1656567286/Mo%C3%ABt%20Lashes/flowers/flowers-15_wtzotn.jpg',
+    },
+    {
+      id: 14,
+      rating: 5,
+      content: `
+        <p>Wouldn’t trust anyone else, does it exactly how I like them!</p>
+      `,
+      author: 'Elena Mitchell',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1656566681/Mo%C3%ABt%20Lashes/flowers/flowers-14_rd87lm.jpg',
+    },
     {
       id: 1,
       rating: 5,
@@ -312,17 +332,18 @@ export default function CustomerReviews() {
                   </div>
 
                   <div
-                    className={`${'mt-4 space-y-6 text-base italic text-zinc-600'} ${
-                      isActive ? '' : 'line-clamp-2'
-                    }`}
+                    className="mt-4 space-y-6 text-base italic text-zinc-600"
+                    // className={`${'mt-4 space-y-6 text-base italic text-zinc-600'} ${
+                    //   isActive ? '' : 'line-clamp-2'
+                    // }`}
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
                   <span>
                     <button
                       className="pt-2 text-sm font-semibold text-rose-300"
-                      onClick={handleClick}
+                      // onClick={handleClick}
                     >
-                      {isActive ? '' : 'Read more'}
+                      {/* {isActive ? '' : 'Read more'} */}
                     </button>
                   </span>
                 </div>
