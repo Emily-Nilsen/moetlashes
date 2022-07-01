@@ -9,15 +9,27 @@ import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
-  totalCount: 15,
+  totalCount: 16,
   counts: [
-    { rating: 5, count: 15 },
+    { rating: 5, count: 16 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
     { rating: 1, count: 0 },
   ],
   featured: [
+    {
+      id: 16,
+      rating: 5,
+      content: `
+        <p>I'm one of the repeaters at Moet Lashes!
+        The reason why I keep visiting this shop is that Moe, the owner of shop is professional, helpful and reasonable!
+        Highly recommend, thanks always for your great service!!</p>
+      `,
+      author: 'PAO24ify',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1656654120/Mo%C3%ABt%20Lashes/flowers/flower-16_k4q6xx.jpg',
+    },
     {
       id: 15,
       rating: 5,
