@@ -9,15 +9,25 @@ import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
-  totalCount: 16,
+  totalCount: 17,
   counts: [
-    { rating: 5, count: 16 },
+    { rating: 5, count: 17 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
     { rating: 1, count: 0 },
   ],
   featured: [
+    {
+      id: 17,
+      rating: 5,
+      content: `
+        <p>Moet, is an artist, with applying eyelash extensions, the time and care she takes, creates such a wow effect. Thank you so much</p>
+      `,
+      author: 'Kym Harris',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1657063174/Mo%C3%ABt%20Lashes/flowers/flowers-17_tykkme.jpg',
+    },
     {
       id: 16,
       rating: 5,
