@@ -9,15 +9,25 @@ import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
-  totalCount: 17,
+  totalCount: 18,
   counts: [
-    { rating: 5, count: 17 },
+    { rating: 5, count: 18 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
     { rating: 1, count: 0 },
   ],
   featured: [
+    {
+      id: 18,
+      rating: 5,
+      content: `
+        <p>First time getting my lashes done here, Love them, The procedure was so gentle and lashes are so lightweight I forget I even have lash extensions! Plus the prices are so good! Will definitely be coming back</p>
+      `,
+      author: 'Serina Ivy',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1658523975/Mo%C3%ABt%20Lashes/flowers/flowers-18_kxuegh.jpg',
+    },
     {
       id: 17,
       rating: 5,
