@@ -9,15 +9,26 @@ import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
-  totalCount: 18,
+  totalCount: 19,
   counts: [
-    { rating: 5, count: 18 },
+    { rating: 5, count: 19 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
     { rating: 1, count: 0 },
   ],
   featured: [
+    // More reviews...
+    {
+      id: 19,
+      rating: 5,
+      content: `
+        <p>Moe is very impressive and she has been my lash artist since I moved to Cairns last year 🌟 I would never go anywhere else!</p>
+      `,
+      author: 'Jenalyn Monge',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1658611233/Mo%C3%ABt%20Lashes/flowers/flowers-19_kwg2gg.jpg',
+    },
     {
       id: 18,
       rating: 5,
@@ -209,9 +220,10 @@ const reviews = {
       avatarSrc:
         'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653968501/Mo%C3%ABt%20Lashes/flowers/flowers-13_syzof9.jpg',
     },
-    // More reviews...
   ],
 };
+
+// const reviewsTotalCount = Object.keys(reviews.featured).length;
 
 const reviewPreviews = reviews.featured.slice(0, 3);
 const reviewRemaining = reviews.featured.slice(4);
