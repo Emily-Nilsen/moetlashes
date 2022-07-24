@@ -9,9 +9,9 @@ import { Disclosure } from '@headlessui/react';
 
 const reviews = {
   average: 5,
-  totalCount: 19,
+  totalCount: 20,
   counts: [
-    { rating: 5, count: 19 },
+    { rating: 5, count: 20 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
@@ -19,6 +19,16 @@ const reviews = {
   ],
   featured: [
     // More reviews...
+    {
+      id: 20,
+      rating: 5,
+      content: `
+        <p>I’ve been going to Moët lashes for 3years now. She always does a Fantastic job on my eyelash lifts.</p>
+      `,
+      author: 'Tomoe Orland',
+      avatarSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1658635177/Mo%C3%ABt%20Lashes/flowers/flowers-20_konqqd.jpg',
+    },
     {
       id: 19,
       rating: 5,
