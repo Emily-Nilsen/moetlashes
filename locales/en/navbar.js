@@ -2,7 +2,7 @@ const navbar = {
   lashes: `Lashes`,
   pricing: `Pricing`,
   about: `About`,
-  contact: `Contact`,
+  contact: `Booking`,
 };
 
 export default navbar;

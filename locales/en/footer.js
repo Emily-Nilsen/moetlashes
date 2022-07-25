@@ -6,7 +6,7 @@ const footer = {
   lashes: `Lashes`,
   pricing: `Pricing`,
   about: `About`,
-  contact: `Contact`,
+  contact: `Booking`,
   cairns_city: `Cairns City`,
   hours: `Hours`,
   opening_hours: `Mon-Fri 9am to 6pm`,
