@@ -62,8 +62,8 @@ export default function Map() {
               We’re easy to find.
             </h1>
             <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
-              Our beauty salon is located at the heart of Cairns, upstairs in
-              the Orchid Plaza Shopping Centre.
+              Our beauty salon is located at the heart of Cairns, on the ground
+              floor of the Orchid Plaza Shopping Centre.
             </p>
           </div>
         </div>
